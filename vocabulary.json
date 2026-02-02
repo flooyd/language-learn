@@ -1,0 +1,4587 @@
+{
+  "basics": [
+    {
+      "spanish": "el",
+      "english": "the",
+      "partOfSpeech": "article"
+    },
+    {
+      "spanish": "la",
+      "english": "the",
+      "partOfSpeech": "article"
+    },
+    {
+      "spanish": "un",
+      "english": "a/an",
+      "partOfSpeech": "article"
+    },
+    {
+      "spanish": "una",
+      "english": "a/an",
+      "partOfSpeech": "article"
+    },
+    {
+      "spanish": "yo",
+      "english": "I",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "tú",
+      "english": "you",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "él",
+      "english": "he",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "ella",
+      "english": "she",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "nosotros",
+      "english": "we",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "vosotros",
+      "english": "you all",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "ellos",
+      "english": "they",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "ellas",
+      "english": "they",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "usted",
+      "english": "you (formal)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "ustedes",
+      "english": "you all (formal)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "me",
+      "english": "me",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "te",
+      "english": "you",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "le",
+      "english": "him/her/you",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "nos",
+      "english": "us",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "les",
+      "english": "them/you all",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "y",
+      "english": "and",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "o",
+      "english": "or",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "pero",
+      "english": "but",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "porque",
+      "english": "because",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "si",
+      "english": "if",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "que",
+      "english": "that/which",
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "spanish": "en",
+      "english": "in/on",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "de",
+      "english": "of/from",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "a",
+      "english": "to/at",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "con",
+      "english": "with",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "por",
+      "english": "for/by",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "para",
+      "english": "for/to",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "sin",
+      "english": "without",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "sobre",
+      "english": "on/about",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "entre",
+      "english": "between",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "hasta",
+      "english": "until",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "desde",
+      "english": "from/since",
+      "partOfSpeech": "preposition"
+    }
+  ],
+  "numbers": [
+    {
+      "spanish": "cero",
+      "english": "zero",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "uno",
+      "english": "one",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "dos",
+      "english": "two",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "tres",
+      "english": "three",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "cuatro",
+      "english": "four",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "cinco",
+      "english": "five",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "seis",
+      "english": "six",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "siete",
+      "english": "seven",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "ocho",
+      "english": "eight",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "nueve",
+      "english": "nine",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "diez",
+      "english": "ten",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "once",
+      "english": "eleven",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "doce",
+      "english": "twelve",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "trece",
+      "english": "thirteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "catorce",
+      "english": "fourteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "quince",
+      "english": "fifteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "dieciséis",
+      "english": "sixteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "diecisiete",
+      "english": "seventeen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "dieciocho",
+      "english": "eighteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "diecinueve",
+      "english": "nineteen",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "veinte",
+      "english": "twenty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "treinta",
+      "english": "thirty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "cuarenta",
+      "english": "forty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "cincuenta",
+      "english": "fifty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "sesenta",
+      "english": "sixty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "setenta",
+      "english": "seventy",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "ochenta",
+      "english": "eighty",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "noventa",
+      "english": "ninety",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "cien",
+      "english": "one hundred",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "mil",
+      "english": "one thousand",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "millón",
+      "english": "million",
+      "partOfSpeech": "number"
+    },
+    {
+      "spanish": "primero",
+      "english": "first",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "segundo",
+      "english": "second",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "tercero",
+      "english": "third",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "cuarto",
+      "english": "fourth",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "quinto",
+      "english": "fifth",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "sexto",
+      "english": "sixth",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "séptimo",
+      "english": "seventh",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "octavo",
+      "english": "eighth",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "noveno",
+      "english": "ninth",
+      "partOfSpeech": "ordinal"
+    },
+    {
+      "spanish": "décimo",
+      "english": "tenth",
+      "partOfSpeech": "ordinal"
+    }
+  ],
+  "beginner": [
+    {
+      "spanish": "hola",
+      "english": "hello",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "adiós",
+      "english": "goodbye",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "gracias",
+      "english": "thank you",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "por favor",
+      "english": "please",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "sí",
+      "english": "yes",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "no",
+      "english": "no",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "agua",
+      "english": "water",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "casa",
+      "english": "house",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "perro",
+      "english": "dog",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "gato",
+      "english": "cat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "familia",
+      "english": "family",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "madre",
+      "english": "mother",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "padre",
+      "english": "father",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hijo",
+      "english": "son",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hija",
+      "english": "daughter",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hermano",
+      "english": "brother",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hermana",
+      "english": "sister",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "abuelo",
+      "english": "grandfather",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "abuela",
+      "english": "grandmother",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tío",
+      "english": "uncle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tía",
+      "english": "aunt",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "primo",
+      "english": "cousin",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "esposo",
+      "english": "husband",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "esposa",
+      "english": "wife",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "amigo",
+      "english": "friend",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "libro",
+      "english": "book",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mesa",
+      "english": "table",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "silla",
+      "english": "chair",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cama",
+      "english": "bed",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "puerta",
+      "english": "door",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ventana",
+      "english": "window",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "piso",
+      "english": "floor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "techo",
+      "english": "ceiling/roof",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pared",
+      "english": "wall",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cocina",
+      "english": "kitchen",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "baño",
+      "english": "bathroom",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sala",
+      "english": "living room",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "habitación",
+      "english": "room/bedroom",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "jardín",
+      "english": "garden",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "coche",
+      "english": "car",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "bicicleta",
+      "english": "bicycle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "autobús",
+      "english": "bus",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tren",
+      "english": "train",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "avión",
+      "english": "airplane",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "barco",
+      "english": "boat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "comida",
+      "english": "food",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pan",
+      "english": "bread",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "carne",
+      "english": "meat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pollo",
+      "english": "chicken",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pescado",
+      "english": "fish",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "arroz",
+      "english": "rice",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pasta",
+      "english": "pasta",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sopa",
+      "english": "soup",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ensalada",
+      "english": "salad",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "fruta",
+      "english": "fruit",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "manzana",
+      "english": "apple",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "plátano",
+      "english": "banana",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "uva",
+      "english": "grape",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "fresa",
+      "english": "strawberry",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "verdura",
+      "english": "vegetable",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tomate",
+      "english": "tomato",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "lechuga",
+      "english": "lettuce",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "zanahoria",
+      "english": "carrot",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "papa",
+      "english": "potato",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cebolla",
+      "english": "onion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "queso",
+      "english": "cheese",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "huevo",
+      "english": "egg",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "leche",
+      "english": "milk",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mantequilla",
+      "english": "butter",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "azúcar",
+      "english": "sugar",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sal",
+      "english": "salt",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pimienta",
+      "english": "pepper",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "café",
+      "english": "coffee",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "té",
+      "english": "tea",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "jugo",
+      "english": "juice",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vino",
+      "english": "wine",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cerveza",
+      "english": "beer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desayuno",
+      "english": "breakfast",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "almuerzo",
+      "english": "lunch",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cena",
+      "english": "dinner",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "plato",
+      "english": "plate/dish",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vaso",
+      "english": "glass",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "taza",
+      "english": "cup",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cuchara",
+      "english": "spoon",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tenedor",
+      "english": "fork",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cuchillo",
+      "english": "knife",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cabeza",
+      "english": "head",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cara",
+      "english": "face",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ojo",
+      "english": "eye",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "nariz",
+      "english": "nose",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "boca",
+      "english": "mouth",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "oreja",
+      "english": "ear",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pelo",
+      "english": "hair",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cuello",
+      "english": "neck",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "brazo",
+      "english": "arm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mano",
+      "english": "hand",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dedo",
+      "english": "finger",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pierna",
+      "english": "leg",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pie",
+      "english": "foot",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "espalda",
+      "english": "back",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "corazón",
+      "english": "heart",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cuerpo",
+      "english": "body",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ropa",
+      "english": "clothing",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "camisa",
+      "english": "shirt",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pantalón",
+      "english": "pants",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "falda",
+      "english": "skirt",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vestido",
+      "english": "dress",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "zapato",
+      "english": "shoe",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "calcetín",
+      "english": "sock",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sombrero",
+      "english": "hat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "abrigo",
+      "english": "coat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "chaqueta",
+      "english": "jacket",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "animal",
+      "english": "animal",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pájaro",
+      "english": "bird",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pez",
+      "english": "fish",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "caballo",
+      "english": "horse",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vaca",
+      "english": "cow",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cerdo",
+      "english": "pig",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "oveja",
+      "english": "sheep",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ratón",
+      "english": "mouse",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "día",
+      "english": "day",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "noche",
+      "english": "night",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mañana",
+      "english": "morning/tomorrow",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tarde",
+      "english": "afternoon/late",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hoy",
+      "english": "today",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "ayer",
+      "english": "yesterday",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "año",
+      "english": "year",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mes",
+      "english": "month",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "semana",
+      "english": "week",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hora",
+      "english": "hour",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "minuto",
+      "english": "minute",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "lunes",
+      "english": "Monday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "martes",
+      "english": "Tuesday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "miércoles",
+      "english": "Wednesday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "jueves",
+      "english": "Thursday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "viernes",
+      "english": "Friday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sábado",
+      "english": "Saturday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "domingo",
+      "english": "Sunday",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "enero",
+      "english": "January",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "febrero",
+      "english": "February",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "marzo",
+      "english": "March",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "abril",
+      "english": "April",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mayo",
+      "english": "May",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "junio",
+      "english": "June",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "julio",
+      "english": "July",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "agosto",
+      "english": "August",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "septiembre",
+      "english": "September",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "octubre",
+      "english": "October",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "noviembre",
+      "english": "November",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "diciembre",
+      "english": "December",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "primavera",
+      "english": "spring",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "verano",
+      "english": "summer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "otoño",
+      "english": "autumn/fall",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "invierno",
+      "english": "winter",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tiempo",
+      "english": "time/weather",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sol",
+      "english": "sun",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "luna",
+      "english": "moon",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "estrella",
+      "english": "star",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cielo",
+      "english": "sky",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "nube",
+      "english": "cloud",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "lluvia",
+      "english": "rain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "nieve",
+      "english": "snow",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "viento",
+      "english": "wind",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "calor",
+      "english": "heat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "nombre",
+      "english": "name",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "persona",
+      "english": "person",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hombre",
+      "english": "man",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mujer",
+      "english": "woman",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "niño",
+      "english": "boy/child",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "niña",
+      "english": "girl",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "bebé",
+      "english": "baby",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "adulto",
+      "english": "adult",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "edad",
+      "english": "age",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vida",
+      "english": "life",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "muerte",
+      "english": "death",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "nacimiento",
+      "english": "birth",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ciudad",
+      "english": "city",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pueblo",
+      "english": "town/village",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "país",
+      "english": "country",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mundo",
+      "english": "world",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "calle",
+      "english": "street",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "avenida",
+      "english": "avenue",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "plaza",
+      "english": "square/plaza",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "parque",
+      "english": "park",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tienda",
+      "english": "store/shop",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mercado",
+      "english": "market",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "restaurante",
+      "english": "restaurant",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hotel",
+      "english": "hotel",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "banco",
+      "english": "bank",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "oficina",
+      "english": "office",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "escuela",
+      "english": "school",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "iglesia",
+      "english": "church",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "museo",
+      "english": "museum",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cine",
+      "english": "cinema/movie theater",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "teatro",
+      "english": "theater",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "trabajo",
+      "english": "work/job",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dinero",
+      "english": "money",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "precio",
+      "english": "price",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "carta",
+      "english": "letter",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "papel",
+      "english": "paper",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "lápiz",
+      "english": "pencil",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pluma",
+      "english": "pen",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cuaderno",
+      "english": "notebook",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "bolsa",
+      "english": "bag",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "maleta",
+      "english": "suitcase",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "llave",
+      "english": "key",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "reloj",
+      "english": "watch/clock",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "teléfono",
+      "english": "telephone",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ordenador",
+      "english": "computer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "televisión",
+      "english": "television",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "radio",
+      "english": "radio",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "música",
+      "english": "music",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "canción",
+      "english": "song",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "película",
+      "english": "movie/film",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "foto",
+      "english": "photo",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "imagen",
+      "english": "image",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "color",
+      "english": "color",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "rojo",
+      "english": "red",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "azul",
+      "english": "blue",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "verde",
+      "english": "green",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "amarillo",
+      "english": "yellow",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "naranja",
+      "english": "orange",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "morado",
+      "english": "purple",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "rosa",
+      "english": "pink",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "marrón",
+      "english": "brown",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "gris",
+      "english": "gray",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "blanco",
+      "english": "white",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "negro",
+      "english": "black",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "grande",
+      "english": "big/large",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "pequeño",
+      "english": "small",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "alto",
+      "english": "tall/high",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "bajo",
+      "english": "short/low",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "largo",
+      "english": "long",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "corto",
+      "english": "short",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ancho",
+      "english": "wide",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "estrecho",
+      "english": "narrow",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "gordo",
+      "english": "fat",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "delgado",
+      "english": "thin",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "fuerte",
+      "english": "strong",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "débil",
+      "english": "weak",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "bueno",
+      "english": "good",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "malo",
+      "english": "bad",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "mejor",
+      "english": "better",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "peor",
+      "english": "worse",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "nuevo",
+      "english": "new",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "viejo",
+      "english": "old",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "joven",
+      "english": "young",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "bonito",
+      "english": "pretty",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "feo",
+      "english": "ugly",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "hermoso",
+      "english": "beautiful",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "lindo",
+      "english": "cute",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "feliz",
+      "english": "happy",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "triste",
+      "english": "sad",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "contento",
+      "english": "content/glad",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "enojado",
+      "english": "angry",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "cansado",
+      "english": "tired",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "aburrido",
+      "english": "bored",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "caliente",
+      "english": "hot",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "frío",
+      "english": "cold",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "tibio",
+      "english": "warm/lukewarm",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "rápido",
+      "english": "fast",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "lento",
+      "english": "slow",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "fácil",
+      "english": "easy",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "difícil",
+      "english": "difficult",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "rico",
+      "english": "rich/delicious",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "pobre",
+      "english": "poor",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "caro",
+      "english": "expensive",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "barato",
+      "english": "cheap",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "limpio",
+      "english": "clean",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "sucio",
+      "english": "dirty",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "lleno",
+      "english": "full",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "vacío",
+      "english": "empty",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "abierto",
+      "english": "open",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "cerrado",
+      "english": "closed",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "claro",
+      "english": "clear/light",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "oscuro",
+      "english": "dark",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ser",
+      "english": "to be",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "estar",
+      "english": "to be",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "tener",
+      "english": "to have",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hacer",
+      "english": "to do/make",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ir",
+      "english": "to go",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "venir",
+      "english": "to come",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ver",
+      "english": "to see",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "mirar",
+      "english": "to look at/watch",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "oír",
+      "english": "to hear",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "escuchar",
+      "english": "to listen",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hablar",
+      "english": "to speak",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "decir",
+      "english": "to say/tell",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "preguntar",
+      "english": "to ask",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "responder",
+      "english": "to answer",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "leer",
+      "english": "to read",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "escribir",
+      "english": "to write",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "comer",
+      "english": "to eat",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "beber",
+      "english": "to drink",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "cocinar",
+      "english": "to cook",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "dormir",
+      "english": "to sleep",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "despertar",
+      "english": "to wake up",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "levantarse",
+      "english": "to get up",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "sentarse",
+      "english": "to sit down",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "caminar",
+      "english": "to walk",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "correr",
+      "english": "to run",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "saltar",
+      "english": "to jump",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "nadar",
+      "english": "to swim",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "bailar",
+      "english": "to dance",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "cantar",
+      "english": "to sing",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "jugar",
+      "english": "to play",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "vivir",
+      "english": "to live",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "morir",
+      "english": "to die",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "nacer",
+      "english": "to be born",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "trabajar",
+      "english": "to work",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "estudiar",
+      "english": "to study",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "aprender",
+      "english": "to learn",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "enseñar",
+      "english": "to teach",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "querer",
+      "english": "to want",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "amar",
+      "english": "to love",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "odiar",
+      "english": "to hate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "gustar",
+      "english": "to like/be pleasing",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "poder",
+      "english": "to be able to/can",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "deber",
+      "english": "to must/should",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "saber",
+      "english": "to know",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "conocer",
+      "english": "to know/meet",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "entender",
+      "english": "to understand",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "dar",
+      "english": "to give",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "recibir",
+      "english": "to receive",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "tomar",
+      "english": "to take",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "llevar",
+      "english": "to carry/take",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "traer",
+      "english": "to bring",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "buscar",
+      "english": "to search/look for",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "encontrar",
+      "english": "to find",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "perder",
+      "english": "to lose",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ganar",
+      "english": "to win/earn",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "llamar",
+      "english": "to call",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "poner",
+      "english": "to put",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "sacar",
+      "english": "to take out",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "abrir",
+      "english": "to open",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "cerrar",
+      "english": "to close",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "salir",
+      "english": "to leave/go out",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "entrar",
+      "english": "to enter",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "llegar",
+      "english": "to arrive",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "partir",
+      "english": "to depart/leave",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "viajar",
+      "english": "to travel",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "volar",
+      "english": "to fly",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "conducir",
+      "english": "to drive",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "pasar",
+      "english": "to pass/happen",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "quedar",
+      "english": "to stay/remain",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "seguir",
+      "english": "to follow/continue",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "pensar",
+      "english": "to think",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "creer",
+      "english": "to believe",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "sentir",
+      "english": "to feel",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "esperar",
+      "english": "to wait/hope",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "empezar",
+      "english": "to begin",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "terminar",
+      "english": "to finish",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "continuar",
+      "english": "to continue",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "parar",
+      "english": "to stop",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "comprar",
+      "english": "to buy",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "vender",
+      "english": "to sell",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "pagar",
+      "english": "to pay",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "costar",
+      "english": "to cost",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "usar",
+      "english": "to use",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "necesitar",
+      "english": "to need",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ayudar",
+      "english": "to help",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "limpiar",
+      "english": "to clean",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "lavar",
+      "english": "to wash",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "secar",
+      "english": "to dry",
+      "partOfSpeech": "verb"
+    }
+  ],
+  "intermediate": [
+    {
+      "spanish": "conocimiento",
+      "english": "knowledge",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desarrollo",
+      "english": "development",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "experiencia",
+      "english": "experience",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "gobierno",
+      "english": "government",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sociedad",
+      "english": "society",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "educación",
+      "english": "education",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "historia",
+      "english": "history",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cultura",
+      "english": "culture",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "economía",
+      "english": "economy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "política",
+      "english": "politics/policy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tecnología",
+      "english": "technology",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "naturaleza",
+      "english": "nature",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ambiente",
+      "english": "environment",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "salud",
+      "english": "health",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "enfermedad",
+      "english": "illness/disease",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "medicina",
+      "english": "medicine",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hospital",
+      "english": "hospital",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "médico",
+      "english": "doctor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "profesor",
+      "english": "teacher/professor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "estudiante",
+      "english": "student",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "universidad",
+      "english": "university",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "biblioteca",
+      "english": "library",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "investigación",
+      "english": "research/investigation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "problema",
+      "english": "problem",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "solución",
+      "english": "solution",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pregunta",
+      "english": "question",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "respuesta",
+      "english": "answer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "decisión",
+      "english": "decision",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "opinión",
+      "english": "opinion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "razón",
+      "english": "reason",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "situación",
+      "english": "situation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "condición",
+      "english": "condition",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "relación",
+      "english": "relationship",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "comunicación",
+      "english": "communication",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "información",
+      "english": "information",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "idea",
+      "english": "idea",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pensamiento",
+      "english": "thought",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sentimiento",
+      "english": "feeling",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "emoción",
+      "english": "emotion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "proyecto",
+      "english": "project",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "objetivo",
+      "english": "objective/goal",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "resultado",
+      "english": "result",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "consecuencia",
+      "english": "consequence",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ventaja",
+      "english": "advantage",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desventaja",
+      "english": "disadvantage",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "oportunidad",
+      "english": "opportunity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "riesgo",
+      "english": "risk",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dificultad",
+      "english": "difficulty",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "esfuerzo",
+      "english": "effort",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "éxito",
+      "english": "success",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "fracaso",
+      "english": "failure",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cambio",
+      "english": "change",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "diferencia",
+      "english": "difference",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "semejanza",
+      "english": "similarity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "importante",
+      "english": "important",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "necesario",
+      "english": "necessary",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "posible",
+      "english": "possible",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "imposible",
+      "english": "impossible",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "interesante",
+      "english": "interesting",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "útil",
+      "english": "useful",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "inútil",
+      "english": "useless",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "completo",
+      "english": "complete",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "incompleto",
+      "english": "incomplete",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "correcto",
+      "english": "correct",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "incorrecto",
+      "english": "incorrect",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "verdadero",
+      "english": "true",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "falso",
+      "english": "false",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "real",
+      "english": "real",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "artificial",
+      "english": "artificial",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "natural",
+      "english": "natural",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "extraño",
+      "english": "strange",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "común",
+      "english": "common",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "raro",
+      "english": "rare/weird",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "similar",
+      "english": "similar",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "diferente",
+      "english": "different",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "comprender",
+      "english": "to comprehend",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "explicar",
+      "english": "to explain",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "recordar",
+      "english": "to remember",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "olvidar",
+      "english": "to forget",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "decidir",
+      "english": "to decide",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "elegir",
+      "english": "to choose",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "preferir",
+      "english": "to prefer",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "intentar",
+      "english": "to try/attempt",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "lograr",
+      "english": "to achieve",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "conseguir",
+      "english": "to get/obtain",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "permitir",
+      "english": "to allow",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "prohibir",
+      "english": "to prohibit",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "obligar",
+      "english": "to force/oblige",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "evitar",
+      "english": "to avoid",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "resolver",
+      "english": "to resolve/solve",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "crear",
+      "english": "to create",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "destruir",
+      "english": "to destroy",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "construir",
+      "english": "to build",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "mejorar",
+      "english": "to improve",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "aumentar",
+      "english": "to increase",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "disminuir",
+      "english": "to decrease",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "reducir",
+      "english": "to reduce",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "calcular",
+      "english": "to calculate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "medir",
+      "english": "to measure",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "comparar",
+      "english": "to compare",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "analizar",
+      "english": "to analyze",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "examinar",
+      "english": "to examine",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "observar",
+      "english": "to observe",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "demostrar",
+      "english": "to demonstrate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "probar",
+      "english": "to prove/test/try",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "confirmar",
+      "english": "to confirm",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "negar",
+      "english": "to deny",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "aceptar",
+      "english": "to accept",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "rechazar",
+      "english": "to reject",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "participar",
+      "english": "to participate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "colaborar",
+      "english": "to collaborate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "competir",
+      "english": "to compete",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "discutir",
+      "english": "to discuss/argue",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "debatir",
+      "english": "to debate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "convencer",
+      "english": "to convince",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "persuadir",
+      "english": "to persuade",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "influir",
+      "english": "to influence",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "afectar",
+      "english": "to affect",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "considerar",
+      "english": "to consider",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "proponer",
+      "english": "to propose",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "sugerir",
+      "english": "to suggest",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "recomendar",
+      "english": "to recommend",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "advertir",
+      "english": "to warn",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "amenazar",
+      "english": "to threaten",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "prometer",
+      "english": "to promise",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "cumplir",
+      "english": "to fulfill/comply",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "fallar",
+      "english": "to fail",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "triunfar",
+      "english": "to triumph",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "superar",
+      "english": "to overcome/surpass",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "alcanzar",
+      "english": "to reach/achieve",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "mantener",
+      "english": "to maintain",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "conservar",
+      "english": "to preserve",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "proteger",
+      "english": "to protect",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "defender",
+      "english": "to defend",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "atacar",
+      "english": "to attack",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "luchar",
+      "english": "to fight",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "batalla",
+      "english": "battle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "guerra",
+      "english": "war",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "paz",
+      "english": "peace",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "conflicto",
+      "english": "conflict",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "acuerdo",
+      "english": "agreement",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tratado",
+      "english": "treaty",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ley",
+      "english": "law",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "regla",
+      "english": "rule",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "norma",
+      "english": "norm/standard",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "derecho",
+      "english": "right/law",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "responsabilidad",
+      "english": "responsibility",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "obligación",
+      "english": "obligation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "libertad",
+      "english": "freedom",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "justicia",
+      "english": "justice",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "igualdad",
+      "english": "equality",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desigualdad",
+      "english": "inequality",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "democracia",
+      "english": "democracy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dictadura",
+      "english": "dictatorship",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "autoridad",
+      "english": "authority",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "control",
+      "english": "control",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "influencia",
+      "english": "influence",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "presión",
+      "english": "pressure",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tensión",
+      "english": "tension",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "estrés",
+      "english": "stress",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ansiedad",
+      "english": "anxiety",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "miedo",
+      "english": "fear",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "temor",
+      "english": "dread/apprehension",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "valentía",
+      "english": "bravery",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "coraje",
+      "english": "courage",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "esperanza",
+      "english": "hope",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desesperación",
+      "english": "desperation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "alegría",
+      "english": "joy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "tristeza",
+      "english": "sadness",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dolor",
+      "english": "pain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "placer",
+      "english": "pleasure",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "satisfacción",
+      "english": "satisfaction",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "frustración",
+      "english": "frustration",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "confusión",
+      "english": "confusion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "claridad",
+      "english": "clarity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "certeza",
+      "english": "certainty",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "duda",
+      "english": "doubt",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "curiosidad",
+      "english": "curiosity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "interés",
+      "english": "interest",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "aburrimiento",
+      "english": "boredom",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "entusiasmo",
+      "english": "enthusiasm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pasión",
+      "english": "passion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "amor",
+      "english": "love",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "odio",
+      "english": "hatred",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "amistad",
+      "english": "friendship",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "enemigo",
+      "english": "enemy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "compañero",
+      "english": "companion/partner",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pareja",
+      "english": "couple/pair/partner",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vecino",
+      "english": "neighbor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "extranjero",
+      "english": "foreigner/stranger",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ciudadano",
+      "english": "citizen",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "habitante",
+      "english": "inhabitant",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "población",
+      "english": "population",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "comunidad",
+      "english": "community",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "grupo",
+      "english": "group",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "equipo",
+      "english": "team",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "organización",
+      "english": "organization",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "empresa",
+      "english": "company/enterprise",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "negocio",
+      "english": "business",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "comercio",
+      "english": "commerce/trade",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "industria",
+      "english": "industry",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "producción",
+      "english": "production",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "producto",
+      "english": "product",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "servicio",
+      "english": "service",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cliente",
+      "english": "client/customer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "consumidor",
+      "english": "consumer",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "competencia",
+      "english": "competition",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "rival",
+      "english": "rival",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "líder",
+      "english": "leader",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "jefe",
+      "english": "boss/chief",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "empleado",
+      "english": "employee",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "trabajador",
+      "english": "worker",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "profesional",
+      "english": "professional",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "experto",
+      "english": "expert",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "especialista",
+      "english": "specialist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "novato",
+      "english": "novice/rookie",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "principiante",
+      "english": "beginner",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "habilidad",
+      "english": "skill/ability",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "capacidad",
+      "english": "capacity/ability",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "talento",
+      "english": "talent",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "genio",
+      "english": "genius",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "inteligencia",
+      "english": "intelligence",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sabiduría",
+      "english": "wisdom",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ignorancia",
+      "english": "ignorance",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "error",
+      "english": "error/mistake",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "falta",
+      "english": "fault/lack",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "defecto",
+      "english": "defect/flaw",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "virtud",
+      "english": "virtue",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vicio",
+      "english": "vice",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cualidad",
+      "english": "quality",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "característica",
+      "english": "characteristic",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "aspecto",
+      "english": "aspect",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "detalle",
+      "english": "detail",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "conjunto",
+      "english": "set/ensemble",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "elemento",
+      "english": "element",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "parte",
+      "english": "part",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "todo",
+      "english": "whole/everything",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mitad",
+      "english": "half",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "porción",
+      "english": "portion",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cantidad",
+      "english": "quantity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "número",
+      "english": "number",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "cifra",
+      "english": "figure/number",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "suma",
+      "english": "sum",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "total",
+      "english": "total",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "promedio",
+      "english": "average",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "máximo",
+      "english": "maximum",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mínimo",
+      "english": "minimum",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "límite",
+      "english": "limit",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "frontera",
+      "english": "border/frontier",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "barrera",
+      "english": "barrier",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "obstáculo",
+      "english": "obstacle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "desafío",
+      "english": "challenge",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "meta",
+      "english": "goal",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "fin",
+      "english": "end/purpose",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "principio",
+      "english": "beginning/principle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "origen",
+      "english": "origin",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "causa",
+      "english": "cause",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "efecto",
+      "english": "effect",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "impacto",
+      "english": "impact",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "importancia",
+      "english": "importance",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "relevancia",
+      "english": "relevance",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "significado",
+      "english": "meaning/significance",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sentido",
+      "english": "sense/meaning",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "valor",
+      "english": "value",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mérito",
+      "english": "merit",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "beneficio",
+      "english": "benefit",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ganancia",
+      "english": "profit/gain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pérdida",
+      "english": "loss",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "daño",
+      "english": "damage/harm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "perjuicio",
+      "english": "detriment/harm",
+      "partOfSpeech": "noun"
+    }
+  ],
+  "advanced": [
+    {
+      "spanish": "perspectiva",
+      "english": "perspective",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hipótesis",
+      "english": "hypothesis",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "metodología",
+      "english": "methodology",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "fenómeno",
+      "english": "phenomenon",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "paradoja",
+      "english": "paradox",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ambigüedad",
+      "english": "ambiguity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "discrepancia",
+      "english": "discrepancy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sostenibilidad",
+      "english": "sustainability",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "infraestructura",
+      "english": "infrastructure",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "conciencia",
+      "english": "consciousness/awareness",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "subjetividad",
+      "english": "subjectivity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "objetividad",
+      "english": "objectivity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "reciprocidad",
+      "english": "reciprocity",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "jerarquía",
+      "english": "hierarchy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "autonomía",
+      "english": "autonomy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "vulnerabilidad",
+      "english": "vulnerability",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "resiliencia",
+      "english": "resilience",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "dilema",
+      "english": "dilemma",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "paradigma",
+      "english": "paradigm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "controversia",
+      "english": "controversy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "arbitrario",
+      "english": "arbitrary",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "inherente",
+      "english": "inherent",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "meticuloso",
+      "english": "meticulous",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "pertinente",
+      "english": "pertinent/relevant",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "superfluo",
+      "english": "superfluous",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "efímero",
+      "english": "ephemeral",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ambivalente",
+      "english": "ambivalent",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "análogo",
+      "english": "analogous",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "intrínseco",
+      "english": "intrinsic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "extrínseco",
+      "english": "extrinsic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "pragmático",
+      "english": "pragmatic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "idiosincrático",
+      "english": "idiosyncratic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "contemporáneo",
+      "english": "contemporary",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "obsoleto",
+      "english": "obsolete",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "tangible",
+      "english": "tangible",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "intangible",
+      "english": "intangible",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "vehemente",
+      "english": "vehement",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "asumir",
+      "english": "to assume",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "inferir",
+      "english": "to infer",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "sintetizar",
+      "english": "to synthesize",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "corroborar",
+      "english": "to corroborate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "refutar",
+      "english": "to refute",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "postular",
+      "english": "to postulate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "mitigar",
+      "english": "to mitigate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "exacerbar",
+      "english": "to exacerbate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "perpetuar",
+      "english": "to perpetuate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "subsanar",
+      "english": "to rectify/remedy",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "dilucidar",
+      "english": "to elucidate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "reivindicar",
+      "english": "to vindicate/claim",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "discernir",
+      "english": "to discern",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "deducir",
+      "english": "to deduce",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "extrapolación",
+      "english": "extrapolation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "analogía",
+      "english": "analogy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "metáfora",
+      "english": "metaphor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "alegoría",
+      "english": "allegory",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "ironía",
+      "english": "irony",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "sarcasmo",
+      "english": "sarcasm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "eufemismo",
+      "english": "euphemism",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hipérbole",
+      "english": "hyperbole",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "paradójico",
+      "english": "paradoxical",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "irónico",
+      "english": "ironic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "sutil",
+      "english": "subtle",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "explícito",
+      "english": "explicit",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "implícito",
+      "english": "implicit",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "categórico",
+      "english": "categorical",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "condicional",
+      "english": "conditional",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "absoluto",
+      "english": "absolute",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "relativo",
+      "english": "relative",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "subjetivo",
+      "english": "subjective",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "imparcial",
+      "english": "impartial",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "parcial",
+      "english": "partial/biased",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "sesgado",
+      "english": "biased",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "neutral",
+      "english": "neutral",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "equitativo",
+      "english": "equitable",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "justo",
+      "english": "fair/just",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "injusto",
+      "english": "unfair/unjust",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "legítimo",
+      "english": "legitimate",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ilegítimo",
+      "english": "illegitimate",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "lícito",
+      "english": "licit/lawful",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ilícito",
+      "english": "illicit/unlawful",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ético",
+      "english": "ethical",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "moral",
+      "english": "moral",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "inmoral",
+      "english": "immoral",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "virtuoso",
+      "english": "virtuous",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "vicioso",
+      "english": "vicious",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "íntegro",
+      "english": "upright/integral",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "corrupto",
+      "english": "corrupt",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "honesto",
+      "english": "honest",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "deshonesto",
+      "english": "dishonest",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "sincero",
+      "english": "sincere",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "hipócrita",
+      "english": "hypocritical",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "auténtico",
+      "english": "authentic",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "genuino",
+      "english": "genuine",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "fraudulento",
+      "english": "fraudulent",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "legítimamente",
+      "english": "legitimately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "notablemente",
+      "english": "notably",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "significativamente",
+      "english": "significantly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "considerablemente",
+      "english": "considerably",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "sustancialmente",
+      "english": "substantially",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "marginalmente",
+      "english": "marginally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "negligentemente",
+      "english": "negligibly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "predominantemente",
+      "english": "predominantly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "primordialmente",
+      "english": "primarily",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "esencialmente",
+      "english": "essentially",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "fundamentalmente",
+      "english": "fundamentally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "radicalmente",
+      "english": "radically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "drásticamente",
+      "english": "drastically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "gradualmente",
+      "english": "gradually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "progresivamente",
+      "english": "progressively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "sucesivamente",
+      "english": "successively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "simultáneamente",
+      "english": "simultaneously",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "consecutivamente",
+      "english": "consecutively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "perpetuamente",
+      "english": "perpetually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "temporalmente",
+      "english": "temporarily",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "transitoriamente",
+      "english": "transiently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "permanentemente",
+      "english": "permanently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "definitivamente",
+      "english": "definitively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "provisionalmente",
+      "english": "provisionally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "hipotéticamente",
+      "english": "hypothetically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "teóricamente",
+      "english": "theoretically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "prácticamente",
+      "english": "practically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "empíricamente",
+      "english": "empirically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "sistemáticamente",
+      "english": "systematically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "metódicamente",
+      "english": "methodically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "arbitrariamente",
+      "english": "arbitrarily",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "aleatoriamente",
+      "english": "randomly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "deliberadamente",
+      "english": "deliberately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "intencionalmente",
+      "english": "intentionally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "inadvertidamente",
+      "english": "inadvertently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "involuntariamente",
+      "english": "involuntarily",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "espontáneamente",
+      "english": "spontaneously",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "compulsivamente",
+      "english": "compulsively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "instintivamente",
+      "english": "instinctively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "intuitivamente",
+      "english": "intuitively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "racionalmente",
+      "english": "rationally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "lógicamente",
+      "english": "logically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "coherentemente",
+      "english": "coherently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "inconsistentemente",
+      "english": "inconsistently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "paradójicamente",
+      "english": "paradoxically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "convenientemente",
+      "english": "conveniently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "oportunamente",
+      "english": "opportunely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "apropiadamente",
+      "english": "appropriately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "inapropiadamente",
+      "english": "inappropriately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "adecuadamente",
+      "english": "adequately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "inadecuadamente",
+      "english": "inadequately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "suficientemente",
+      "english": "sufficiently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "insuficientemente",
+      "english": "insufficiently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "excesivamente",
+      "english": "excessively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "moderadamente",
+      "english": "moderately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "extremadamente",
+      "english": "extremely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "relativamente",
+      "english": "relatively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "absolutamente",
+      "english": "absolutely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "parcialmente",
+      "english": "partially",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "totalmente",
+      "english": "totally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "completamente",
+      "english": "completely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "enteramente",
+      "english": "entirely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "íntegramente",
+      "english": "entirely/wholly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "meramente",
+      "english": "merely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "exclusivamente",
+      "english": "exclusively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "únicamente",
+      "english": "solely/only",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "solamente",
+      "english": "only",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "inclusivamente",
+      "english": "inclusively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "comprensivamente",
+      "english": "comprehensively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "exhaustivamente",
+      "english": "exhaustively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "superficialmente",
+      "english": "superficially",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "profundamente",
+      "english": "profoundly/deeply",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "brevemente",
+      "english": "briefly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "extensamente",
+      "english": "extensively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "concisamente",
+      "english": "concisely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "verbosamente",
+      "english": "verbosely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "elocuentemente",
+      "english": "eloquently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "articuladamente",
+      "english": "articulately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "ambiguamente",
+      "english": "ambiguously",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "precisamente",
+      "english": "precisely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "exactamente",
+      "english": "exactly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "aproximadamente",
+      "english": "approximately",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "vagamente",
+      "english": "vaguely",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "específicamente",
+      "english": "specifically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "genéricamente",
+      "english": "generically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "universalmente",
+      "english": "universally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "particularmente",
+      "english": "particularly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "especialmente",
+      "english": "especially",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "excepcionalmente",
+      "english": "exceptionally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "normalmente",
+      "english": "normally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "habitualmente",
+      "english": "habitually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "usualmente",
+      "english": "usually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "típicamente",
+      "english": "typically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "atípicamente",
+      "english": "atypically",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "convencionalmente",
+      "english": "conventionally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "tradicionalmente",
+      "english": "traditionally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "innovadoramente",
+      "english": "innovatively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "creativamente",
+      "english": "creatively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "originalmente",
+      "english": "originally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "derivativamente",
+      "english": "derivatively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "independientemente",
+      "english": "independently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "dependientemente",
+      "english": "dependently",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "autónomamente",
+      "english": "autonomously",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "colectivamente",
+      "english": "collectively",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "individualmente",
+      "english": "individually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "mutuamente",
+      "english": "mutually",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "recíprocamente",
+      "english": "reciprocally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "unilateralmente",
+      "english": "unilaterally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "bilateralmente",
+      "english": "bilaterally",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "multilateralmente",
+      "english": "multilaterally",
+      "partOfSpeech": "adverb"
+    }
+  ]
+}
