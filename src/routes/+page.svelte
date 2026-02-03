@@ -80,6 +80,10 @@
     }
 
 	@media (max-width: 1024px) {
+		nav h1 {
+			white-space: nowrap;
+		}
+
 		.intro h3 {
 			max-width: 318.19px;
 		}
