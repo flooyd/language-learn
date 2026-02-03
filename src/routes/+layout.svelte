@@ -8,7 +8,11 @@
 	let ready = $state(false);
 	let duration = $state(800);
 	let menuOpen = $state(false);
-	let darkMode = $state(false);
+
+	// Load dark mode immediately to prevent flash
+	let darkMode = $state(
+		typeof localStorage !== 'undefined' && localStorage.getItem('darkMode') === 'true'
+	);
 
 	// Close menu on navigation
 	const handleNavigation = () => {
@@ -22,11 +26,6 @@
 
 	onMount(() => {
 		ready = true;
-		// Load dark mode preference from localStorage
-		const savedDarkMode = localStorage.getItem('darkMode');
-		if (savedDarkMode !== null) {
-			darkMode = savedDarkMode === 'true';
-		}
 	});
 
 	// Apply dark mode class to body element

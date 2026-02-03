@@ -192,6 +192,11 @@
 	}
 
 	@media (max-width: 768px) {
+		.intro {
+			justify-content: flex-start;
+			padding-top: 2rem;
+		}
+
 		.intro h3 {
 			max-width: 318.19px;
 		}
