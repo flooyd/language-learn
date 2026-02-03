@@ -69,7 +69,6 @@
 	.intro h3 {
 		background: #f0e68c;
 		padding: 10px;
-		width: fit-content;
 		max-width: 638.25px;
 		text-align: left;
 	}
@@ -79,4 +78,10 @@
         margin: 0px;
         background: black;
     }
+
+	@media (max-width: 768px) {
+		.intro h3 {
+			max-width: 318.19px;
+		}
+	}
 </style>
