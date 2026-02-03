@@ -87,7 +87,7 @@
 		color: #f0e68c;
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 768px) {
 		:global(h1) {
 			font-size: 1.44rem;
 		}

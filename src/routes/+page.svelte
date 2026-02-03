@@ -79,7 +79,7 @@
         background: black;
     }
 
-	@media (max-width: 1024px) {
+	@media (max-width: 768px) {
 		nav h1 {
 			white-space: nowrap;
 		}
