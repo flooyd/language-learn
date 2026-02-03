@@ -8,7 +8,7 @@
 
 	const handleClickStartLearning = () => {
 		goto('/learn');
-	}
+	};
 
 	onMount(() => {
 		ready = true;
@@ -19,7 +19,7 @@
 	<div class="intro" in:fade={{ duration }}>
 		<h1>Welcome to Language Learn</h1>
 		<h3>Learn Spanish and other languages using a table or flashcards</h3>
-        <button onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
+		<button onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
 	</div>
 {/if}
 
@@ -28,7 +28,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: calc(100vh - 142.954px);
+		height: calc(100vh - 164px);
 	}
 
 	.intro h1 {
@@ -46,11 +46,11 @@
 		border: 3px solid black;
 	}
 
-    .intro button h3 {
-        padding: 0px;
-        margin: 0px;
-        background: black;
-    }
+	.intro button h3 {
+		padding: 0px;
+		margin: 0px;
+		background: black;
+	}
 
 	@media (max-width: 768px) {
 		.intro h3 {

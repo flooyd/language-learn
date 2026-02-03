@@ -137,5 +137,6 @@
         border: 1px solid black;
         padding: 11.11px;
         text-align: left;
+        width: fit-content;
     }
 </style>
