@@ -42,7 +42,6 @@
         justify-content: center;
         flex-direction: column;
         height: calc(100vh - 142.954px);
-        padding: 20px;
         gap: 2.074rem;
     }
 
