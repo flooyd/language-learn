@@ -27,7 +27,7 @@
 			<button
 				class="mode-button"
 				class:active={learningMode === 'flashcards'}
-				onclick={() => (learningMode = 'flashcards')}>Flashcards</button
+				onclick={() => (learningMode = 'flashcards')}>Flash</button
 			>
             <select bind:value={selectedCategory}>
                 {#each categories as category}

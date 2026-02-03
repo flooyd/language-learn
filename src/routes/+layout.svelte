@@ -198,7 +198,7 @@
 		background: black;
 		color: white;
 		border: none;
-		padding: 11.11px 15px;
+		padding: 5px;
 		border-radius: 5px;
 		transition: background 0.3s ease;
 		width: fit-content;
