@@ -72,7 +72,7 @@
 <style>
     .toolbar {
         display: flex;
-        gap: 2.074rem;
+        gap: 1rem;
     }
 
     .mode-button.active {

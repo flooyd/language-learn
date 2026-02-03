@@ -52,7 +52,7 @@
 
 	.left-nav {
 		display: flex;
-		gap: 2.074rem;
+		gap: 1rem;
 		align-items: center;
 	}
 
