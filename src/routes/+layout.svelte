@@ -6,6 +6,7 @@
 	let { children } = $props();
 	let ready = $state(false);
 	let duration = $state(800);
+	let menuOpen = $state(false);
 
 	onMount(() => {
 		ready = true;
@@ -20,11 +21,25 @@
 	<nav transition:fly={{ y: -1000, duration }}>
 		<div class="left-nav">
 			<a href="/"><h1>Language Learn</h1></a>
-			<a href="/about"><h3>About</h3></a>
-			<a href="/learn"><h3>Learn</h3></a>
-			<a href="/pricing"><h3>Pricing</h3></a>
+			<a href="/about" class="desktop-only"><h3>About</h3></a>
+			<a href="/learn" class="desktop-only"><h3>Learn</h3></a>
+			<a href="/pricing" class="desktop-only"><h3>Pricing</h3></a>
 		</div>
-		<a href="/login"><h3>Login</h3></a>
+		<div class="right-nav">
+			<a href="/login"><h3>Login</h3></a>
+			<button class="hamburger" onclick={() => (menuOpen = !menuOpen)}>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		{#if menuOpen}
+			<div class="menu" transition:fly={{ y: -10, duration: 200 }}>
+				<a href="/about" onclick={() => (menuOpen = false)}><h3>About</h3></a>
+				<a href="/learn" onclick={() => (menuOpen = false)}><h3>Learn</h3></a>
+				<a href="/pricing" onclick={() => (menuOpen = false)}><h3>Pricing</h3></a>
+			</div>
+		{/if}
 	</nav>
 	{@render children()}
 	<div style="height: 2.074rem;"></div>
@@ -38,6 +53,8 @@
 		position: sticky;
 		background: lightyellow;
 		top: 0;
+		flex-wrap: wrap;
+		margin-bottom: 2.074rem;
 	}
 
 	nav a {
@@ -46,9 +63,13 @@
 		padding-bottom: 0.0833rem;
 	}
 
-    nav h3 {
-        margin-right: 1rem;
-    }
+	nav h1 {
+		margin: 0;
+	}
+
+	nav h3 {
+		margin: 0;
+	}
 
 	nav a:hover {
 		text-decoration: underline;
@@ -58,6 +79,61 @@
 		display: flex;
 		gap: 11.11px;
 		align-items: center;
+	}
+
+	.desktop-only {
+		display: block;
+	}
+
+	.right-nav {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		gap: 5px;
+	}
+
+	.hamburger span {
+		width: 25px;
+		height: 3px;
+		background: black;
+		border-radius: 2px;
+	}
+
+	.menu {
+		position: absolute;
+		top: 100%;
+		right: 20px;
+		background: white;
+		border: 2px solid black;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+		min-width: 150px;
+		z-index: 10;
+	}
+
+	.menu a {
+		padding: 10px 20px;
+		display: block;
+		white-space: nowrap;
+	}
+
+	.menu a h3 {
+		margin: 0;
+	}
+
+	.menu a:hover {
+		background: #f0e68c;
 	}
 
 	:global(*) {
@@ -139,6 +215,14 @@
 	@media (max-width: 768px) {
 		nav h1 {
 			white-space: nowrap;
+		}
+
+		.desktop-only {
+			display: none;
+		}
+
+		.hamburger {
+			display: flex;
 		}
 
 		:global(h1) {
