@@ -83,7 +83,6 @@
     }
 
     table {
-        width: 100%;
         border-collapse: collapse;
         display: flex;
         flex-direction: column;
