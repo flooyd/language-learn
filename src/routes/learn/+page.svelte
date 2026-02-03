@@ -55,6 +55,146 @@
                     <td>Thank you</td>
                     <td>Interjection</td>
                 </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Hola</td>
+                    <td>Hello</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Adiós</td>
+                    <td>Goodbye</td>
+                    <td>Interjection</td>
+                </tr>
+                <tr>
+                    <td>Por favor</td>
+                    <td>Please</td>
+                    <td>Phrase</td>
+                </tr>
+                <tr>
+                    <td>Gracias</td>
+                    <td>Thank you</td>
+                    <td>Interjection</td>
+                </tr>
                </tbody>
             </table>
         {:else if learningMode === 'flashcards'}
@@ -67,8 +207,7 @@
 <style>
     .toolbar {
         display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 2.074rem;
     }
 
     .mode-button.active {
@@ -81,14 +220,53 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: calc(100vh - 142.954px);
-        padding: 20px;
         gap: 2.074rem;
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead {
+        display: table;
+        width: calc(100% - 17px);
+        table-layout: fixed;
+        background: white;
+    }
+
+    tbody {
+        display: block;
+        height: calc(100vh - 293.89px);
+        overflow-y: scroll;
+        width: 100%;
+        background: lightyellow;
+        scrollbar-gutter: stable;
+    }
+
+    tbody::-webkit-scrollbar {
+        width: 17px;
+    }
+
+    tbody::-webkit-scrollbar-track {
+        background: lightyellow;
+    }
+
+    tbody::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5px;
+    }
+
+    tbody::-webkit-scrollbar-thumb:hover {
+        background: #999;
+    }
+
+    tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
         background: white;
     }
 
