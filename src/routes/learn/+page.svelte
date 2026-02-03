@@ -255,7 +255,7 @@
     }
 
     tbody::-webkit-scrollbar-thumb {
-        background: #ccc;
+        background: #add8e6;
         border-radius: 5px;
     }
 
@@ -268,6 +268,10 @@
         width: 100%;
         table-layout: fixed;
         background: white;
+    }
+
+    tbody tr:hover {
+        background: #f0e68c;
     }
 
     th, td {

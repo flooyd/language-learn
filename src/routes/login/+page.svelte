@@ -36,8 +36,7 @@
     }
 
     h1 {
-        text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     form {

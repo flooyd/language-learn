@@ -20,4 +20,7 @@
         gap: 2.074rem;
     }
 
+    h1 {
+        margin-bottom: 0px;
+    }
 </style>
