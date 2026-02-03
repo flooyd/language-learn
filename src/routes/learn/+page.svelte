@@ -1,10 +1,15 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
+    import { onMount } from 'svelte';
+    import { fade } from 'svelte/transition';
+    import * as spanishData from '$lib/data/spanish.json';
 
-	let duration = $state(800);
-	let ready = $state(false);
-	let learningMode = $state('table');
+    let duration = $state(800);
+    let ready = $state(false);
+    let learningMode = $state('table');
+    const categories = ['basics', 'numbers', 'beginner', 'intermediate', 'advanced'] as const;
+    let selectedCategory = $state<typeof categories[number]>(categories[0]);
+    
+    const columns = ['Spanish', 'English', 'Part of Speech'];
 
 	onMount(() => {
 		ready = true;
@@ -24,42 +29,29 @@
 				class:active={learningMode === 'flashcards'}
 				onclick={() => (learningMode = 'flashcards')}>Flashcards</button
 			>
+            <select bind:value={selectedCategory}>
+                {#each categories as category}
+                    <option value={category}>{category.charAt(0).toUpperCase() + category.slice(1)}</option>
+                {/each}
+            </select>
 		</div>
         {#if learningMode === 'table'}
             <table>
                 <thead>
-                     <tr>
-                    <th>Spanish</th>
-                    <th>English</th>
-                    <th>Part of Speech</th>
+                <tr>
+                    {#each columns as column}
+                        <th>{column}</th>
+                    {/each}
                 </tr>
                 </thead>
                <tbody>
-                <tr>
-                    <td>Hola</td>
-                    <td>Hello</td>
-                    <td>Interjection</td>
-                </tr>
-                <tr>
-                    <td>Adiós</td>
-                    <td>Goodbye</td>
-                    <td>Interjection</td>
-                </tr>
-                <tr>
-                    <td>Por favor</td>
-                    <td>Please</td>
-                    <td>Phrase</td>
-                </tr>
-                <tr>
-                    <td>Gracias</td>
-                    <td>Thank you</td>
-                    <td>Interjection</td>
-                </tr>
-                <tr>
-                    <td>Lo siento</td>
-                    <td>I'm sorry</td>
-                    <td>Phrase</td>
-                </tr>
+                {#each spanishData[selectedCategory as keyof typeof spanishData] as item}
+                    <tr>
+                        <td>{item.spanish}</td>
+                        <td>{item.english}</td>
+                        <td>{item.partOfSpeech}</td>
+                    </tr>
+                {/each}
                </tbody>
             </table>
         {:else if learningMode === 'flashcards'}
@@ -86,6 +78,7 @@
         justify-content: center;
         flex-direction: column;
         gap: 2.074rem;
+        height: calc(100vh - 164px);
     }
 
     table {
@@ -141,7 +134,7 @@
 
     th, td {
         border: 1px solid black;
-        padding: 10px;
+        padding: 11.11px;
         text-align: left;
     }
 </style>

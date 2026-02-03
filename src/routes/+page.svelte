@@ -33,14 +33,14 @@
 
 	.intro h1 {
 		background: #add8e6;
-		padding: 10px;
+		padding: 11.11px;
 		width: fit-content;
 		border: 3px solid black;
 	}
 
 	.intro h3 {
 		background: #f0e68c;
-		padding: 10px;
+		padding: 11.11px;
 		max-width: 638.25px;
 		text-align: left;
 		border: 3px solid black;

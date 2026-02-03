@@ -77,7 +77,7 @@
 
 	.left-nav {
 		display: flex;
-		gap: 11.11px;
+		gap: 2.074rem;
 		align-items: center;
 	}
 
@@ -111,19 +111,19 @@
 	.menu {
 		position: absolute;
 		top: 100%;
-		right: 20px;
+		right: 19.2px;
 		background: white;
 		border: 2px solid black;
 		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
-		padding: 10px 0;
+		padding: 11.11px 0;
 		min-width: 150px;
 		z-index: 10;
 	}
 
 	.menu a {
-		padding: 10px 20px;
+		padding: 11.11px 19.2px;
 		display: block;
 		white-space: nowrap;
 	}
@@ -146,7 +146,7 @@
 
 	:global(body) {
 		line-height: 1.6;
-		padding: 20px;
+		padding: 19.2px;
 		background: lightyellow;
 		height: 100vh;
 	}
@@ -198,7 +198,7 @@
 		background: black;
 		color: white;
 		border: none;
-		padding: 10px 15px;
+		padding: 11.11px 15px;
 		border-radius: 5px;
 		transition: background 0.3s ease;
 		width: fit-content;
