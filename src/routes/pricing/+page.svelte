@@ -15,7 +15,7 @@
         <h1>Pricing Plans</h1>
         <p>Choose the plan that best suits your language learning needs. We offer a free plan with basic features and a premium plan with advanced features for a small monthly fee.</p>
         <div class="plans">
-            <div class="plan">
+            <div class="plan basic">
                 <h2>Free Plan</h2>
                 <ul>
                     <li>Access to basic tables and flashcards</li>
@@ -46,15 +46,23 @@
         gap: 2.074rem;
     }
 
+    h1 {
+        margin-bottom: 0px;
+    }
+
     .plans {
         display: flex;
         gap: 2rem;
     }
 
     .plan {
-        border: 2px solid black;
+        border: 3px solid #add8e6;
         padding: 1rem;
         
+    }
+
+    .plan.basic {
+        border-color: grey;
     }
 
     .plan h2 {
