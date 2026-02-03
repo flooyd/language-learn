@@ -133,11 +133,20 @@
 	.hamburger {
 		display: none;
 		flex-direction: column;
-		background: none;
-		border: none;
+		background: none !important;
+		border: none !important;
 		padding: 0;
 		cursor: pointer;
 		gap: 5px;
+		width: auto;
+	}
+
+	.hamburger:hover,
+	.hamburger:focus,
+	.hamburger:active {
+		background: none !important;
+		border: none !important;
+		outline: none;
 	}
 
 	.hamburger span {
@@ -308,6 +317,19 @@
 
 	:global(body.dark-mode) nav a {
 		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) .hamburger {
+		background: none !important;
+		border: none !important;
+	}
+
+	:global(body.dark-mode) .hamburger:hover,
+	:global(body.dark-mode) .hamburger:focus,
+	:global(body.dark-mode) .hamburger:active {
+		background: none !important;
+		border: none !important;
+		outline: none;
 	}
 
 	:global(body.dark-mode) .hamburger span {
