@@ -8,6 +8,7 @@
 	let ready = $state(false);
 	let duration = $state(800);
 	let menuOpen = $state(false);
+	let darkMode = $state(false);
 
 	// Close menu on navigation
 	const handleNavigation = () => {
@@ -21,7 +22,28 @@
 
 	onMount(() => {
 		ready = true;
+		// Load dark mode preference from localStorage
+		const savedDarkMode = localStorage.getItem('darkMode');
+		if (savedDarkMode !== null) {
+			darkMode = savedDarkMode === 'true';
+		}
 	});
+
+	// Apply dark mode class to body element
+	$effect(() => {
+		if (typeof document !== 'undefined') {
+			if (darkMode) {
+				document.body.classList.add('dark-mode');
+			} else {
+				document.body.classList.remove('dark-mode');
+			}
+		}
+	});
+
+	const toggleDarkMode = () => {
+		darkMode = !darkMode;
+		localStorage.setItem('darkMode', darkMode.toString());
+	};
 
 </script>
 
@@ -36,6 +58,9 @@
 			<a href="/about" class="desktop-only"><h3>About</h3></a>
 			<a href="/learn" class="desktop-only"><h3>Learn</h3></a>
 			<a href="/pricing" class="desktop-only"><h3>Pricing</h3></a>
+			<button class="dark-mode-toggle desktop-only" onclick={toggleDarkMode}>
+				{darkMode ? '☀️' : '🌙'}
+			</button>
 		</div>
 		<div class="right-nav">
 			<a href="/login"><h3>Login</h3></a>
@@ -50,6 +75,9 @@
 				<a href="/about" onclick={() => (menuOpen = false)}><h3>About</h3></a>
 				<a href="/learn" onclick={() => (menuOpen = false)}><h3>Learn</h3></a>
 				<a href="/pricing" onclick={() => (menuOpen = false)}><h3>Pricing</h3></a>
+				<button class="dark-mode-toggle-menu" onclick={toggleDarkMode}>
+					{darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+				</button>
 			</div>
 		{/if}
 	</nav>
@@ -148,6 +176,39 @@
 		background: #f0e68c;
 	}
 
+	.dark-mode-toggle {
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		transition: transform 0.2s;
+	}
+
+	.dark-mode-toggle:hover {
+		transform: scale(1.2);
+		border: none;
+	}
+
+	.dark-mode-toggle-menu {
+		background: none;
+		border: none;
+		color: inherit;
+		padding: 11.11px 19.2px;
+		text-align: left;
+		width: 100%;
+		font-weight: normal;
+		display: block;
+		white-space: nowrap;
+	}
+
+	.dark-mode-toggle-menu:hover {
+		background: #f0e68c;
+		border: none;
+		color: inherit;
+	}
+
 	:global(*) {
 		font-family: 'IBM Plex Sans', sans-serif;
 		margin: 0;
@@ -234,6 +295,69 @@
 	:global(::-webkit-scrollbar-thumb) {
 		background: #add8e6 !important;
 		border-radius: 5px;
+	}
+
+	/* Dark Mode Styles */
+	:global(body.dark-mode) {
+		background: #121212;
+		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) nav {
+		background: #121212;
+	}
+
+	:global(body.dark-mode) nav a {
+		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) .hamburger span {
+		background: #e0e0e0;
+	}
+
+	:global(body.dark-mode) .menu {
+		background: #2a2a2a;
+		border-color: #444;
+	}
+
+	:global(body.dark-mode) .menu a:hover {
+		background: #3a3a3a;
+	}
+
+	:global(body.dark-mode) .dark-mode-toggle-menu:hover {
+		background: #3a3a3a;
+	}
+
+	:global(body.dark-mode) button {
+		background: #e0e0e0;
+		color: #121212;
+		border-color: #4a90e2;
+	}
+
+	:global(body.dark-mode) button:hover {
+		border-color: #f0e68c;
+		color: #f0e68c;
+		background: #2a2a2a;
+	}
+
+	:global(body.dark-mode) ::-webkit-scrollbar-track {
+		background: #1a1a1a !important;
+	}
+
+	:global(body.dark-mode) ::-webkit-scrollbar-thumb {
+		background: #4a90e2 !important;
+	}
+
+	:global(body.dark-mode) input,
+	:global(body.dark-mode) select,
+	:global(body.dark-mode) textarea {
+		background: #2a2a2a;
+		color: #e0e0e0;
+		border: 1px solid #444;
+	}
+
+	:global(body.dark-mode) a {
+		color: #add8e6;
 	}
 
 	@media (max-width: 768px) {

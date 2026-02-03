@@ -8,12 +8,29 @@
     let learningMode = $state('table');
     const categories = ['basics', 'numbers', 'beginner', 'intermediate', 'advanced'] as const;
     let selectedCategory = $state<typeof categories[number]>(categories[0]);
-    
+    let flippedCards = $state<Set<number>>(new Set());
+
+    // Reset flipped cards when category changes
+    $effect(() => {
+        selectedCategory;
+        flippedCards = new Set();
+    });
+
     const columns = ['Spanish', 'English', 'Part of Speech'];
 
 	onMount(() => {
 		ready = true;
 	});
+
+    const toggleFlip = (index: number) => {
+        if (flippedCards.has(index)) {
+            flippedCards.delete(index);
+        } else {
+            flippedCards.add(index);
+        }
+        // Trigger reactivity
+        flippedCards = new Set(flippedCards);
+    };
 </script>
 
 {#if ready}
@@ -49,10 +66,23 @@
                </tbody>
             </table>
         {:else if learningMode === 'cards'}
-            {#each spanishData[selectedCategory as keyof typeof spanishData] as item}
-                <div class="flashcard">
-                    <h2>{item.spanish}</h2>
-                    <p>{item.english} - {item.partOfSpeech}</p>
+            {#each spanishData[selectedCategory as keyof typeof spanishData] as item, index}
+                <div
+                    class="flashcard-container"
+                    onclick={() => toggleFlip(index)}
+                    role="button"
+                    tabindex="0"
+                    onkeydown={(e) => e.key === 'Enter' && toggleFlip(index)}
+                >
+                    <div class="flashcard" class:flipped={flippedCards.has(index)}>
+                        <div class="flashcard-front">
+                            <h2>{item.spanish}</h2>
+                        </div>
+                        <div class="flashcard-back">
+                            <h2>{item.english}</h2>
+                            <p>{item.partOfSpeech}</p>
+                        </div>
+                    </div>
                 </div>
             {/each}
         {/if}
@@ -114,14 +144,94 @@
         width: 33.33%;
     }
 
+    .flashcard-container {
+        perspective: 1000px;
+        cursor: pointer;
+        min-height: 150px;
+    }
+
     .flashcard {
+        position: relative;
+        width: 100%;
+        min-height: 150px;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flashcard.flipped {
+        transform: rotateY(180deg);
+    }
+
+    .flashcard-front,
+    .flashcard-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+        backface-visibility: hidden;
         border: 2px solid black;
         border-radius: 5px;
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flashcard-front {
         background: lightyellow;
     }
 
-    .flashcard:hover {
-        background: #f0e68c;
+    .flashcard-back {
+        background: #add8e6;
+        transform: rotateY(180deg);
+    }
+
+    .flashcard-container:hover .flashcard-front,
+    .flashcard-container:hover .flashcard-back {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Dark Mode Styles */
+    :global(body.dark-mode) .flashcard-front {
+        background: #2a2a2a;
+        color: #e0e0e0;
+        border-color: #444;
+    }
+
+    :global(body.dark-mode) .flashcard-back {
+        background: #1e3a5f;
+        color: #e0e0e0;
+        border-color: #444;
+    }
+
+    :global(body.dark-mode) thead {
+        background: #2a2a2a;
+        color: #e0e0e0;
+    }
+
+    :global(body.dark-mode) tbody {
+        background: #121212;
+    }
+
+    :global(body.dark-mode) tbody tr {
+        background: #2a2a2a;
+        color: #e0e0e0;
+    }
+
+    :global(body.dark-mode) tbody tr:hover {
+        background: #3a3a3a;
+    }
+
+    :global(body.dark-mode) th,
+    :global(body.dark-mode) td {
+        border-color: #444;
+    }
+
+    :global(body.dark-mode) select {
+        background: #2a2a2a;
+        color: #e0e0e0;
+        border: 1px solid #444;
     }
 </style>
