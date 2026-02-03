@@ -1,9 +1,14 @@
 <script>
+	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
 	let duration = $state(800);
 	let ready = $state(false);
+
+	const handleClickStartLearning = () => {
+		goto('/learn');
+	}
 
 	onMount(() => {
 		ready = true;
@@ -14,7 +19,7 @@
 	<div class="intro" in:fade={{ duration }}>
 		<h1>Welcome to Language Learn</h1>
 		<h3>Learn Spanish and other languages using a table or flashcards.</h3>
-        <button><h3>Start Learning</h3></button>
+        <button onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
 	</div>
 {/if}
 
