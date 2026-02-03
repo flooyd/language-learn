@@ -53,7 +53,7 @@
     .plans {
         display: flex;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .plan {
@@ -77,5 +77,15 @@
 
     .plan li {
         margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .plans {
+            flex-direction: column;
+        }
+
+        .container {
+            height: auto;
+        }
     }
 </style>
