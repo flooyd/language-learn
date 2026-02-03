@@ -79,7 +79,7 @@
         background: black;
     }
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		.intro h3 {
 			max-width: 318.19px;
 		}
