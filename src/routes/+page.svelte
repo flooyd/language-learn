@@ -18,7 +18,7 @@
 {#if ready}
 	<div class="intro" in:fade={{ duration }}>
 		<h1>Welcome to Language Learn</h1>
-		<h3>Learn Spanish and other languages using a table or flashcards</h3>
+		<h3>Learn Spanish and other languages using a table or cards</h3>
 		<button onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
 	</div>
 {/if}

@@ -12,27 +12,22 @@
 
 {#if ready}
 	<div class="container" in:fade={{ duration }}>
-		<h1>Pricing Plans</h1>
+		<h1>Pricing</h1>
 		<p>
 			Choose the plan that best suits your language learning needs. We offer a free plan with basic
 			features and a premium plan with advanced features for a small monthly fee.
 		</p>
 		<div class="plans">
 			<div class="plan basic">
-				<h2>Free Plan</h2>
+				<h2>Free</h2>
 				<ul>
-					<li>Access to basic tables and flashcards</li>
-					<li>Limited daily practice sessions</li>
-					<li>Community support</li>
+					<li>Access to basic tables and cards</li>
 				</ul>
 			</div>
 			<div class="plan">
-				<h2>Premium Plan - $9.99/month</h2>
+				<h2>Premium - $9.99</h2>
 				<ul>
-					<li>Access to all tables and flashcards</li>
-					<li>Unlimited daily practice sessions</li>
-					<li>Personalized learning paths</li>
-					<li>Email support</li>
+					<li>Access to all tables and cards</li>
 				</ul>
 			</div>
 		</div>
@@ -42,7 +37,6 @@
 <style>
 	.container {
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
 		height: calc(100vh - 164px);
 		gap: 2.074rem;

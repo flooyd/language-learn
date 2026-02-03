@@ -19,16 +19,10 @@
 {#if ready}
 	<div class="container" in:fade={{ duration }}>
 		<div class="toolbar">
-			<button
-				class="mode-button"
-				class:active={learningMode === 'table'}
-				onclick={() => (learningMode = 'table')}>Table</button
-			>
-			<button
-				class="mode-button"
-				class:active={learningMode === 'flashcards'}
-				onclick={() => (learningMode = 'flashcards')}>Flash</button
-			>
+			<select bind:value={learningMode}>
+                <option value="table">Table</option>
+                <option value="cards">Cards</option>
+            </select>
             <select bind:value={selectedCategory}>
                 {#each categories as category}
                     <option value={category}>{category.charAt(0).toUpperCase() + category.slice(1)}</option>
@@ -54,9 +48,13 @@
                 {/each}
                </tbody>
             </table>
-        {:else if learningMode === 'flashcards'}
-            <h2>Learning Mode: Flashcards</h2>
-            <!-- Flashcards learning content goes here -->
+        {:else if learningMode === 'cards'}
+            {#each spanishData[selectedCategory as keyof typeof spanishData] as item}
+                <div class="flashcard">
+                    <h2>{item.spanish}</h2>
+                    <p>{item.english} - {item.partOfSpeech}</p>
+                </div>
+            {/each}
         {/if}
 	</div>
 {/if}
@@ -68,18 +66,13 @@
         flex-wrap: wrap;
     }
 
-    .mode-button.active {
-        background-color: #add8e6;
-        color: black;
-    }
-
     .container {
         max-width: 600px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 2.074rem;
-        height: calc(100vh - 164px);
+        min-height: calc(100vh - 164px);
     }
 
     table {
@@ -90,35 +83,15 @@
 
     thead {
         display: table;
-        width: calc(100% - 17px);
         table-layout: fixed;
         background: white;
     }
 
     tbody {
         display: block;
-        height: calc(100vh - 293.89px);
-        overflow-y: scroll;
         width: 100%;
         background: lightyellow;
         scrollbar-gutter: stable;
-    }
-
-    tbody::-webkit-scrollbar {
-        width: 17px;
-    }
-
-    tbody::-webkit-scrollbar-track {
-        background: lightyellow;
-    }
-
-    tbody::-webkit-scrollbar-thumb {
-        background: #add8e6;
-        border-radius: 5px;
-    }
-
-    tbody::-webkit-scrollbar-thumb:hover {
-        background: #999;
     }
 
     tbody tr {
@@ -137,5 +110,16 @@
         padding: 11.11px;
         text-align: left;
         width: fit-content;
+    }
+
+    .flashcard {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 1rem;
+        background: lightyellow;
+    }
+
+    .flashcard:hover {
+        background: #f0e68c;
     }
 </style>

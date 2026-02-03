@@ -35,10 +35,8 @@
 	.container {
 		max-width: 400px;
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
 		height: calc(100vh - 164px);
-		padding: 19.2px;
 		gap: 2.074rem;
 	}
 

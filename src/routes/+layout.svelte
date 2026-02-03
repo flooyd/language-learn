@@ -2,15 +2,27 @@
 	import { fly } from 'svelte/transition';
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
 	let ready = $state(false);
 	let duration = $state(800);
 	let menuOpen = $state(false);
 
+	// Close menu on navigation
+	const handleNavigation = () => {
+		console.log('true')
+		menuOpen = false;
+	};
+
+	afterNavigate(() => {
+		handleNavigation();
+	});
+
 	onMount(() => {
 		ready = true;
 	});
+
 </script>
 
 <svelte:head>
@@ -42,7 +54,6 @@
 		{/if}
 	</nav>
 	{@render children()}
-	<div style="height: 2.074rem;"></div>
 {/if}
 
 <style>
@@ -52,9 +63,10 @@
 		align-items: center;
 		position: sticky;
 		background: lightyellow;
-		top: 0;
+		top: 0px;
 		flex-wrap: wrap;
-		margin-bottom: 2.074rem;
+		z-index: 100;
+		padding-bottom: 2.986rem;
 	}
 
 	nav a {
@@ -148,7 +160,6 @@
 		line-height: 1.6;
 		padding: 19.2px;
 		background: lightyellow;
-		height: 100vh;
 	}
 
 	:global(h1) {
@@ -210,6 +221,19 @@
 	:global(button:hover) {
 		border: 5px solid #f0e68c;
 		color: #f0e68c;
+	}
+
+	:global(::-webkit-scrollbar) {
+		width: 17px !important;
+	}
+
+	:global(::-webkit-scrollbar-track) {
+        background: lightyellow !important;
+    }
+
+	:global(::-webkit-scrollbar-thumb) {
+		background: #add8e6 !important;
+		border-radius: 5px;
 	}
 
 	@media (max-width: 768px) {
