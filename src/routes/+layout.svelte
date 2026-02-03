@@ -86,4 +86,34 @@
 		border: 5px solid #f0e68c;
 		color: #f0e68c;
 	}
+
+	@media (max-width: 768px) {
+		:global(h1) {
+			font-size: 1.728rem;
+		}
+
+		:global(h2) {
+			font-size: 1.44rem;
+		}
+
+		:global(h3) {
+			font-size: 1.2rem;
+		}
+
+		:global(h4) {
+			font-size: 1rem;
+		}
+
+		:global(h5) {
+			font-size: 0.833rem;
+		}
+
+		:global(h6) {
+			font-size: 0.694rem;
+		}
+
+		:global(*) {
+			font-size: 0.875rem;
+		}
+	}
 </style>
