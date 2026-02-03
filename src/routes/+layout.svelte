@@ -1,16 +1,59 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import favicon from '$lib/assets/favicon.svg';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+	let ready = $state(false);
+	let duration = $state(800);
+
+	onMount(() => {
+		ready = true;
+	});
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+{#if ready}
+	<nav transition:fly={{ y: -1000, duration }}>
+		<div class="left-nav">
+			<a href="/"><h1>Language Learn</h1></a>
+			<a href="/about"><h3>About</h3></a>
+		</div>
+		<a href="/login"><h3>Login</h3></a>
+	</nav>
+	{@render children()}
+{/if}
 
 <style>
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: black;
+		padding-bottom: 0.0833rem;
+	}
+
+    nav h3 {
+        margin-right: 1rem;
+    }
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+
+	.left-nav {
+		display: flex;
+		gap: 2.074rem;
+		align-items: center;
+	}
+	
 	:global(*) {
 		font-family: 'IBM Plex Sans', sans-serif;
 		margin: 0;
