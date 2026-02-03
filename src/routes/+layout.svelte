@@ -27,6 +27,7 @@
 		<a href="/login"><h3>Login</h3></a>
 	</nav>
 	{@render children()}
+	<div style="height: 2.074rem;"></div>
 {/if}
 
 <style>
@@ -34,6 +35,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: sticky;
+		background: lightyellow;
+		top: 0;
 	}
 
 	nav a {
@@ -52,7 +56,7 @@
 
 	.left-nav {
 		display: flex;
-		gap: 1rem;
+		gap: 11.11px;
 		align-items: center;
 	}
 
