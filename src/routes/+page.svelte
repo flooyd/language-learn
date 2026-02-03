@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 
 	let duration = $state(800);
 	let ready = $state(false);
@@ -11,7 +11,7 @@
 </script>
 
 {#if ready}
-	<div class="intro" transition:fly={{ x: -1000, duration }}>
+	<div class="intro" in:fade={{ duration }}>
 		<h1>Welcome to Language Learn</h1>
 		<h3>Learn Spanish and other languages using a table or flashcards.</h3>
         <button><h3>Start Learning</h3></button>
@@ -50,10 +50,6 @@
     }
 
 	@media (max-width: 768px) {
-		nav h1 {
-			white-space: nowrap;
-		}
-
 		.intro h3 {
 			max-width: 318.19px;
 		}

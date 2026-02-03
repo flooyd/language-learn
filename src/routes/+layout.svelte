@@ -53,7 +53,7 @@
 		gap: 2.074rem;
 		align-items: center;
 	}
-	
+
 	:global(*) {
 		font-family: 'IBM Plex Sans', sans-serif;
 		margin: 0;
@@ -131,6 +131,10 @@
 	}
 
 	@media (max-width: 768px) {
+		nav h1 {
+			white-space: nowrap;
+		}
+		
 		:global(h1) {
 			font-size: 1.44rem;
 		}
