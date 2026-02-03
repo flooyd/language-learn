@@ -36,7 +36,6 @@
 		padding: 10px;
 		width: fit-content;
 		border: 3px solid black;
-
 	}
 
 	.intro h3 {

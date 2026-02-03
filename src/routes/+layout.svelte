@@ -21,6 +21,8 @@
 		<div class="left-nav">
 			<a href="/"><h1>Language Learn</h1></a>
 			<a href="/about"><h3>About</h3></a>
+			<a href="/learn"><h3>Learn</h3></a>
+			<a href="/pricing"><h3>Pricing</h3></a>
 		</div>
 		<a href="/login"><h3>Login</h3></a>
 	</nav>
@@ -134,7 +136,7 @@
 		nav h1 {
 			white-space: nowrap;
 		}
-		
+
 		:global(h1) {
 			font-size: 1.44rem;
 		}
