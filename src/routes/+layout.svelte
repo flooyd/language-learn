@@ -66,7 +66,7 @@
 		top: 0px;
 		flex-wrap: wrap;
 		z-index: 100;
-		padding-bottom: 2.986rem;
+		padding-bottom: 2.074rem;
 	}
 
 	nav a {

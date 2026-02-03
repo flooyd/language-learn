@@ -77,6 +77,7 @@
 
     table {
         border-collapse: collapse;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -84,6 +85,7 @@
     thead {
         display: table;
         table-layout: fixed;
+        width: 100%;
         background: white;
     }
 
@@ -109,7 +111,7 @@
         border: 1px solid black;
         padding: 11.11px;
         text-align: left;
-        width: fit-content;
+        width: 33.33%;
     }
 
     .flashcard {
