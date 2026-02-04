@@ -63,7 +63,7 @@
 		</div>
 		<div class="right-nav">
 			<a href="/login"><h3>Login</h3></a>
-			<button class="hamburger" onclick={() => (menuOpen = !menuOpen)}>
+			<button class="hamburger" onclick={() => (menuOpen = !menuOpen)} aria-label="Toggle navigation menu">
 				<span></span>
 				<span></span>
 				<span></span>

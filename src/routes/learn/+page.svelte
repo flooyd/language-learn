@@ -3,7 +3,6 @@
     import { fade, fly } from 'svelte/transition';
     import * as spanishData from '$lib/data/spanish.json';
 
-    let duration = $state(800);
     let ready = $state(false);
     let learningMode = $state('table');
     const categories = ['basics', 'numbers', 'beginner', 'intermediate', 'advanced'] as const;
@@ -57,23 +56,23 @@
 
 		<div class="controls" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			<div class="toolbar">
-				<div class="control-group">
-					<label>Mode</label>
-					<select bind:value={learningMode}>
-						<option value="table">📊 Table View</option>
-						<option value="cards">🎴 Flashcards</option>
-					</select>
-				</div>
-				<div class="control-group">
-					<label>Category</label>
-					<select bind:value={selectedCategory}>
-						{#each categories as category}
-							<option value={category}>
-								{getCategoryEmoji(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
-							</option>
-						{/each}
-					</select>
-				</div>
+                <div class="control-group">
+                    <label for="mode-select">Mode</label>
+                    <select id="mode-select" bind:value={learningMode}>
+                        <option value="table">📊 Table View</option>
+                        <option value="cards">🎴 Flashcards</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="category-select">Category</label>
+                    <select id="category-select" bind:value={selectedCategory}>
+                        {#each categories as category}
+                            <option value={category}>
+                                {getCategoryEmoji(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+                            </option>
+                        {/each}
+                    </select>
+                </div>
 			</div>
 
 			<div class="stats-badge">

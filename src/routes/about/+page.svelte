@@ -3,7 +3,6 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
-    let duration = $state(800);
 	let ready = $state(false);
 
 	onMount(() => {

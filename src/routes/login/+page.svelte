@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 
 	let loginOrRegister = $state('login');
-	let duration = $state(800);
 	let ready = $state(false);
 
 	onMount(() => {
