@@ -11,12 +11,12 @@
 </script>
 
 {#if ready}
-	<div class="container" in:fade={{ duration }}>
-		<h1>Pricing</h1>
-		<p class="subtitle">
+	<div class="container">
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Pricing</h1>
+		<p class="subtitle" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			Choose the plan that best suits your language learning needs. Start free and upgrade anytime.
 		</p>
-		<div class="plans">
+		<div class="plans" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="plan free-plan">
 				<h2>Free</h2>
 				<div class="price">

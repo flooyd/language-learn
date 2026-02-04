@@ -90,8 +90,8 @@
 	.form-card {
 		background: white;
 		border: 3px solid black;
-		border-radius: 5px;;
-		padding: 2rem;
+		border-radius: 5px;
+		padding: 1rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
@@ -104,7 +104,7 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 
 	.form-group {
@@ -159,8 +159,8 @@
 	.switch-card {
 		background: #f0e68c;
 		border: 3px solid black;
-		border-radius: 5px;;
-		padding: 1.5rem;
+		border-radius: 5px;
+		padding: 1rem;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
