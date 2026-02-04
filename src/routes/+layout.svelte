@@ -231,7 +231,8 @@
 	}
 
 	:global(h1) {
-		font-family: 'Playfair Display', serif;
+		font-family: 'ApfelGrotezk-Regular', sans-serif;
+		src: url('ApfelGrotezk-Regular.woff');
 		margin-bottom: 2.074rem;
 		margin-top: 1rem;
 	}
