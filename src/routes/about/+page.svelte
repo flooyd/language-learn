@@ -64,8 +64,8 @@
         max-width: 1200px;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
-        padding-bottom: 3rem;
+        gap: 1rem;
+        padding-bottom: 2.074rem;
     }
 
     h1 {
@@ -73,7 +73,11 @@
     }
 
 	h2 {
-		margin-bottom: 1rem;
+		margin-bottom: 0px;
+	}
+
+	h3 {
+		margin-bottom: 0;
 	}
 
 	/* Mission Card */
@@ -81,7 +85,7 @@
 		background: #add8e6;
 		border: 3px solid black;
 		padding: 2rem;
-		border-radius: 8px;
+		border-radius: 5px;;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
@@ -112,17 +116,17 @@
 	.features-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 
 	.feature-card {
 		background: white;
 		border: 3px solid black;
-		padding: 1.5rem;
-		border-radius: 8px;
+		padding: 1rem;
+		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: 1rem;
 		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 	}
 
@@ -134,12 +138,10 @@
 
 	.feature-icon {
 		font-size: 2.5rem;
-		margin-bottom: 0.5rem;
 	}
 
 	.feature-card h3 {
 		color: black;
-		margin-bottom: 0.5rem;
 		font-size: 1.3rem;
 	}
 
@@ -152,13 +154,13 @@
 	/* CTA Section */
 	.cta-section {
 		text-align: center;
-		padding: 2rem;
+		padding: 1rem;
 		background: white;
 		border: 3px solid black;
-		border-radius: 8px;
+		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 1rem;
 		align-items: center;
 	}
 

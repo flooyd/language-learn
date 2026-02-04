@@ -93,7 +93,6 @@
 		top: 0px;
 		flex-wrap: wrap;
 		z-index: 100;
-		padding-bottom: 2.074rem;
 	}
 
 	nav a {
@@ -234,6 +233,7 @@
 	:global(h1) {
 		font-family: 'Playfair Display', serif;
 		margin-bottom: 2.074rem;
+		margin-top: 1rem;
 	}
 
 	:global(h2, h3, h4, h5, h6) {

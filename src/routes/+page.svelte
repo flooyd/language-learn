@@ -50,9 +50,9 @@
 	.intro {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		height: calc(100vh - 164px);
-		gap: 2rem;
+		justify-content: flex-start;
+		min-height: calc(100vh - 164px);
+		gap: 1rem;
 	}
 
 	.intro h1 {
@@ -84,7 +84,7 @@
 
 	.stats {
 		display: flex;
-		gap: 2rem;
+		gap: 1rem;
 		flex-wrap: wrap;
 		margin: 1rem 0;
 	}
@@ -92,11 +92,11 @@
 	.stat {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
-		padding: 1rem 1.5rem;
+		gap: 11.11px;
+		padding: .0833rem;
 		background: white;
 		border: 3px solid black;
-		border-radius: 8px;
+		border-radius: 5px;;
 		min-width: 120px;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}

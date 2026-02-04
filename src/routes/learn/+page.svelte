@@ -143,7 +143,7 @@
         flex-direction: column;
         gap: 2rem;
         min-height: calc(100vh - 164px);
-        padding-bottom: 2rem;
+        padding-bottom: 2.074rem;
     }
 
     .header {
@@ -153,7 +153,7 @@
     }
 
     .header h1 {
-        margin: 0;
+        margin-bottom: 0px;
         background: #add8e6;
         padding: 11.11px;
         width: fit-content;
@@ -170,7 +170,7 @@
     .controls {
         background: white;
         border: 3px solid black;
-        border-radius: 8px;
+        border-radius: 5px;;
         padding: 1.5rem;
         display: flex;
         justify-content: space-between;
@@ -223,7 +223,7 @@
     .stats-badge {
         background: #f0e68c;
         border: 3px solid black;
-        border-radius: 8px;
+        border-radius: 5px;;
         padding: 0.75rem 1.5rem;
         display: flex;
         flex-direction: column;
@@ -247,7 +247,7 @@
     .hint {
         background: #add8e6;
         border: 3px solid black;
-        border-radius: 8px;
+        border-radius: 5px;;
         padding: 1rem 1.5rem;
         color: black;
         font-size: 1rem;
@@ -274,7 +274,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        border-radius: 8px;
+        border-radius: 5px;;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -344,7 +344,7 @@
         min-height: 180px;
         backface-visibility: hidden;
         border: 3px solid black;
-        border-radius: 8px;
+        border-radius: 5px;;
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
