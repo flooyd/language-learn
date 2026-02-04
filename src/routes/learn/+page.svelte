@@ -52,7 +52,7 @@
 	<div class="container">
 		<div class="header" in:fly={{ y: -50, duration: 600, delay: 0 }}>
 			<h1>Learn Spanish</h1>
-			<p class="description">Master Spanish vocabulary with interactive learning modes</p>
+			<p class="description">Master Spanish vocabulary with interactive learning modes.</p>
 		</div>
 
 		<div class="controls" in:fly={{ y: -30, duration: 600, delay: 150 }}>
@@ -154,11 +154,6 @@
 
     .header h1 {
         margin-bottom: 0px;
-        background: #add8e6;
-        padding: 11.11px;
-        width: fit-content;
-        border: 3px solid black;
-        color: black;
     }
 
     .description {
@@ -398,7 +393,7 @@
 
     /* Dark Mode Styles */
     :global(body.dark-mode) .description {
-        color: #b0b0b0;
+        color: #e0e0e0;
     }
 
     :global(body.dark-mode) .controls {
@@ -407,7 +402,7 @@
     }
 
     :global(body.dark-mode) .control-group label {
-        color: #b0b0b0;
+        color: #e0e0e0;
     }
 
     :global(body.dark-mode) .control-group select {
@@ -431,7 +426,7 @@
     }
 
     :global(body.dark-mode) .stats-badge .label {
-        color: #b0b0b0;
+        color: #e0e0e0;
     }
 
     :global(body.dark-mode) .hint {
@@ -453,7 +448,7 @@
     }
 
     :global(body.dark-mode) .flashcard-back p {
-        color: #b0b0b0;
+        color: #e0e0e0;
     }
 
     :global(body.dark-mode) thead {

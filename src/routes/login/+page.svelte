@@ -63,7 +63,7 @@
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
 		gap: 1rem;
-		padding-bottom: 2.074rem;
+		padding-bottom: 2rem;
 	}
 
 	.header {
@@ -74,11 +74,6 @@
 
 	h1 {
 		margin-bottom: 0;
-		background: #add8e6;
-		padding: 11.11px;
-		width: fit-content;
-		border: 3px solid black;
-		color: black;
 	}
 
 	.subtitle {
@@ -120,7 +115,7 @@
 	}
 
 	input {
-		padding: 12px;
+		padding: 5px;
 		border: 2px solid #ccc;
 		border-radius: 5px;
 		font-size: 1rem;
@@ -138,7 +133,6 @@
 	}
 
 	.submit-button {
-		padding: 12px;
 		font-size: 1.2rem;
 		font-weight: bold;
 		background: black;
@@ -147,7 +141,6 @@
 		border-radius: 5px;
 		cursor: pointer;
 		transition: transform 0.2s ease, border-color 0.3s ease;
-		margin-top: 0.5rem;
 	}
 
 	.submit-button:hover {
@@ -157,10 +150,6 @@
 	}
 
 	.switch-card {
-		background: #f0e68c;
-		border: 3px solid black;
-		border-radius: 5px;
-		padding: 1rem;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -194,7 +183,7 @@
 
 	/* Dark Mode Styles */
 	:global(body.dark-mode) .subtitle {
-		color: #b0b0b0;
+		color: #e0e0e0;
 	}
 
 	:global(body.dark-mode) .form-card {

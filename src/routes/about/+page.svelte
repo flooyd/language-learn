@@ -82,10 +82,6 @@
 
 	/* Mission Card */
 	.mission-card {
-		background: #add8e6;
-		border: 3px solid black;
-		padding: 2rem;
-		border-radius: 5px;;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
@@ -188,11 +184,6 @@
 	}
 
 	/* Dark Mode Styles */
-	:global(body.dark-mode) .mission-card {
-		background: #1e3a5f;
-		border-color: #4a90e2;
-	}
-
 	:global(body.dark-mode) .mission-card h2,
 	:global(body.dark-mode) .mission-card p {
 		color: #e0e0e0;
@@ -212,7 +203,7 @@
 	}
 
 	:global(body.dark-mode) .feature-card p {
-		color: #b0b0b0;
+		color: #e0e0e0;
 	}
 
 	:global(body.dark-mode) .cta-section {

@@ -21,8 +21,8 @@
 
 {#if ready}
 	<div class="intro">
-		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn</h1>
-		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables or flashcards</h3>
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn.</h1>
+		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables or flashcards.</h3>
 
 		<div class="stats" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="stat">
@@ -56,10 +56,6 @@
 	}
 
 	.intro h1 {
-		background: #add8e6;
-		padding: 11.11px;
-		width: fit-content;
-		border: 3px solid black;
 		color: black;
 		transition: transform 0.3s ease;
 		margin-bottom: 0px;
@@ -70,11 +66,6 @@
 	}
 
 	.intro h3 {
-		background: #f0e68c;
-		padding: 11.11px;
-		max-width: 638.25px;
-		text-align: left;
-		border: 3px solid black;
 		color: black;
 		transition: transform 0.3s ease;
 		margin-bottom: 0;
@@ -175,7 +166,7 @@
 	}
 
 	:global(body.dark-mode) .stat-label {
-		color: #b0b0b0;
+		color: #e0e0e0;
 	}
 
 	:global(body.dark-mode) .secondary-cta {
@@ -190,6 +181,10 @@
 	:global(body.dark-mode) .secondary-cta:hover {
 		background: #3a3a3a;
 		border-color: #4a90e2;
+	}
+
+	:global(body.dark-mode) h1, :global(body.dark-mode) h3 {
+		color: white;
 	}
 
 	@media (max-width: 768px) {

@@ -220,7 +220,7 @@
 	}
 
 	:global(body.dark-mode) .period {
-		color: #b0b0b0;
+		color: #e0e0e0;
 	}
 
 	:global(body.dark-mode) .plan li.included {
@@ -254,7 +254,7 @@
 	}
 
 	:global(body.dark-mode) .subtitle {
-		color: #b0b0b0;
+		color: #e0e0e0;
 	}
 
 	@media (max-width: 768px) {
