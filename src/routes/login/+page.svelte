@@ -14,7 +14,7 @@
 {#if ready}
 	<div class="container">
 		<div class="header" in:fly={{ y: -50, duration: 600, delay: 0 }}>
-			<h1>{loginOrRegister === 'login' ? '🔐 Login' : '✨ Register'}</h1>
+			<h1>{loginOrRegister === 'login' ? 'Login' : 'Register'}</h1>
 			<p class="subtitle">
 				{loginOrRegister === 'login'
 					? 'Welcome back! Continue your language learning journey.'
@@ -25,17 +25,17 @@
 		<div class="form-card" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			<form>
 				<div class="form-group">
-					<label for="username">👤 Username</label>
+					<label for="username">Username</label>
 					<input type="text" id="username" name="username" required placeholder="Enter your username" />
 				</div>
 
 				<div class="form-group">
-					<label for="password">🔑 Password</label>
+					<label for="password">Password</label>
 					<input type="password" id="password" name="password" required placeholder="Enter your password" />
 				</div>
 
 				<button type="submit" class="submit-button">
-					{loginOrRegister === 'login' ? '🚀 Login' : '🎓 Create Account'}
+					{loginOrRegister === 'login' ? 'Login' : 'Create Account'}
 				</button>
 			</form>
 		</div>
@@ -62,8 +62,8 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 2rem;
-		padding-bottom: 2rem;
+		gap: 1rem;
+		padding-bottom: 2.074rem;
 	}
 
 	.header {

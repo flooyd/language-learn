@@ -17,33 +17,33 @@
 
 {#if ready}
 	<div class="container">
-		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>📖 About Language Learn</h1>
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>About</h1>
 
 		<div class="mission-card" in:fly={{ y: -30, duration: 600, delay: 150 }}>
-			<h2>🎯 Our Mission</h2>
+			<h2>Our Mission</h2>
 			<p>Language Learn is designed to make language learning accessible, enjoyable, and effective for everyone. We believe that learning a new language should be simple, interactive, and fun.</p>
 		</div>
 
 		<div class="features-section" in:fly={{ y: -20, duration: 600, delay: 300 }}>
-			<h2>✨ What We Offer</h2>
+			<h2>What We Offer</h2>
 			<div class="features-grid">
 				<div class="feature-card">
-					<div class="feature-icon">📚</div>
+					<div class="feature-icon"></div>
 					<h3>Comprehensive Vocabulary</h3>
 					<p>500+ Spanish words across 5 learning levels, from basics to advanced.</p>
 				</div>
 				<div class="feature-card">
-					<div class="feature-icon">🔄</div>
+					<div class="feature-icon"></div>
 					<h3>Dual Learning Modes</h3>
 					<p>Switch between table view for reference and flashcards for active learning.</p>
 				</div>
 				<div class="feature-card">
-					<div class="feature-icon">🎓</div>
+					<div class="feature-icon"></div>
 					<h3>Progressive Learning</h3>
 					<p>Start with basics and advance through beginner, intermediate, and advanced levels.</p>
 				</div>
 				<div class="feature-card">
-					<div class="feature-icon">💰</div>
+					<div class="feature-icon"></div>
 					<h3>Free to Start</h3>
 					<p>Begin your language journey with our free plan, upgrade when ready.</p>
 				</div>
@@ -53,7 +53,7 @@
 		<div class="cta-section" in:fly={{ y: -10, duration: 600, delay: 450 }}>
 			<h2>Ready to begin your language journey?</h2>
 			<button class="cta-button" onclick={handleClickStartLearning}>
-				<h3>🚀 Start Learning</h3>
+				<h3>Start Learning</h3>
 			</button>
 		</div>
 	</div>

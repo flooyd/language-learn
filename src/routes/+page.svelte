@@ -21,8 +21,8 @@
 
 {#if ready}
 	<div class="intro">
-		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>🌍 Welcome to Language Learn</h1>
-		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables or flashcards 🎓</h3>
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn</h1>
+		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables or flashcards</h3>
 
 		<div class="stats" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="stat">
@@ -40,7 +40,7 @@
 		</div>
 
 		<div class="cta-buttons" in:fly={{ y: -10, duration: 600, delay: 450 }}>
-			<button class="primary-cta" onclick={handleClickStartLearning}><h3>🚀 Start Learning</h3></button>
+			<button class="primary-cta" onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
 			<button class="secondary-cta" onclick={handleClickPricing}><h3>💎 View Pricing</h3></button>
 		</div>
 	</div>
@@ -62,6 +62,7 @@
 		border: 3px solid black;
 		color: black;
 		transition: transform 0.3s ease;
+		margin-bottom: 0px;
 	}
 
 	.intro h1:hover {
@@ -76,6 +77,7 @@
 		border: 3px solid black;
 		color: black;
 		transition: transform 0.3s ease;
+		margin-bottom: 0;
 	}
 
 	.intro h3:hover {
@@ -86,14 +88,13 @@
 		display: flex;
 		gap: 1rem;
 		flex-wrap: wrap;
-		margin: 1rem 0;
 	}
 
 	.stat {
 		display: flex;
 		flex-direction: column;
 		gap: 11.11px;
-		padding: .0833rem;
+		padding: 1rem;
 		background: white;
 		border: 3px solid black;
 		border-radius: 5px;;

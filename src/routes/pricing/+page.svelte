@@ -54,7 +54,7 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 2.074rem;
+		gap: 1rem;
 		padding-bottom: 2rem;
 	}
 
@@ -64,7 +64,7 @@
 
 	.subtitle {
 		font-size: 1.2rem;
-		margin-bottom: 1rem;
+		margin-bottom: 0px;
 	}
 
 	.plans {
@@ -120,14 +120,13 @@
 
 	.plan h2 {
 		text-align: center;
-		margin-top: 0.5rem;
-		margin-bottom: 1rem;
-		font-size: 2rem;
+		margin-bottom: 0px;
+		font-size: 2.074rem;
 	}
 
 	.price {
 		text-align: center;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.amount {
@@ -145,7 +144,6 @@
 	.plan ul {
 		list-style-type: none;
 		padding: 0;
-		margin-bottom: 2rem;
 		flex-grow: 1;
 	}
 

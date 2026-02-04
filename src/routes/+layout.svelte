@@ -278,7 +278,7 @@
 		background: black;
 		color: white;
 		border: none;
-		padding: 5px;
+		padding: .833rem;
 		border-radius: 5px;
 		transition: background 0.3s ease;
 		width: fit-content;

@@ -51,21 +51,21 @@
 {#if ready}
 	<div class="container">
 		<div class="header" in:fly={{ y: -50, duration: 600, delay: 0 }}>
-			<h1>🎯 Learn Spanish</h1>
+			<h1>Learn Spanish</h1>
 			<p class="description">Master Spanish vocabulary with interactive learning modes</p>
 		</div>
 
 		<div class="controls" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			<div class="toolbar">
 				<div class="control-group">
-					<label>📋 Mode</label>
+					<label>Mode</label>
 					<select bind:value={learningMode}>
 						<option value="table">📊 Table View</option>
 						<option value="cards">🎴 Flashcards</option>
 					</select>
 				</div>
 				<div class="control-group">
-					<label>📂 Category</label>
+					<label>Category</label>
 					<select bind:value={selectedCategory}>
 						{#each categories as category}
 							<option value={category}>
@@ -84,7 +84,7 @@
 
 		{#if learningMode === 'cards'}
 			<div class="hint" in:fly={{ y: -20, duration: 600, delay: 300 }}>
-				💡 <strong>Tip:</strong> Click any card to flip and reveal the translation
+				<strong>Tip:</strong> Click any card to flip and reveal the translation
 			</div>
 		{/if}
 
@@ -121,7 +121,7 @@
 							<div class="flashcard" class:flipped={flippedCards.has(index)}>
 								<div class="flashcard-front">
 									<h2>{item.spanish}</h2>
-									<div class="flip-indicator">🔄</div>
+									<div class="flip-indicator">↻</div>
 								</div>
 								<div class="flashcard-back">
 									<h2>{item.english}</h2>
