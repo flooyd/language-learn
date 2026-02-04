@@ -8,11 +8,15 @@
     const categories = ['basics', 'numbers', 'beginner', 'intermediate', 'advanced'] as const;
     let selectedCategory = $state<typeof categories[number]>(categories[0]);
     let flippedCards = $state<Set<number>>(new Set());
+    let sortColumn = $state<string | null>(null);
+    let sortDirection = $state<'asc' | 'desc' | null>(null);
 
-    // Reset flipped cards when category changes
+    // Reset flipped cards and sort state when category changes
     $effect(() => {
         selectedCategory;
         flippedCards = new Set();
+        sortColumn = null;
+        sortDirection = null;
     });
 
     const columns = ['Spanish', 'English', 'Part of Speech'];
@@ -45,6 +49,53 @@
         // Trigger reactivity
         flippedCards = new Set(flippedCards);
     };
+
+    // Handle column header click for sorting
+    const handleSort = (column: string) => {
+        if (sortColumn === column) {
+            // Cycle through: null -> asc -> desc -> null
+            if (sortDirection === null) {
+                sortDirection = 'asc';
+            } else if (sortDirection === 'asc') {
+                sortDirection = 'desc';
+            } else {
+                sortDirection = null;
+                sortColumn = null;
+            }
+        } else {
+            sortColumn = column;
+            sortDirection = 'asc';
+        }
+    };
+
+    // Get sorted data for current category
+    let sortedData = $derived.by(() => {
+        const data = [...spanishData[selectedCategory as keyof typeof spanishData]];
+
+        if (!sortColumn || !sortDirection) {
+            return data;
+        }
+
+        return data.sort((a, b) => {
+            let aValue: string;
+            let bValue: string;
+
+            // Map column name to data property
+            if (sortColumn === 'Spanish') {
+                aValue = a.spanish;
+                bValue = b.spanish;
+            } else if (sortColumn === 'English') {
+                aValue = a.english;
+                bValue = b.english;
+            } else { // Part of Speech
+                aValue = a.partOfSpeech;
+                bValue = b.partOfSpeech;
+            }
+
+            const comparison = aValue.localeCompare(bValue);
+            return sortDirection === 'asc' ? comparison : -comparison;
+        });
+    });
 </script>
 
 {#if ready}
@@ -93,12 +144,24 @@
                 <thead>
                 <tr>
                     {#each columns as column}
-                        <th>{column}</th>
+                        <th
+                            onclick={() => handleSort(column)}
+                            role="button"
+                            tabindex="0"
+                            onkeydown={(e) => e.key === 'Enter' && handleSort(column)}
+                        >
+                            {column}
+                            {#if sortColumn === column && sortDirection === 'asc'}
+                                <span class="sort-arrow">▲</span>
+                            {:else if sortColumn === column && sortDirection === 'desc'}
+                                <span class="sort-arrow">▼</span>
+                            {/if}
+                        </th>
                     {/each}
                 </tr>
                 </thead>
                <tbody>
-                {#each spanishData[selectedCategory as keyof typeof spanishData] as item}
+                {#each sortedData as item}
                     <tr>
                         <td>{item.spanish}</td>
                         <td>{item.english}</td>
@@ -283,6 +346,18 @@
     thead th {
         font-weight: bold;
         color: black;
+        cursor: pointer;
+        user-select: none;
+        transition: background 0.2s ease;
+    }
+
+    thead th:hover {
+        background: #8cc4e0;
+    }
+
+    .sort-arrow {
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
     }
 
     tbody {
@@ -453,6 +528,10 @@
     :global(body.dark-mode) thead {
         background: #1e3a5f;
         color: #e0e0e0;
+    }
+
+    :global(body.dark-mode) thead th:hover {
+        background: #2a4a6f;
     }
 
     :global(body.dark-mode) tbody {
