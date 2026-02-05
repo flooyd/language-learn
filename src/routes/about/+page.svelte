@@ -216,7 +216,7 @@
 
 	@media (max-width: 768px) {
 		.container {
-			gap: 2rem;
+			gap: 1rem;
 		}
 
 		.features-grid {
