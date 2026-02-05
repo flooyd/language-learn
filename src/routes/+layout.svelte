@@ -115,7 +115,7 @@
 
 	.left-nav {
 		display: flex;
-		gap: 2.074rem;
+		gap: 2.986rem;
 		align-items: center;
 	}
 

@@ -84,10 +84,6 @@
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
-	.mission-card:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-	}
 
 	.mission-card h2 {
 		color: black;
@@ -225,16 +221,6 @@
 
 		.features-grid {
 			grid-template-columns: 1fr;
-		}
-
-		.mission-card,
-		.how-it-works,
-		.cta-section {
-			padding: 1.5rem;
-		}
-
-		.feature-card {
-			padding: 1.25rem;
 		}
 	}
 </style>
