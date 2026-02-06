@@ -284,7 +284,7 @@
 		transition: background 0.3s ease;
 		width: fit-content;
 		font-weight: bold;
-		border: 5px solid #add8e6;
+		border: 5px solid #4a90e2;
 		border-radius: 5px;
 	}
 
@@ -302,7 +302,7 @@
     }
 
 	:global(::-webkit-scrollbar-thumb) {
-		background: #add8e6 !important;
+		background: #4a90e2 !important;
 		border-radius: 5px;
 	}
 
@@ -379,7 +379,7 @@
 	}
 
 	:global(body.dark-mode) a {
-		color: #add8e6;
+		color: #4a90e2;
 	}
 
 	@media (max-width: 768px) {

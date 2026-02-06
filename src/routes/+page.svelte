@@ -100,7 +100,7 @@
 	.stat-number {
 		font-size: 2rem;
 		font-weight: bold;
-		color: #add8e6;
+		color: #4a90e2;
 	}
 
 	.stat-label {
@@ -133,7 +133,7 @@
 
 	.primary-cta {
 		background: black;
-		border: 5px solid #add8e6;
+		border: 5px solid #4a90e2;
 	}
 
 	.secondary-cta h3 {
@@ -151,7 +151,7 @@
 
 	.secondary-cta:hover {
 		background: #f0e68c;
-		border-color: #add8e6;
+		border-color: #4a90e2;
 	}
 
 	/* Dark Mode Styles */

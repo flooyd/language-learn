@@ -268,12 +268,12 @@
     }
 
     .control-group select:hover {
-        border-color: #add8e6;
+        border-color: #4a90e2;
     }
 
     .control-group select:focus {
         outline: none;
-        border-color: #add8e6;
+        border-color: #4a90e2;
         box-shadow: 0 0 0 3px rgba(173, 216, 230, 0.2);
     }
 
@@ -302,7 +302,7 @@
     }
 
     .hint {
-        background: #add8e6;
+        background: #4a90e2;
         border: 3px solid black;
         border-radius: 5px;;
         padding: 1rem 1.5rem;
@@ -340,7 +340,7 @@
         display: table;
         table-layout: fixed;
         width: 100%;
-        background: #add8e6;
+        background: #4a90e2;
     }
 
     thead th {
@@ -429,7 +429,7 @@
     }
 
     .flashcard-back {
-        background: #add8e6;
+        background: #4a90e2;
         transform: rotateY(180deg);
     }
 

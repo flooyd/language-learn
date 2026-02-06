@@ -87,7 +87,7 @@
 		background: white;
 		border: 3px solid black;
 		border-radius: 5px;
-		padding: 1rem;
+		padding: 2.074rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
@@ -106,7 +106,7 @@
 	.form-group {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
 	}
 
 	label {
@@ -125,7 +125,7 @@
 
 	input:focus {
 		outline: none;
-		border-color: #add8e6;
+		border-color: #4a90e2;
 		box-shadow: 0 0 0 3px rgba(173, 216, 230, 0.2);
 	}
 
@@ -138,7 +138,7 @@
 		font-weight: bold;
 		background: black;
 		color: white;
-		border: 5px solid #add8e6;
+		border: 5px solid #4a90e2;
 		border-radius: 5px;
 		cursor: pointer;
 		transition: transform 0.2s ease, border-color 0.3s ease;
@@ -178,8 +178,8 @@
 
 	.switch-button:hover {
 		transform: scale(1.05);
-		background: #add8e6;
-		border-color: #add8e6;
+		background: #4a90e2;
+		border-color: #4a90e2;
 	}
 
 	/* Dark Mode Styles */

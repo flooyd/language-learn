@@ -99,7 +99,7 @@
 	}
 
 	.premium-plan {
-		border-color: #add8e6;
+		border-color: #4a90e2;
 		background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
 		border-width: 3px;
 	}
@@ -109,7 +109,7 @@
 		top: -12px;
 		left: 50%;
 		transform: translateX(-50%);
-		background: #add8e6;
+		background: #4a90e2;
 		color: black;
 		padding: 0.5rem 1.5rem;
 		border-radius: 20px;
@@ -132,7 +132,7 @@
 	.amount {
 		font-size: 3rem;
 		font-weight: bold;
-		color: #add8e6;
+		color: #4a90e2;
 	}
 
 	.period {
@@ -187,14 +187,13 @@
 	}
 
 	.premium-button {
-		background: #add8e6;
+		background: #4a90e2;
 		color: black;
-		border: 3px solid #87ceeb;
+		border: 3px solid black;
 	}
 
 	.premium-button:hover {
 		background: #87ceeb;
-		border-color: #add8e6;
 		transform: scale(1.02);
 	}
 
@@ -245,7 +244,6 @@
 	:global(body.dark-mode) .premium-button {
 		background: #4a90e2;
 		color: white;
-		border-color: #5a9fe2;
 	}
 
 	:global(body.dark-mode) .premium-button:hover {
