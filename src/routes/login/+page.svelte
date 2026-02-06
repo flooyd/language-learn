@@ -223,11 +223,6 @@
 		color: #f0e68c;
 	}
 
-	:global(body.dark-mode) .switch-card {
-		background: #2a2a2a;
-		border-color: #444;
-	}
-
 	:global(body.dark-mode) .switch-card p {
 		color: #e0e0e0;
 	}

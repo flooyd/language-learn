@@ -225,7 +225,9 @@
 	}
 
 	:global(body) {
+		position: relative;
 		line-height: 1.6;
+		height: 100vh;
 		padding: 19.2px;
 		background: lightyellow;
 	}
@@ -246,10 +248,14 @@
 	}
 
 	:global(h2) {
+		font-family: 'ApfelGrotezk-Regular', sans-serif;
+		src: url('ApfelGrotezk-Regular.woff');
 		font-size: 2.488rem;
 	}
 
 	:global(h3) {
+		font-family: 'ApfelGrotezk-Regular', sans-serif;
+		src: url('ApfelGrotezk-Regular.woff');
 		font-size: 2.074rem;
 	}
 
@@ -370,19 +376,11 @@
 		background: #4a90e2 !important;
 	}
 
-	:global(body.dark-mode) input,
-	:global(body.dark-mode) select,
-	:global(body.dark-mode) textarea {
-		background: #2a2a2a;
-		color: #e0e0e0;
-		border: 1px solid #444;
-	}
-
 	:global(body.dark-mode) a {
 		color: #4a90e2;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1090px) {
 		nav h1 {
 			white-space: nowrap;
 		}

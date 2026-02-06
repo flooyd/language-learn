@@ -40,12 +40,35 @@
 
 		<div class="cta-buttons" in:fly={{ y: -10, duration: 600, delay: 450 }}>
 			<button class="primary-cta" onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
-			<button class="secondary-cta" onclick={handleClickPricing}><h3>💎 View Pricing</h3></button>
+			<button class="secondary-cta" onclick={handleClickPricing}><h3>View Pricing</h3></button>
 		</div>
 	</div>
+
+	<footer>
+		<p>&copy; 2024 Language Learn. All rights reserved.</p>
+		<p>
+			<a href="https://github.com/flooyd/language-learn" target="_blank" rel="noopener noreferrer">GitHub</a>
+		</p>
+	</footer>
 {/if}
 
 <style>
+	footer {
+		display: flex;
+		position: absolute;
+		bottom: 0px;
+		background: lightyellow;
+		z-index: 100;
+		gap: 2.986rem;
+		width: calc(100vw - 34px);
+		justify-content: space-between;
+	}
+
+	footer p {
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+
 	.intro {
 		display: flex;
 		flex-direction: column;
@@ -133,7 +156,7 @@
 
 	.primary-cta {
 		background: black;
-		border: 5px solid #4a90e2;
+		border: 8px solid #4a90e2;
 	}
 
 	.secondary-cta h3 {
@@ -146,7 +169,7 @@
 
 	.secondary-cta {
 		background: white;
-		border: 5px solid #f0e68c;
+		border: 8px solid #f0e68c;
 	}
 
 	.secondary-cta:hover {
@@ -189,7 +212,6 @@
 	@media (max-width: 768px) {
 		.intro {
 			justify-content: flex-start;
-			padding-top: 2rem;
 		}
 
 		.intro h3 {

@@ -10,6 +10,7 @@
     let flippedCards = $state<Set<number>>(new Set());
     let sortColumn = $state<string | null>(null);
     let sortDirection = $state<'asc' | 'desc' | null>(null);
+    let showHint = $state(true);
 
     // Reset flipped cards and sort state when category changes
     $effect(() => {
@@ -132,9 +133,10 @@
 			</div>
 		</div>
 
-		{#if learningMode === 'cards'}
+		{#if learningMode === 'cards' && showHint}
 			<div class="hint" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 				<strong>Tip:</strong> Click any card to flip and reveal the translation
+                <button onclick={() => (showHint = false)}>Okay</button>
 			</div>
 		{/if}
 
