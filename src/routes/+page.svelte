@@ -29,6 +29,10 @@
 				<span class="stat-label">Spanish Words</span>
 			</div>
 			<div class="stat">
+				<span class="stat-number">500+</span>
+				<span class="stat-label">Korean Words</span>
+			</div>
+			<div class="stat">
 				<span class="stat-number">5</span>
 				<span class="stat-label">Learning Levels</span>
 			</div>
@@ -43,32 +47,9 @@
 			<button class="secondary-cta" onclick={handleClickPricing}><h3>View Pricing</h3></button>
 		</div>
 	</div>
-
-	<footer>
-		<p>&copy; 2024 Language Learn. All rights reserved.</p>
-		<p>
-			<a href="https://github.com/flooyd/language-learn" target="_blank" rel="noopener noreferrer">GitHub</a>
-		</p>
-	</footer>
 {/if}
 
 <style>
-	footer {
-		display: flex;
-		position: absolute;
-		bottom: 0px;
-		background: lightyellow;
-		z-index: 100;
-		gap: 2.986rem;
-		width: calc(100vw - 34px);
-		justify-content: space-between;
-	}
-
-	footer p {
-		margin: 0;
-		margin-bottom: 1rem;
-	}
-
 	.intro {
 		display: flex;
 		flex-direction: column;
