@@ -63,7 +63,7 @@
         max-width: 1200px;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2.074rem;
         padding-bottom: 2.074rem;
     }
 
@@ -215,10 +215,6 @@
 	}
 
 	@media (max-width: 768px) {
-		.container {
-			gap: 1rem;
-		}
-
 		.features-grid {
 			grid-template-columns: 1fr;
 		}

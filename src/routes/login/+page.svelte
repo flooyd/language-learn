@@ -70,7 +70,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1rem;
+		gap: 2.074rem;
 		padding-bottom: 2rem;
 	}
 
@@ -249,11 +249,6 @@
 	@media (max-width: 768px) {
 		.container {
 			max-width: 100%;
-		}
-
-		.form-card,
-		.switch-card {
-			padding: 1.5rem;
 		}
 
 		h1 {

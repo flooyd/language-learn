@@ -205,7 +205,7 @@
         max-width: 1000px;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 2.074rem;
         min-height: calc(100vh - 164px);
         padding-bottom: 2.074rem;
     }

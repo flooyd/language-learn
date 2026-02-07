@@ -55,7 +55,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		min-height: calc(100vh - 164px);
-		gap: 1rem;
+		gap: 2.074rem;
 	}
 
 	.intro h1 {

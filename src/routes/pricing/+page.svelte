@@ -53,7 +53,7 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 2.074rem;
 		padding-bottom: 2rem;
 	}
 
