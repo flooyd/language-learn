@@ -227,7 +227,6 @@
 	:global(body) {
 		position: relative;
 		line-height: 1.6;
-		height: 100vh;
 		padding: 19.2px;
 		background: lightyellow;
 	}

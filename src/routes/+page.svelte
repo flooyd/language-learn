@@ -64,18 +64,9 @@
 		margin-bottom: 0px;
 	}
 
-	.intro h1:hover {
-		transform: translateX(5px);
-	}
-
 	.intro h3 {
 		color: black;
-		transition: transform 0.3s ease;
 		margin-bottom: 0;
-	}
-
-	.intro h3:hover {
-		transform: translateX(5px);
 	}
 
 	.stats {
@@ -120,6 +111,7 @@
 	}
 
 	.cta-buttons button {
+		text-align: center;
 		transition: transform 0.2s ease;
 	}
 
@@ -193,10 +185,6 @@
 	@media (max-width: 768px) {
 		.intro {
 			justify-content: flex-start;
-		}
-
-		.intro h3 {
-			max-width: 318.19px;
 		}
 
 		.stats {
