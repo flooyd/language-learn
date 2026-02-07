@@ -91,8 +91,8 @@
 		padding: 1rem;
 		background: white;
 		border: 3px solid black;
-		border-radius: 5px;;
-		min-width: 120px;
+		border-radius: 5px;
+		min-width: 139.9px !important;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
