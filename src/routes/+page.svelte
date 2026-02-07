@@ -21,20 +21,20 @@
 {#if ready}
 	<div class="intro">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn.</h1>
-		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables or flashcards.</h3>
+		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables, flashcards or quizzes.</h3>
 
 		<div class="stats" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="stat">
 				<span class="stat-number">500+</span>
-				<span class="stat-label">Spanish Words</span>
-			</div>
-			<div class="stat">
-				<span class="stat-number">500+</span>
-				<span class="stat-label">Korean Words</span>
+				<span class="stat-label">Total Words</span>
 			</div>
 			<div class="stat">
 				<span class="stat-number">5</span>
 				<span class="stat-label">Learning Levels</span>
+			</div>
+			 <div class="stat">
+				<span class="stat-number">3</span>
+				<span class="stat-label">Learning Modes</span>
 			</div>
 			<div class="stat">
 				<span class="stat-number">Free</span>
@@ -122,21 +122,17 @@
 	.primary-cta h3 {
 		padding: 0px;
 		margin: 0px;
-		background: black;
-		color: white;
 		border: none;
 	}
 
 	.primary-cta {
-		background: black;
+		background: white;
 		border: .833rem solid #4a90e2;
 	}
 
 	.secondary-cta h3 {
 		padding: 0px;
 		margin: 0px;
-		background: transparent;
-		color: black;
 		border: none;
 	}
 
