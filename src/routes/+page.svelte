@@ -129,7 +129,7 @@
 
 	.primary-cta {
 		background: black;
-		border: 8px solid #4a90e2;
+		border: .833rem solid #4a90e2;
 	}
 
 	.secondary-cta h3 {
@@ -142,7 +142,7 @@
 
 	.secondary-cta {
 		background: white;
-		border: 8px solid #f0e68c;
+		border: .833rem solid #f0e68c;
 	}
 
 	.secondary-cta:hover {
