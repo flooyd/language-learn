@@ -1,61 +1,68 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
-	import { onMount } from 'svelte';
 
 	let loginOrRegister = $state('login');
-	let ready = $state(false);
-
-	onMount(() => {
-		ready = true;
-	});
 </script>
 
-{#if ready}
-	{#key loginOrRegister}
-		<div class="container">
-			<div class="header" in:fly={{ y: -50, duration: 600, delay: 0 }}>
-				<h1>{loginOrRegister === 'login' ? 'Login' : 'Register'}</h1>
-				<p class="subtitle">
-					{loginOrRegister === 'login'
-						? 'Welcome back! Continue your language learning journey.'
-						: 'Join us and start learning Spanish today!'}
-				</p>
-			</div>
-
-			<div class="form-card" in:fly={{ y: -30, duration: 600, delay: 150 }}>
-				<form>
-					<div class="form-group">
-						<label for="username">Username</label>
-						<input type="text" id="username" name="username" required placeholder="Enter your username" />
-					</div>
-
-					<div class="form-group">
-						<label for="password">Password</label>
-						<input type="password" id="password" name="password" required placeholder="Enter your password" />
-					</div>
-
-					<button type="submit" class="submit-button">
-						{loginOrRegister === 'login' ? 'Login' : 'Create Account'}
-					</button>
-				</form>
-			</div>
-
-			<div class="switch-card" in:fly={{ y: -10, duration: 600, delay: 300 }}>
-				{#if loginOrRegister === 'login'}
-					<p>Don't have an account?</p>
-					<button class="switch-button" onclick={() => (loginOrRegister = 'register')}>
-						Register here
-					</button>
-				{:else}
-					<p>Already have an account?</p>
-					<button class="switch-button" onclick={() => (loginOrRegister = 'login')}>
-						Login here
-					</button>
-				{/if}
-			</div>
+<div class="container">
+	{#if loginOrRegister === 'login'}
+		<div class="header" in:fly|global={{ y: -50, duration: 600, delay: 0 }}>
+			<h1>Login</h1>
+			<p class="subtitle">Welcome back! Continue your language learning journey.</p>
 		</div>
-	{/key}
-{/if}
+
+		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
+			<form>
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" id="username" name="username" required placeholder="Enter your username" />
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required placeholder="Enter your password" />
+				</div>
+
+				<button type="submit" class="submit-button">Login</button>
+			</form>
+		</div>
+
+		<div class="switch-card" in:fly|global={{ y: -10, duration: 600, delay: 300 }}>
+			<p>Don't have an account?</p>
+			<button class="switch-button" onclick={() => (loginOrRegister = 'register')}>
+				Register here
+			</button>
+		</div>
+	{:else}
+		<div class="header" in:fly|global={{ y: -50, duration: 600, delay: 0 }}>
+			<h1>Register</h1>
+			<p class="subtitle">Join us and start learning Spanish today!</p>
+		</div>
+
+		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
+			<form>
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" id="username" name="username" required placeholder="Enter your username" />
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required placeholder="Enter your password" />
+				</div>
+
+				<button type="submit" class="submit-button">Create Account</button>
+			</form>
+		</div>
+
+		<div class="switch-card" in:fly|global={{ y: -10, duration: 600, delay: 300 }}>
+			<p>Already have an account?</p>
+			<button class="switch-button" onclick={() => (loginOrRegister = 'login')}>
+				Login here
+			</button>
+		</div>
+	{/if}
+</div>
 
 <style>
 	.container {

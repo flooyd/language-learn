@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
-	let duration = $state(800);
 	let ready = $state(false);
 
 	onMount(() => {
