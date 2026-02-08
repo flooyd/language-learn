@@ -138,7 +138,7 @@
 
 	.secondary-cta {
 		background: white;
-		border: .833rem solid #f0e68c;
+		border: .833rem solid green;
 	}
 
 	.secondary-cta:hover {
