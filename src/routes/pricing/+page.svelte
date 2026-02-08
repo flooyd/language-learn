@@ -153,7 +153,7 @@
 	}
 
 	.plan li.included {
-		color: #2e7d32;
+		color: green;
 		font-weight: 500;
 	}
 
