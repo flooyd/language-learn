@@ -181,6 +181,7 @@
 	@media (max-width: 768px) {
 		.intro {
 			justify-content: flex-start;
+            gap: 1rem;
 		}
 
 		.stats {
