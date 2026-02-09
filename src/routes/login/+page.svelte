@@ -141,10 +141,6 @@
 	}
 
 	.submit-button {
-		font-size: 1.2rem;
-		font-weight: bold;
-		background: black;
-		color: white;
 		border: 5px solid #4a90e2;
 		border-radius: 5px;
 		cursor: pointer;
