@@ -281,9 +281,8 @@
 
 	:global(button) {
 		cursor: pointer;
-		background: black;
-		color: white;
-		border: none;
+		background: white;
+        color: black;
 		padding: .833rem;
 		border-radius: 5px;
 		transition: background 0.3s ease;
