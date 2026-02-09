@@ -14,8 +14,8 @@
 		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
 			<form>
 				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" required placeholder="Enter your username" />
+					<label for="username">Email</label>
+					<input type="text" id="username" name="username" required placeholder="Enter your email" />
 				</div>
 
 				<div class="form-group">
@@ -51,7 +51,7 @@
 					<input type="password" id="password" name="password" required placeholder="Enter your password" />
 				</div>
 
-				<button type="submit" class="submit-button">Create Account</button>
+				<button type="submit" class="submit-button">Register</button>
 			</form>
 		</div>
 
