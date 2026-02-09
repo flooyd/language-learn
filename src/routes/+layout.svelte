@@ -292,11 +292,6 @@
 		border-radius: 5px;
 	}
 
-	:global(button:hover) {
-		border: 5px solid #f0e68c;
-		color: #f0e68c;
-	}
-
 	:global(::-webkit-scrollbar) {
 		width: 17px !important;
 	}
@@ -313,7 +308,7 @@
 	/* Dark Mode Styles */
 	:global(body.dark-mode) {
 		background: #121212;
-		color: #e0e0e0;
+		color: white;
 	}
 
 	:global(body.dark-mode) nav {
@@ -358,12 +353,6 @@
 		background: #e0e0e0;
 		color: #121212;
 		border-color: #4a90e2;
-	}
-
-	:global(body.dark-mode) button:hover {
-		border-color: #f0e68c;
-		color: #f0e68c;
-		background: #2a2a2a;
 	}
 
 	:global(body.dark-mode) ::-webkit-scrollbar-track {

@@ -21,7 +21,7 @@
 {#if ready}
 	<div class="intro">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn.</h1>
-		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn Spanish and other languages using interactive tables, flashcards or quizzes.</h3>
+		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn languages using interactive tables, flashcards, quizzes, and sentences.</h3>
 
 		<div class="stats" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="stat">
@@ -33,7 +33,7 @@
 				<span class="stat-label">Learning Levels</span>
 			</div>
 			 <div class="stat">
-				<span class="stat-number">3</span>
+				<span class="stat-number">4</span>
 				<span class="stat-label">Learning Modes</span>
 			</div>
 			<div class="stat">
@@ -130,6 +130,10 @@
 		border: .833rem solid #4a90e2;
 	}
 
+	.primary-cta:hover {
+		background: #4a90e2;
+	}
+
 	.secondary-cta h3 {
 		padding: 0px;
 		margin: 0px;
@@ -142,8 +146,7 @@
 	}
 
 	.secondary-cta:hover {
-		background: #f0e68c;
-		border-color: #4a90e2;
+		background: green;
 	}
 
 	/* Dark Mode Styles */
@@ -157,25 +160,15 @@
 	}
 
 	:global(body.dark-mode) .stat-label {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .secondary-cta {
-		background: #2a2a2a;
-		border-color: #f0e68c;
-	}
-
-	:global(body.dark-mode) .secondary-cta h3 {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .secondary-cta:hover {
-		background: #3a3a3a;
-		border-color: #4a90e2;
+		color: white;
 	}
 
 	:global(body.dark-mode) h1, :global(body.dark-mode) h3 {
 		color: white;
+	}
+
+	:global(body.dark-mode) button h3 {
+		color: black;
 	}
 
 	@media (max-width: 768px) {

@@ -168,6 +168,7 @@
 
 	.cta-button {
 		transition: transform 0.3s ease;
+		border-width: .833rem;
 	}
 
 	.cta-button:hover {

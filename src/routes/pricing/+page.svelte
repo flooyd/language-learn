@@ -180,19 +180,16 @@
 	}
 
 	.free-button:hover {
-		background: #f5f5f5;
-		border-color: #757575;
+		background: #9e9e9e;
 		transform: scale(1.02);
 	}
 
 	.premium-button {
-		background: #4a90e2;
 		color: black;
-		border: 3px solid black;
 	}
 
 	.premium-button:hover {
-		background: #87ceeb;
+		background: #4a90e2;
 		transform: scale(1.02);
 	}
 
@@ -236,8 +233,7 @@
 	}
 
 	:global(body.dark-mode) .free-button:hover {
-		background: #3a3a3a;
-		border-color: #888;
+		background: #666;
 	}
 
 	:global(body.dark-mode) .premium-button {

@@ -230,12 +230,6 @@
 		color: #e0e0e0;
 	}
 
-	:global(body.dark-mode) .switch-button {
-		background: #1a1a1a;
-		color: #e0e0e0;
-		border-color: #444;
-	}
-
 	:global(body.dark-mode) .switch-button:hover {
 		background: #4a90e2;
 		border-color: #4a90e2;
