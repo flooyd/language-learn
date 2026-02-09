@@ -398,6 +398,12 @@
 		:global(h3) {
 			font-size: 1rem;
 		}
+		:global(h4) {
+			font-size: 0.833rem;
+		}
+		:global(h5) {
+			font-size: 0.694rem;
+		}
 
 		:global(*) {
 			font-size: 1rem;
