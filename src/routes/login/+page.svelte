@@ -149,8 +149,6 @@
 
 	.submit-button:hover {
 		transform: scale(1.02);
-		border-color: #f0e68c;
-		color: #f0e68c;
 	}
 
 	.switch-card {

@@ -402,7 +402,7 @@
 			font-size: 0.833rem;
 		}
 		:global(h5) {
-			font-size: 0.694rem;
+			font-size: 1rem;
 		}
 
 		:global(*) {
