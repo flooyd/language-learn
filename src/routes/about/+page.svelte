@@ -163,8 +163,6 @@
 	.cta-button h3 {
 		padding: 0;
 		margin: 0;
-		background: black;
-		color: white;
 		border: none;
 	}
 
