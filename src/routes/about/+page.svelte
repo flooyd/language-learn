@@ -169,8 +169,6 @@
 	}
 
 	.cta-button {
-		background: black;
-		border: 5px solid #4a90e2;
 		transition: transform 0.3s ease;
 	}
 
