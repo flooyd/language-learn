@@ -28,22 +28,22 @@
 			<div class="features-grid">
 				<div class="feature-card">
 					<div class="feature-icon"></div>
-					<h3>Comprehensive Vocabulary</h3>
+					<h5>Comprehensive Vocabulary</h5>
 					<p>500+ Spanish words across 5 learning levels, from basics to advanced.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>
-					<h3>Dual Learning Modes</h3>
+					<h5>Dual Learning Modes</h5>
 					<p>Switch between table view for reference and flashcards for active learning.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>
-					<h3>Progressive Learning</h3>
+					<h5>Progressive Learning</h5>
 					<p>Start with basics and advance through beginner, intermediate, and advanced levels.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>
-					<h3>Free to Start</h3>
+					<h5>Free to Start</h5>
 					<p>Begin your language journey with our free plan, upgrade when ready.</p>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 		<div class="cta-section" in:fly={{ y: -10, duration: 600, delay: 450 }}>
 			<h2>Ready to begin your language journey?</h2>
 			<button class="cta-button" onclick={handleClickStartLearning}>
-				<h3>Start Learning</h3>
+				<h5>Start Learning</h5>
 			</button>
 		</div>
 	</div>
@@ -87,7 +87,6 @@
 
 	.mission-card h2 {
 		color: black;
-		margin-bottom: 1rem;
 	}
 
 	.mission-card p {
@@ -101,7 +100,7 @@
 	.features-section {
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 
 	.features-grid {

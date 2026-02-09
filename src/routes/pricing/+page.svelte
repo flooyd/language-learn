@@ -12,9 +12,9 @@
 {#if ready}
 	<div class="container">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Pricing</h1>
-		<p class="subtitle" in:fly={{ y: -30, duration: 600, delay: 150 }}>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			Choose the plan that best suits your language learning needs. Start free and upgrade anytime.
-		</p>
+		</h5>
 		<div class="plans" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="plan free-plan">
 				<h2>Free</h2>
@@ -54,15 +54,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2.074rem;
-		padding-bottom: 2rem;
+		padding-bottom: 2.074rem;
 	}
 
 	h1 {
-		margin-bottom: 0px;
-	}
-
-	.subtitle {
-		font-size: 1.2rem;
 		margin-bottom: 0px;
 	}
 

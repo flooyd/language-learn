@@ -21,7 +21,7 @@
 {#if ready}
 	<div class="intro">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Welcome to Language Learn.</h1>
-		<h3 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn languages using interactive tables, flashcards, quizzes, and sentences.</h3>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>Learn languages using interactive tables, flashcards, quizzes, and sentences.</h5>
 
 		<div class="stats" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			<div class="stat">
@@ -43,8 +43,8 @@
 		</div>
 
 		<div class="cta-buttons" in:fly={{ y: -10, duration: 600, delay: 450 }}>
-			<button class="primary-cta" onclick={handleClickStartLearning}><h3>Start Learning</h3></button>
-			<button class="secondary-cta" onclick={handleClickPricing}><h3>View Pricing</h3></button>
+			<button class="primary-cta" onclick={handleClickStartLearning}><h5>Start Learning</h5></button>
+			<button class="secondary-cta" onclick={handleClickPricing}><h5>View Pricing</h5></button>
 		</div>
 	</div>
 {/if}

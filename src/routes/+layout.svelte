@@ -54,15 +54,15 @@
 	<nav transition:fly={{ y: -1000, duration }}>
 		<div class="left-nav">
 			<a href="/"><h1>Language Learn</h1></a>
-			<a href="/about" class="desktop-only"><h3>About</h3></a>
-			<a href="/learn" class="desktop-only"><h3>Learn</h3></a>
-			<a href="/pricing" class="desktop-only"><h3>Pricing</h3></a>
+			<a href="/about" class="desktop-only"><h5>About</h5></a>
+			<a href="/learn" class="desktop-only"><h5>Learn</h5></a>
+			<a href="/pricing" class="desktop-only"><h5>Pricing</h5></a>
 			<button class="dark-mode-toggle desktop-only" onclick={toggleDarkMode}>
 				{darkMode ? '☀️' : '🌙'}
 			</button>
 		</div>
 		<div class="right-nav">
-			<a href="/login"><h3>Login</h3></a>
+			<a href="/login"><h5>Login</h5></a>
 			<button class="hamburger" onclick={() => (menuOpen = !menuOpen)} aria-label="Toggle navigation menu">
 				<span></span>
 				<span></span>
@@ -71,9 +71,9 @@
 		</div>
 		{#if menuOpen}
 			<div class="menu" transition:fly={{ y: -10, duration: 200 }}>
-				<a href="/about" onclick={() => (menuOpen = false)}><h3>About</h3></a>
-				<a href="/learn" onclick={() => (menuOpen = false)}><h3>Learn</h3></a>
-				<a href="/pricing" onclick={() => (menuOpen = false)}><h3>Pricing</h3></a>
+				<a href="/about" onclick={() => (menuOpen = false)}><h5>About</h5></a>
+				<a href="/learn" onclick={() => (menuOpen = false)}><h5>Learn</h5></a>
+				<a href="/pricing" onclick={() => (menuOpen = false)}><h5>Pricing</h5></a>
 				<button class="dark-mode-toggle-menu" onclick={toggleDarkMode}>
 					{darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
 				</button>
@@ -238,10 +238,6 @@
 		margin-top: 1rem;
 	}
 
-	:global(h2, h3, h4, h5, h6) {
-		margin-bottom: 2.074rem;
-	}
-
 	:global(h1) {
 		font-size: 2.986rem;
 	}
@@ -264,6 +260,7 @@
 
 	:global(h5) {
 		font-size: 1.44rem;
+		color: #333
 	}
 
 	:global(h6) {
@@ -292,6 +289,10 @@
 		border-radius: 5px;
 	}
 
+	:global(button:hover) {
+		background: #4a90e2;
+	}
+
 	:global(::-webkit-scrollbar) {
 		width: 17px !important;
 	}
@@ -304,6 +305,12 @@
 		background: #4a90e2 !important;
 		border-radius: 5px;
 	}
+
+	:global(.description) {
+        color: #666;
+        font-size: 1.1rem;
+        margin: 0;
+    }
 
 	/* Dark Mode Styles */
 	:global(body.dark-mode) {

@@ -8,7 +8,7 @@
 	{#if loginOrRegister === 'login'}
 		<div class="header" in:fly|global={{ y: -50, duration: 600, delay: 0 }}>
 			<h1>Login</h1>
-			<p class="subtitle">Continue your language learning journey.</p>
+			<h5>Continue your language learning journey.</h5>
 		</div>
 
 		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
@@ -28,7 +28,7 @@
 		</div>
 
 		<div class="switch-card" in:fly|global={{ y: -10, duration: 600, delay: 300 }}>
-			<p>Don't have an account?</p>
+			<h5>Don't have an account?</h5>
 			<button class="switch-button" onclick={() => (loginOrRegister = 'register')}>
 				Register here
 			</button>
@@ -56,7 +56,7 @@
 		</div>
 
 		<div class="switch-card" in:fly|global={{ y: -10, duration: 600, delay: 300 }}>
-			<p>Already have an account?</p>
+			<h5>Already have an account?</h5>
 			<button class="switch-button" onclick={() => (loginOrRegister = 'login')}>
 				Login here
 			</button>
@@ -154,17 +154,9 @@
 	}
 
 	.switch-card {
-		text-align: center;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		align-items: center;
-	}
-
-	.switch-card p {
-		margin: 0;
-		color: black;
-		font-size: 1.1rem;
 	}
 
 	.switch-button {
