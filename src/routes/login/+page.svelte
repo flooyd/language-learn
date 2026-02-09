@@ -8,7 +8,7 @@
 	{#if loginOrRegister === 'login'}
 		<div class="header" in:fly|global={{ y: -50, duration: 600, delay: 0 }}>
 			<h1>Login</h1>
-			<p class="subtitle">Welcome back! Continue your language learning journey.</p>
+			<p class="subtitle">Continue your language learning journey.</p>
 		</div>
 
 		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
@@ -249,6 +249,7 @@
 	@media (max-width: 768px) {
 		.container {
 			max-width: 100%;
+            gap: 1rem;
 		}
 
 		h1 {
