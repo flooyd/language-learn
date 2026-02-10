@@ -29,12 +29,12 @@
 				<div class="feature-card">
 					<div class="feature-icon"></div>
 					<h5>Comprehensive Vocabulary</h5>
-					<p>500+ Spanish words across 5 learning levels, from basics to advanced.</p>
+					<p>500+ words across 5 learning levels, from basics to advanced.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>
-					<h5>Dual Learning Modes</h5>
-					<p>Switch between table view for reference and flashcards for active learning.</p>
+					<h5>Multiple Learning Modes</h5>
+					<p>Switch between Table View, Flashcards, Quiz Mode, and Sentences for different learning experiences.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>

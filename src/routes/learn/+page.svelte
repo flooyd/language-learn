@@ -3,6 +3,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import * as spanishData from '$lib/data/spanish.json';
 	import { goto } from '$app/navigation';
+	import { language } from '$lib/stores';
 
 	let ready = $state(false);
 	let learningMode = $state('table');
@@ -111,12 +112,22 @@
 
 {#if ready}
 	<div class="container">
-		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Learn Spanish</h1>
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>How would you like to learn {$language}? <button>Change Language</button></h1>
 		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
-			Master Spanish vocabulary with interactive learning modes.
+			Table
 		</h5>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
+			Flashcards
+		</h5>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
+			Quizzes (coming soon)
+		</h5>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
+			Sentences (coming soon)
+		</h5>
+		
 
-		<div class="controls" in:fly={{ y: -30, duration: 600, delay: 150 }}>
+		<!-- <div class="controls" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			<div class="toolbar">
 				<div class="control-group">
 					<label for="mode-select">Mode</label>
@@ -144,9 +155,9 @@
 				<span class="word-count">{wordCount}</span>
 				<span class="label">words</span>
 			</div>
-		</div>
+		</div> -->
 
-		{#if learningMode === 'cards' && showHint}
+		<!-- {#if learningMode === 'cards' && showHint}
 			<div class="hint" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 				<strong>Tip:</strong> Click any card to flip and reveal the translation
 				<button onclick={() => (showHint = false)}>Okay</button>
@@ -209,14 +220,14 @@
 					{/each}
 				</div>
 			{/if}
-		</div>
+		</div> -->
 	</div>
 {/if}
 
 <style>
 	.container {
-		max-width: 1000px;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		gap: 2.074rem;
 		min-height: calc(100vh - 164px);
@@ -225,6 +236,19 @@
 
 	h1 {
 		margin-bottom: 0px;
+		display: flex;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
+		gap: 1rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	h5:hover {
+		color: #4a90e2;
+		cursor: pointer;
 	}
 
 	.controls {

@@ -128,12 +128,12 @@
 		padding-bottom: 0.0833rem;
 	}
 
-	nav h1 {
-		margin: 0;
+	nav a:hover > h5 {
+		color: #4a90e2;
 	}
 
-	nav a:hover {
-		text-decoration: underline;
+	nav h1 {
+		margin: 0;
 	}
 
 	.left-nav {
