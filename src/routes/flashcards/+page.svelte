@@ -88,8 +88,9 @@
     h5 {
         display: flex;
         justify-content: space-between;
-        gap: 1px;
+        gap: 1rem;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .cards-grid {
