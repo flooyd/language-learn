@@ -179,6 +179,46 @@
       "spanish": "desde",
       "english": "from/since",
       "partOfSpeech": "preposition"
+    },
+    {
+      "spanish": "es",
+      "english": "is",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "son",
+      "english": "are",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "está",
+      "english": "is (location/condition)",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "están",
+      "english": "are (location/condition)",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "tiene",
+      "english": "has",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "tienen",
+      "english": "have",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hace",
+      "english": "does/makes",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hacen",
+      "english": "do/make",
+      "partOfSpeech": "verb"
     }
   ],
   "numbers": [

@@ -24,7 +24,6 @@
 
 	// Close menu on navigation
 	const handleNavigation = () => {
-		console.log('true');
 		menuOpen = false;
 	};
 

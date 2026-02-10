@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import H1Buttons from '$lib/components/H1Buttons.svelte';
 	import * as spanishData from '$lib/data/spanish.json';
 	import { selectedCategory } from '$lib/stores';
 	import { onMount } from 'svelte';
@@ -18,7 +19,7 @@
 	});
 
     let sortedData = $derived.by(() => {
-		const data = [...spanishData[$selectedCategory as keyof typeof spanishData]];
+		const data = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
 
 		if (!sortColumn || !sortDirection) {
 			return data;
@@ -64,13 +65,17 @@
 	};
 
 	onMount(() => {
+		console
 		ready = true;
 	});
 </script>
 
 {#if ready}
 	<div class="container">
-		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>Table <button onclick={() => goto('/learn')}>Back to Modes</button></h1>
+		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>
+			Table 
+			<H1Buttons/>
+		</h1>
 		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			Learn words in a structured format with Table.
 		</h5>
@@ -189,5 +194,33 @@
 		padding: 12px;
 		text-align: left;
 		width: 33.33%;
+	}
+
+	/* Dark Mode Styles */
+	:global(body.dark-mode) thead {
+		background: #1e3a5f;
+		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) thead th:hover {
+		background: #2a4a6f;
+	}
+
+	:global(body.dark-mode) tbody {
+		background: #121212;
+	}
+
+	:global(body.dark-mode) tbody tr {
+		background: #2a2a2a;
+		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) tbody tr:hover {
+		background: #3a3a3a;
+	}
+
+	:global(body.dark-mode) th,
+	:global(body.dark-mode) td {
+		border-color: #444;
 	}
 </style>
