@@ -377,7 +377,7 @@
 
 	:global(body.dark-mode) button {
 		background: #e0e0e0;
-		color: #121212;
+		color: black;
 		border-color: #4a90e2;
 	}
 
@@ -391,6 +391,10 @@
 
 	:global(body.dark-mode) a {
 		color: #4a90e2;
+	}
+
+	:global(body.dark-mode h5){
+		color: white;
 	}
 
 	@media (max-width: 1090px) {

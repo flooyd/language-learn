@@ -130,11 +130,6 @@
 		font-size: 2.5rem;
 	}
 
-	.feature-card h3 {
-		color: black;
-		font-size: 1.3rem;
-	}
-
 	.feature-card p {
 		color: #666;
 		margin-bottom: 0;
@@ -159,15 +154,10 @@
 		margin-bottom: 0;
 	}
 
-	.cta-button h3 {
-		padding: 0;
-		margin: 0;
-		border: none;
-	}
-
 	.cta-button {
 		transition: transform 0.3s ease;
 		border-width: .833rem;
+		color: black;
 	}
 
 	.cta-button:hover {
@@ -199,11 +189,11 @@
 	}
 
 	:global(body.dark-mode) .cta-section h2 {
-		color: #e0e0e0;
+		color: white;
 	}
 
-	:global(body.dark-mode) .cta-button {
-		border-color: #4a90e2;
+	:global(body.dark-mode .cta-button h5) {
+		color: black;
 	}
 
 	@media (max-width: 768px) {

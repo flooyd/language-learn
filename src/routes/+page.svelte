@@ -150,6 +150,14 @@
 		color: white;
 	}
 
+	:global(body.dark-mode) .primary-cta h5 {
+		color: black;
+	}
+
+	:global(body.dark-mode) .secondary-cta h5 {
+		color: black;
+	}
+
 	@media (max-width: 768px) {
 		.intro {
 			justify-content: flex-start;
