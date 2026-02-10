@@ -62,6 +62,10 @@
 		color: black;
 		transition: transform 0.3s ease;
 		margin-bottom: 0px;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
 	}
 
 	.stats {

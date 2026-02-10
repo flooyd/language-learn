@@ -14,7 +14,7 @@
 	let { children, data }: Props = $props();
 
 	let ready = $state(false);
-	let duration = $state(800);
+	let duration = $state(600);
 	let menuOpen = $state(false);
 
 	// Load dark mode immediately to prevent flash
