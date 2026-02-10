@@ -474,10 +474,6 @@
 	}
 
 	/* Dark Mode Styles */
-	:global(body.dark-mode) .description {
-		color: #e0e0e0;
-	}
-
 	:global(body.dark-mode) .controls {
 		background: #2a2a2a;
 		border-color: #444;

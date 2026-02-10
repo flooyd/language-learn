@@ -3,8 +3,16 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
+	import { user } from '$lib/stores';
+	import type { LayoutData } from './$types';
 
-	let { children } = $props();
+	interface Props {
+		children: any;
+		data: LayoutData;
+	}
+
+	let { children, data }: Props = $props();
+
 	let ready = $state(false);
 	let duration = $state(800);
 	let menuOpen = $state(false);
@@ -16,7 +24,7 @@
 
 	// Close menu on navigation
 	const handleNavigation = () => {
-		console.log('true')
+		console.log('true');
 		menuOpen = false;
 	};
 
@@ -39,11 +47,18 @@
 		}
 	});
 
+	$effect(() => {
+		if (data?.user) {
+			$user = data.user;
+		} else {
+			$user = null;
+		}
+	});
+
 	const toggleDarkMode = () => {
 		darkMode = !darkMode;
 		localStorage.setItem('darkMode', darkMode.toString());
 	};
-
 </script>
 
 <svelte:head>
@@ -57,13 +72,22 @@
 			<a href="/about" class="desktop-only"><h5>About</h5></a>
 			<a href="/learn" class="desktop-only"><h5>Learn</h5></a>
 			<a href="/pricing" class="desktop-only"><h5>Pricing</h5></a>
+			{#if $user}
+				<a href="/account" class="desktop-only"><h5>Account</h5></a>
+			{/if}
 			<button class="dark-mode-toggle desktop-only" onclick={toggleDarkMode}>
 				{darkMode ? '☀️' : '🌙'}
 			</button>
 		</div>
 		<div class="right-nav">
-			<a href="/login"><h5>Login</h5></a>
-			<button class="hamburger" onclick={() => (menuOpen = !menuOpen)} aria-label="Toggle navigation menu">
+			{#if !$user}
+				<a href="/login"><h5>Login</h5></a>
+			{/if}
+			<button
+				class="hamburger"
+				onclick={() => (menuOpen = !menuOpen)}
+				aria-label="Toggle navigation menu"
+			>
 				<span></span>
 				<span></span>
 				<span></span>
@@ -74,6 +98,9 @@
 				<a href="/about" onclick={() => (menuOpen = false)}><h5>About</h5></a>
 				<a href="/learn" onclick={() => (menuOpen = false)}><h5>Learn</h5></a>
 				<a href="/pricing" onclick={() => (menuOpen = false)}><h5>Pricing</h5></a>
+				{#if $user}
+					<a href="/account" onclick={() => (menuOpen = false)}><h5>Account</h5></a>
+				{/if}
 				<button class="dark-mode-toggle-menu" onclick={toggleDarkMode}>
 					{darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
 				</button>
@@ -102,10 +129,6 @@
 	}
 
 	nav h1 {
-		margin: 0;
-	}
-
-	nav h3 {
 		margin: 0;
 	}
 
@@ -173,10 +196,6 @@
 		padding: 11.11px 19.2px;
 		display: block;
 		white-space: nowrap;
-	}
-
-	.menu a h3 {
-		margin: 0;
 	}
 
 	.menu a:hover {
@@ -260,7 +279,7 @@
 
 	:global(h5) {
 		font-size: 1.44rem;
-		color: #333
+		color: #333;
 	}
 
 	:global(h6) {
@@ -279,8 +298,8 @@
 	:global(button) {
 		cursor: pointer;
 		background: white;
-        color: black;
-		padding: .833rem;
+		color: black;
+		padding: 0.833rem;
 		border-radius: 5px;
 		transition: background 0.3s ease;
 		width: fit-content;
@@ -298,8 +317,8 @@
 	}
 
 	:global(::-webkit-scrollbar-track) {
-        background: lightyellow !important;
-    }
+		background: lightyellow !important;
+	}
 
 	:global(::-webkit-scrollbar-thumb) {
 		background: #4a90e2 !important;
@@ -307,10 +326,10 @@
 	}
 
 	:global(.description) {
-        color: #666;
-        font-size: 1.1rem;
-        margin: 0;
-    }
+		color: #666;
+		font-size: 1.1rem;
+		margin: 0;
+	}
 
 	/* Dark Mode Styles */
 	:global(body.dark-mode) {

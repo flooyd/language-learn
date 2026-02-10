@@ -64,11 +64,6 @@
 		margin-bottom: 0px;
 	}
 
-	.intro h3 {
-		color: black;
-		margin-bottom: 0;
-	}
-
 	.stats {
 		display: flex;
 		gap: 1rem;
@@ -119,12 +114,6 @@
 		transform: scale(1.05);
 	}
 
-	.primary-cta h3 {
-		padding: 0px;
-		margin: 0px;
-		border: none;
-	}
-
 	.primary-cta {
 		background: white;
 		border: .833rem solid #4a90e2;
@@ -132,12 +121,6 @@
 
 	.primary-cta:hover {
 		background: #4a90e2;
-	}
-
-	.secondary-cta h3 {
-		padding: 0px;
-		margin: 0px;
-		border: none;
 	}
 
 	.secondary-cta {
@@ -163,12 +146,8 @@
 		color: white;
 	}
 
-	:global(body.dark-mode) h1, :global(body.dark-mode) h3 {
+	:global(body.dark-mode) h1, :global(body.dark-mode) h5 {
 		color: white;
-	}
-
-	:global(body.dark-mode) button h3 {
-		color: black;
 	}
 
 	@media (max-width: 768px) {

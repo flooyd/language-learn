@@ -189,10 +189,6 @@
 		border-color: #4a90e2;
 	}
 
-	:global(body.dark-mode) .feature-card h3 {
-		color: #e0e0e0;
-	}
-
 	:global(body.dark-mode) .feature-card p {
 		color: #e0e0e0;
 	}

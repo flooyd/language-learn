@@ -1,7 +1,71 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
+	import {user} from '$lib/stores';
+	import { goto } from '$app/navigation';
 
 	let loginOrRegister = $state('login');
+
+	const handleSubmit = async (event: Event) => {
+		event.preventDefault();
+		if(loginOrRegister === 'login') {
+			await handleLogin(event);
+		} else {
+			await handleRegister(event);
+		}
+	};
+
+	const handleLogin = async (event: Event) => {
+		console.log('hi')
+		const formData = new FormData(event.target as HTMLFormElement);
+		const email = formData.get('username') as string;
+		const password = formData.get('password') as string;
+
+		try {
+			const response = await fetch('/api/auth/login', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email, password })
+			});
+
+			if (response.ok) {
+				const data = await response.json();
+				user.set(data.user);
+				goto('/learn');
+			} else {
+				const errorData = await response.json();
+				alert(errorData.error || 'Login failed');
+			}
+		} catch (error) {
+			console.error('Error during login:', error);
+			alert('An error occurred. Please try again.');
+		}
+	};
+
+	const handleRegister = async (event: Event) => {
+		const formData = new FormData(event.target as HTMLFormElement);
+		const email = formData.get('email') as string;
+		const password = formData.get('password') as string;
+
+		try {
+			const response = await fetch('/api/auth/register', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email, password })
+			});
+
+			if (response.ok) {
+				const data = await response.json();
+				user.set(data.user);
+				goto('/learn');
+			} else {
+				const errorData = await response.json();
+				alert(errorData.error || 'Registration failed');
+			}
+		} catch (error) {
+			console.error('Error during registration:', error);
+			alert('An error occurred. Please try again.');
+		}
+	};
 </script>
 
 <div class="container">
@@ -12,7 +76,7 @@
 		</div>
 
 		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
-			<form>
+			<form onsubmit={handleSubmit}>
 				<div class="form-group">
 					<label for="username">Email</label>
 					<input type="text" id="username" name="username" required placeholder="Enter your email" />
@@ -40,10 +104,10 @@
 		</div>
 
 		<div class="form-card" in:fly|global={{ y: -30, duration: 600, delay: 150 }}>
-			<form>
+			<form onsubmit={handleSubmit}>
 				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" required placeholder="Enter your username" />
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" required placeholder="Enter your email" />
 				</div>
 
 				<div class="form-group">
@@ -214,10 +278,6 @@
 		background: #2a2a2a;
 		border-color: #f0e68c;
 		color: #f0e68c;
-	}
-
-	:global(body.dark-mode) .switch-card p {
-		color: #e0e0e0;
 	}
 
 	:global(body.dark-mode) .switch-button:hover {

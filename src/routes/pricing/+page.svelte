@@ -241,10 +241,6 @@
 		border-color: #6aafe2;
 	}
 
-	:global(body.dark-mode) .subtitle {
-		color: #e0e0e0;
-	}
-
 	@media (max-width: 768px) {
 		.plans {
 			flex-direction: column;
