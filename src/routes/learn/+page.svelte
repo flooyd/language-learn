@@ -1,15 +1,33 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-	import { language } from '$lib/stores';
-	import { selectedCategory, selectedMode } from '$lib/stores';
+	import { selectedCategory, selectedMode, selectedLanguage, wordPoints } from '$lib/stores';
 	import { goto } from '$app/navigation';
 
 	let ready = $state(false);
 
-	onMount(() => {
+	onMount(async () => {
 		ready = true;
+		await getWordPoints();
+		console.log('Word Points:', $wordPoints);
 	});
+
+	const getWordPoints = async() => {
+		try {
+			const response = await fetch('/api/word-points', {
+				method: 'GET'
+			});
+
+			if (!response.ok) {
+				throw new Error('Failed to fetch word points');
+			}
+
+			const data = await response.json();
+			$wordPoints = data.wordPoints;
+		} catch (error) {
+			console.error('Error fetching word points:', error);
+		}
+	}
 
 	$effect(() => {
 		$selectedCategory;
@@ -53,7 +71,7 @@
 {#if ready}
 	<div class="container">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>
-			How would you like to learn {$language}? <button>Change Language</button>
+			How would you like to learn {($selectedLanguage.charAt(0).toUpperCase() + $selectedLanguage.slice(1))}? <button>Change Language</button>
 		</h1>
 		<button
 			onclick={() => ($selectedMode = 'table')}

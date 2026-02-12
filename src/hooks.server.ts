@@ -20,8 +20,6 @@ export const handle: Handle = async ({ event, resolve }) => {
                         email: existingUsers[0].email
                     };
                 }
-
-                console.log('User data from session token:', event.locals.user);
             }
         } catch (error) {
             console.error('Error verifying session token:', error);

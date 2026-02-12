@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-	import { language } from '$lib/stores';
     import {selectedCategory} from '$lib/stores';
 
 	let ready = $state(false);

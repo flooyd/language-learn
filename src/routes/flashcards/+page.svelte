@@ -1,14 +1,14 @@
 <script lang="ts">
 	import * as spanishData from '$lib/data/spanish.json';
-	import { selectedCategory } from '$lib/stores';
+	import { selectedCategory, selectedLanguage, wordPoints } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-    import { goto } from '$app/navigation';
+	import { updateWordPoints } from '$lib/util';
 	import H1Buttons from '$lib/components/H1Buttons.svelte';
 
 	let flippedCards = $state<Set<number>>(new Set());
 	let ready = $state(false);
-    let words = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
+	let words = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
 
 	const toggleFlip = (index: number) => {
 		if (flippedCards.has(index)) {
@@ -20,13 +20,14 @@
 		flippedCards = new Set(flippedCards);
 	};
 
-    const shuffleWords = () => {
-        const shuffled = [...words].sort(() => Math.random() - 0.5);
-        words = shuffled;
-    };
+	const shuffleWords = () => {
+		const shuffled = [...words].sort(() => Math.random() - 0.5);
+		words = shuffled;
+	};
 
 	onMount(() => {
 		ready = true;
+		shuffleWords();
 	});
 </script>
 
@@ -34,12 +35,12 @@
 	<div class="container">
 		<h1 in:fly={{ y: -50, duration: 600, delay: 0 }}>
 			Flashcards
-            <H1Buttons/>
+			<H1Buttons />
 		</h1>
-        <h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
-            Study words with Flashcards. Flip the card to see the English translation and part of speech.
-            <button onclick={() => shuffleWords()}>Shuffle</button>
-        </h5>
+		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
+			Study words with Flashcards. Flip the card to see the English translation and part of speech.
+			<button onclick={() => shuffleWords()}>Shuffle</button>
+		</h5>
 		<div class="cards-grid" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			{#each words as item, index}
 				<div
@@ -57,6 +58,42 @@
 						<div class="flashcard-back">
 							<h2>{item.english}</h2>
 							<p>{item.partOfSpeech}</p>
+							<div class="points-buttons">
+								<button
+									onclick={(e) => {
+										e.stopPropagation();
+										// Add points logic here
+										updateWordPoints(
+											item[$selectedLanguage as keyof typeof item],
+											$selectedLanguage,
+											true
+										);
+									}}
+								>
+									+10
+								</button>
+								<button
+									onclick={(e) => {
+										e.stopPropagation();
+										// Subtract points logic here
+										updateWordPoints(
+											item[$selectedLanguage as keyof typeof item],
+											$selectedLanguage,
+											false
+										);
+									}}
+									>-10
+								</button>
+							</div>
+							<div class="'points">
+								Points: {(
+									$wordPoints.find(
+										(wp: any) =>
+											wp.word === item[$selectedLanguage as keyof typeof item] &&
+											wp.language === $selectedLanguage
+									) as { points: number } | undefined
+								)?.points ?? 0}
+							</div>
 						</div>
 					</div>
 				</div>
@@ -82,33 +119,34 @@
 		gap: 1rem;
 		justify-content: space-between;
 		align-items: center;
-        flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
-    h5 {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+	h5 {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 
-    .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-    }
+	.cards-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1rem;
+	}
 
 	.flashcard-container {
 		perspective: 1000px;
 		cursor: pointer;
-		min-height: 180px;
+		min-height: 300px;
+		width: 100%;
 	}
 
 	.flashcard {
 		position: relative;
 		width: 100%;
-		min-height: 180px;
+		min-width: 300px;
 		transition: transform 0.6s;
 		transform-style: preserve-3d;
 	}
@@ -122,7 +160,8 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		min-height: 180px;
+		min-height: 300px;
+		min-width: fit-content;
 		backface-visibility: hidden;
 		border: 3px solid black;
 		border-radius: 5px;
@@ -143,6 +182,10 @@
 	.flashcard-back {
 		background: #4a90e2;
 		transform: rotateY(180deg);
+	}
+
+	.points-buttons button {
+		border: 5px solid black;
 	}
 
 	.flashcard-front h2,
@@ -179,7 +222,7 @@
 		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
 
-    :global(body.dark-mode) .flashcard-front {
+	:global(body.dark-mode) .flashcard-front {
 		background: #2a2a2a;
 		color: #e0e0e0;
 		border-color: #444;
