@@ -4,6 +4,7 @@
 
     const handleClickModes = () => {
         $selectedMode = "";
+        localStorage.setItem("selectedMode", "");
         goto('/learn');
     }
 
