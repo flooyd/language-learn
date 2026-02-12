@@ -9,6 +9,8 @@
 	let flippedCards = $state<Set<number>>(new Set());
 	let ready = $state(false);
 	let words = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
+	let flashcardSingle = $state(false);
+	let currentCardIndex = $state(0); // Add this
 
 	const toggleFlip = (index: number) => {
 		if (flippedCards.has(index)) {
@@ -16,23 +18,32 @@
 		} else {
 			flippedCards.add(index);
 		}
-		// Trigger reactivity
 		flippedCards = new Set(flippedCards);
 	};
 
 	const shuffleWords = () => {
 		const shuffled = [...words].sort(() => Math.random() - 0.5);
 		words = shuffled;
+		currentCardIndex = 0; // Reset to first card
+		flippedCards.clear(); // Clear flipped state
+	};
+
+	const nextCard = () => {
+		currentCardIndex = (currentCardIndex + 1) % words.length;
+		flippedCards.clear();
+	};
+
+	const prevCard = () => {
+		currentCardIndex = (currentCardIndex - 1 + words.length) % words.length;
+		flippedCards.clear();
 	};
 
 	onMount(() => {
-		if(!$selectedCategory) {
-			// Redirect to categories page if no category is selected
-			window.location.href = '/categories';
-		}
-		if(!$selectedMode) {
-			// Redirect to categories page if no language is selected
+		if (!$selectedMode) {
 			window.location.href = '/learn';
+		}
+		if (!$selectedCategory) {
+			window.location.href = '/categories';
 		}
 		ready = true;
 		shuffleWords();
@@ -47,66 +58,141 @@
 		</h1>
 		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			Study words with Flashcards. Flip the card to see the English translation and part of speech.
-			<button onclick={() => shuffleWords()}>Shuffle</button>
+			<div class="h5-buttons">
+				<button onclick={() => shuffleWords()}>Shuffle</button>
+				<button onclick={() => (flashcardSingle = !flashcardSingle)}>
+					{flashcardSingle ? 'Show All' : 'Show One'}
+				</button>
+			</div>
 		</h5>
-		<div class="cards-grid" in:fly={{ y: -20, duration: 600, delay: 300 }}>
-			{#each words as item, index}
-				<div
-					class="flashcard-container"
-					onclick={() => toggleFlip(index)}
-					role="button"
-					tabindex="0"
-					onkeydown={(e) => e.key === 'Enter' && toggleFlip(index)}
-				>
-					<div class="flashcard" class:flipped={flippedCards.has(index)}>
-						<div class="flashcard-front">
-							<h2>{item.spanish}</h2>
-							<div class="flip-indicator">↻</div>
-						</div>
-						<div class="flashcard-back">
-							<h2>{item.english}</h2>
-							<p>{item.partOfSpeech}</p>
-							<div class="points-buttons">
-								<button
-									onclick={(e) => {
-										e.stopPropagation();
-										// Add points logic here
-										updateWordPoints(
-											item[$selectedLanguage as keyof typeof item],
-											$selectedLanguage,
-											true
-										);
-									}}
-								>
-									+10
-								</button>
-								<button
-									onclick={(e) => {
-										e.stopPropagation();
-										// Subtract points logic here
-										updateWordPoints(
-											item[$selectedLanguage as keyof typeof item],
-											$selectedLanguage,
-											false
-										);
-									}}
-									>-10
-								</button>
+
+		{#if flashcardSingle}
+			{@const currentItem = words[currentCardIndex]}
+			<!-- Single Card View -->
+			<div class="single-card-container" in:fly={{ y: -20, duration: 600, delay: 300 }}>
+				<button class="nav-button prev" onclick={prevCard}>←</button>
+
+				{#key currentCardIndex}
+					<div
+						class="flashcard-container single"
+						onclick={() => toggleFlip(currentCardIndex)}
+						role="button"
+						tabindex="0"
+						onkeydown={(e) => e.key === 'Enter' && toggleFlip(currentCardIndex)}
+					>
+						<div class="flashcard {flippedCards.has(currentCardIndex) ? 'flipped' : ''}">
+							<div class="flashcard-front">
+								<h2>{currentItem.spanish}</h2>
+								<div class="flip-indicator">↻</div>
 							</div>
-							<div class="'points">
-								Points: {(
-									$wordPoints.find(
-										(wp: any) =>
-											wp.word === item[$selectedLanguage as keyof typeof item] &&
-											wp.language === $selectedLanguage
-									) as { points: number } | undefined
-								)?.points ?? 0}
+							<div class="flashcard-back">
+								<h2>{currentItem.english}</h2>
+								<p>{currentItem.partOfSpeech}</p>
+								<div class="points-buttons">
+									<button
+										onclick={(e) => {
+											e.stopPropagation();
+											updateWordPoints(
+												currentItem[$selectedLanguage as keyof typeof currentItem],
+												$selectedLanguage,
+												true
+											);
+										}}
+									>
+										+10
+									</button>
+									<button
+										onclick={(e) => {
+											e.stopPropagation();
+											updateWordPoints(
+												currentItem[$selectedLanguage as keyof typeof currentItem],
+												$selectedLanguage,
+												false
+											);
+										}}
+									>
+										-10
+									</button>
+								</div>
+								<div class="points">
+									Points: {(
+										$wordPoints.find(
+											(wp: any) =>
+												wp.word === currentItem[$selectedLanguage as keyof typeof currentItem] &&
+												wp.language === $selectedLanguage
+										) as { points: number } | undefined
+									)?.points ?? 0}
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{/each}
-		</div>
+				{/key}
+
+				<button class="nav-button next" onclick={nextCard}>→</button>
+			</div>
+			<div class="card-counter">
+				{currentCardIndex + 1} / {words.length}
+			</div>
+		{:else}
+			<!-- Grid View -->
+			<div class="cards-grid" in:fly={{ y: -20, duration: 600, delay: 300 }}>
+				{#each words as item, index}
+					<div
+						class="flashcard-container"
+						onclick={() => toggleFlip(index)}
+						role="button"
+						tabindex="0"
+						onkeydown={(e) => e.key === 'Enter' && toggleFlip(index)}
+					>
+						<div class="flashcard {flippedCards.has(index) ? 'flipped' : ''}">
+							<div class="flashcard-front">
+								<h2>{item.spanish}</h2>
+								<div class="flip-indicator">↻</div>
+							</div>
+							<div class="flashcard-back">
+								<h2>{item.english}</h2>
+								<p>{item.partOfSpeech}</p>
+								<div class="points-buttons">
+									<button
+										onclick={(e) => {
+											e.stopPropagation();
+											updateWordPoints(
+												item[$selectedLanguage as keyof typeof item],
+												$selectedLanguage,
+												true
+											);
+										}}
+									>
+										+10
+									</button>
+									<button
+										onclick={(e) => {
+											e.stopPropagation();
+											updateWordPoints(
+												item[$selectedLanguage as keyof typeof item],
+												$selectedLanguage,
+												false
+											);
+										}}
+									>
+										-10
+									</button>
+								</div>
+								<div class="points">
+									Points: {(
+										$wordPoints.find(
+											(wp: any) =>
+												wp.word === item[$selectedLanguage as keyof typeof item] &&
+												wp.language === $selectedLanguage
+										) as { points: number } | undefined
+									)?.points ?? 0}
+								</div>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		{/if}
 	</div>
 {/if}
 
@@ -114,7 +200,9 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 2.074rem;
+		min-height: calc(100vh - 164px);
+		gap: 1.44rem;
+		padding-bottom: 1rem;
 	}
 
 	h1 {
@@ -138,6 +226,58 @@
 		flex-wrap: wrap;
 	}
 
+	.h5-buttons {
+		display: flex;
+		gap: 1rem;
+	}
+
+	/* Single Card View */
+	.single-card-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		min-height: 300px;
+	}
+
+	.nav-button {
+		font-size: 2rem;
+		padding: 1rem;
+		background: #4a90e2;
+		border: 3px solid black;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.nav-button:hover {
+		background: #357abd;
+		transform: scale(1.1);
+	}
+
+	.card-counter {
+		text-align: center;
+		font-size: 1.44rem;
+		font-weight: bold;
+		margin-top: 1rem;
+	}
+
+	.flashcard-container.single {
+		max-width: 600px;
+		width: 100%;
+	}
+
+	.flashcard-container.single .flashcard-front,
+	.flashcard-container.single .flashcard-back {
+		min-height: 300px;
+		font-size: 1rem;
+	}
+
+	.flashcard-container.single h2 {
+		font-size: 2.074rem;
+	}
+
+	/* Grid View */
 	.cards-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -152,9 +292,8 @@
 	}
 
 	.flashcard {
-		position: relative;
 		width: 100%;
-		min-width: 300px;
+		height: 100%;
 		transition: transform 0.6s;
 		transform-style: preserve-3d;
 	}
@@ -169,17 +308,16 @@
 		width: 100%;
 		height: 100%;
 		min-height: 300px;
-		min-width: fit-content;
 		backface-visibility: hidden;
 		border: 3px solid black;
 		border-radius: 5px;
-		padding: 1.5rem;
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		gap: 0.5rem;
+		gap: 1rem;
 		transition: box-shadow 0.3s ease;
 	}
 
@@ -192,8 +330,16 @@
 		transform: rotateY(180deg);
 	}
 
+	.points-buttons {
+		display: flex;
+		gap: 0.5rem;
+	}
+
 	.points-buttons button {
 		border: 5px solid black;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		cursor: pointer;
 	}
 
 	.flashcard-front h2,
@@ -243,6 +389,11 @@
 	}
 
 	:global(body.dark-mode) .flashcard-back p {
+		color: #e0e0e0;
+	}
+
+	:global(body.dark-mode) .nav-button {
+		background: #2d5a8a;
 		color: #e0e0e0;
 	}
 </style>

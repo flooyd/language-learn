@@ -109,11 +109,10 @@
 <style>
 	.container {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
-		gap: 2.074rem;
 		min-height: calc(100vh - 164px);
-		padding-bottom: 2.074rem;
+		gap: 1.44rem;
+		padding-bottom: 1rem;
 	}
 
 	h1 {

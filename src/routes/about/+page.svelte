@@ -1,5 +1,5 @@
 <script>
-	import { fade, fly } from "svelte/transition";
+	import { fade, fly } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
@@ -20,7 +20,11 @@
 
 		<div class="mission-card" in:fly={{ y: -30, duration: 600, delay: 150 }}>
 			<h2>Our Mission</h2>
-			<p>Language Learn is designed to make language learning accessible, enjoyable, and effective for everyone. We believe that learning a new language should be simple, interactive, and fun.</p>
+			<p>
+				Language Learn is designed to make language learning accessible, enjoyable, and effective
+				for everyone. We believe that learning a new language should be simple, interactive, and
+				fun.
+			</p>
 		</div>
 
 		<div class="features-section" in:fly={{ y: -20, duration: 600, delay: 300 }}>
@@ -34,7 +38,10 @@
 				<div class="feature-card">
 					<div class="feature-icon"></div>
 					<h5>Multiple Learning Modes</h5>
-					<p>Switch between Table View, Flashcards, Quiz Mode, and Sentences for different learning experiences.</p>
+					<p>
+						Switch between Table View, Flashcards, Quiz Mode, and Sentences for different learning
+						experiences.
+					</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon"></div>
@@ -59,17 +66,21 @@
 {/if}
 
 <style>
-    .container {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        gap: 2.074rem;
-        padding-bottom: 2.074rem;
-    }
+	.container {
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 164px);
+		gap: 1.44rem;
+		padding-bottom: 1rem;
+	}
 
-    h1 {
-        margin-bottom: 0px;
-    }
+	h1 {
+		margin-bottom: 0px;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
+	}
 
 	h2 {
 		margin-bottom: 0px;
@@ -81,9 +92,10 @@
 
 	/* Mission Card */
 	.mission-card {
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
-
 
 	.mission-card h2 {
 		color: black;
@@ -117,7 +129,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease,
+			border-color 0.3s ease;
 	}
 
 	.feature-card:hover {
@@ -156,7 +171,7 @@
 
 	.cta-button {
 		transition: transform 0.3s ease;
-		border-width: .833rem;
+		border-width: 0.833rem;
 		color: black;
 	}
 

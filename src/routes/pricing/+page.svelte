@@ -53,18 +53,22 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 2.074rem;
-		padding-bottom: 2.074rem;
+		min-height: calc(100vh - 164px);
+		gap: 1.44rem;
 	}
 
 	h1 {
 		margin-bottom: 0px;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
 	}
 
 	.plans {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2rem;
+		gap: 1rem;
 		align-items: stretch;
 	}
 
@@ -72,8 +76,8 @@
 		flex: 1;
 		min-width: 280px;
 		max-width: 400px;
-		padding: 2rem;
-		border-radius: 12px;
+		padding: 1rem;
+		border-radius: 11.11px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		display: flex;
 		flex-direction: column;

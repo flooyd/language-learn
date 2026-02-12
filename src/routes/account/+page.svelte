@@ -35,16 +35,19 @@
 
 <style>
 	.container {
-		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
-		gap: 2.074rem;
 		min-height: calc(100vh - 164px);
-		padding-bottom: 2.074rem;
+		gap: 1.44rem;
+		padding-bottom: 1rem;
 	}
 
 	h1 {
 		margin-bottom: 0px;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
 	}
 
     .account-actions {

@@ -130,12 +130,11 @@
 
 <style>
 	.container {
-		max-width: 500px;
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 2.074rem;
-		padding-bottom: 2rem;
+		gap: 1.44rem;
+		padding-bottom: 1rem;
 	}
 
 	.header {
@@ -146,6 +145,10 @@
 
 	h1 {
 		margin-bottom: 0;
+		background: #f0e68c;
+		border: 5px solid black;
+		border-radius: 5px;
+		padding: 1rem;
 	}
 
 	.subtitle {
@@ -155,10 +158,11 @@
 	}
 
 	.form-card {
+		max-width: 500px;
 		background: white;
 		border: 3px solid black;
 		border-radius: 5px;
-		padding: 2.074rem;
+		padding: 1rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}

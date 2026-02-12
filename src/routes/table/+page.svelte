@@ -116,8 +116,10 @@
 <style>
     .container {
         display: flex;
-        flex-direction: column;
-        gap: 2.074rem;
+		flex-direction: column;
+		min-height: calc(100vh - 164px);
+		gap: 1.44rem;
+		padding-bottom: 1rem;
     }
 
     h1 {
