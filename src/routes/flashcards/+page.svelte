@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as spanishData from '$lib/data/spanish.json';
-	import { selectedCategory, selectedLanguage, wordPoints } from '$lib/stores';
+	import { selectedCategory, selectedLanguage, selectedMode, wordPoints } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { updateWordPoints } from '$lib/util';
@@ -26,6 +26,14 @@
 	};
 
 	onMount(() => {
+		if(!$selectedCategory) {
+			// Redirect to categories page if no category is selected
+			window.location.href = '/categories';
+		}
+		if(!$selectedMode) {
+			// Redirect to categories page if no language is selected
+			window.location.href = '/learn';
+		}
 		ready = true;
 		shuffleWords();
 	});

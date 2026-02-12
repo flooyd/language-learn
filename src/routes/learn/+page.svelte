@@ -6,12 +6,6 @@
 
 	let ready = $state(false);
 
-	onMount(async () => {
-		ready = true;
-		await getWordPoints();
-		console.log('Word Points:', $wordPoints);
-	});
-
 	const getWordPoints = async() => {
 		try {
 			const response = await fetch('/api/word-points', {
@@ -27,7 +21,19 @@
 		} catch (error) {
 			console.error('Error fetching word points:', error);
 		}
-	}
+	};
+
+	const handleSelectMode = (mode: string) => {
+		$selectedMode = mode;
+		localStorage.setItem('selectedMode', mode);
+	};
+
+	onMount(async () => {
+		ready = true;
+		await getWordPoints();
+		$selectedCategory = localStorage.getItem('selectedCategory') || '';
+		$selectedMode = localStorage.getItem('selectedMode') || '';
+	});
 
 	$effect(() => {
 		$selectedCategory;
@@ -74,25 +80,25 @@
 			How would you like to learn {($selectedLanguage.charAt(0).toUpperCase() + $selectedLanguage.slice(1))}? <button>Change Language</button>
 		</h1>
 		<button
-			onclick={() => ($selectedMode = 'table')}
+			onclick={() => handleSelectMode('table')}
 			in:fly={{ y: -30, duration: 600, delay: 150 }}
 		>
 			<h5>Table</h5>
 		</button>
 		<button
-			onclick={() => ($selectedMode = 'flashcards')}
+			onclick={() => handleSelectMode('flashcards')}
 			in:fly={{ y: -30, duration: 600, delay: 150 }}
 		>
 			<h5>Flashcards</h5>
 		</button>
 		<button
-			onclick={() => ($selectedMode = 'quizzes')}
+			onclick={() => handleSelectMode('quizzes')}
 			in:fly={{ y: -30, duration: 600, delay: 150 }}
 		>
 			<h5>Quizzes</h5>
 		</button>
 		<button
-			onclick={() => ($selectedMode = 'sentences')}
+			onclick={() => handleSelectMode('sentences')}
 			in:fly={{ y: -30, duration: 600, delay: 150 }}
 		>
 			<h5>Sentences</h5>

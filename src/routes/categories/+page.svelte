@@ -14,6 +14,11 @@
 		'custom'
 	] as const;
 
+	const handleSelectCategory = (category: string) => {
+		$selectedCategory = category;
+		localStorage.setItem('selectedCategory', category);
+	};
+
 	onMount(() => {
 		ready = true;
 	});
@@ -26,7 +31,7 @@
             <button>Change Language</button>
 		</h1>
 		{#each categories as category, index}
-            <a href="/learn" onclick={() => $selectedCategory = category}>
+            <a href="/learn" onclick={() => handleSelectCategory(category)}>
                 <h5 in:fly={{ y: -30, duration: 600, delay: 150 + index * 100 }}>
                     {category.charAt(0).toUpperCase() + category.slice(1)}
                 </h5>
