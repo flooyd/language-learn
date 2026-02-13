@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { selectedCategory, selectedMode, selectedLanguage, wordPoints } from '$lib/stores';
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
 	let ready = $state(false);
 
@@ -10,10 +11,13 @@
 		localStorage.setItem('selectedMode', mode);
 	};
 
+	onMount(() => {
+		ready = true;
+	});
+
 	$effect(() => {
 		$selectedCategory;
 		$selectedMode;
-		ready = true;
 
 		console.log('Selected Category:', $selectedCategory);
 		console.log('Selected Mode:', $selectedMode);
