@@ -31,8 +31,6 @@
 	onMount(async () => {
 		ready = true;
 		await getWordPoints();
-		$selectedCategory = localStorage.getItem('selectedCategory') || '';
-		$selectedMode = localStorage.getItem('selectedMode') || '';
 	});
 
 	$effect(() => {

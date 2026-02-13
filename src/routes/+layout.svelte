@@ -3,7 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
-	import { user } from '$lib/stores';
+	import { selectedCategory, selectedMode, user } from '$lib/stores';
 	import type { LayoutData } from './$types';
 
 	interface Props {
@@ -32,6 +32,8 @@
 	});
 
 	onMount(() => {
+		$selectedCategory = localStorage.getItem('selectedCategory') || '';
+		$selectedMode = localStorage.getItem('selectedMode') || '';
 		ready = true;
 	});
 
