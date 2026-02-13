@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { selectedCategory, selectedMode, selectedLanguage, wordPoints } from '$lib/stores';
 	import { goto } from '$app/navigation';
@@ -14,6 +13,7 @@
 	$effect(() => {
 		$selectedCategory;
 		$selectedMode;
+		ready = true;
 
 		console.log('Selected Category:', $selectedCategory);
 		console.log('Selected Mode:', $selectedMode);
@@ -47,8 +47,6 @@
 		} else {
 			goto('/learn');
 		}
-
-		ready = true;
 	});
 </script>
 
