@@ -5,6 +5,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import { selectedCategory, selectedMode, user, wordPoints } from '$lib/stores';
 	import type { LayoutData } from './$types';
+	import { getWordPoints } from '$lib/util';
 
 	interface Props {
 		children: any;
@@ -25,23 +26,6 @@
 	// Close menu on navigation
 	const handleNavigation = () => {
 		menuOpen = false;
-	};
-
-	const getWordPoints = async() => {
-		try {
-			const response = await fetch('/api/word-points', {
-				method: 'GET'
-			});
-
-			if (!response.ok) {
-				throw new Error('Failed to fetch word points');
-			}
-
-			const data = await response.json();
-			$wordPoints = data.wordPoints;
-		} catch (error) {
-			console.error('Error fetching word points:', error);
-		}
 	};
 
 	afterNavigate(() => {
@@ -412,7 +396,7 @@
 		color: #4a90e2;
 	}
 
-	:global(body.dark-mode h5){
+	:global(body.dark-mode h5) {
 		color: white;
 	}
 

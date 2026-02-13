@@ -1,9 +1,9 @@
 import { json } from '@sveltejs/kit';
-import {db} from '$lib/server/db';
-import {wordPoint} from '$lib/server/db/schema';
+import { db } from '$lib/server/db';
+import { wordPoint } from '$lib/server/db/schema';
 import { eq, and } from 'drizzle-orm';
 
-export const POST = async ({request, locals}) => {
+export const POST = async ({ request, locals }) => {
     const { word, language, correct } = await request.json();
 
     if (!locals.user) {
@@ -22,8 +22,9 @@ export const POST = async ({request, locals}) => {
         if (existingEntry.length > 0) {
             const currentPoints = existingEntry[0].points;
             const newPoints = correct ? currentPoints + 10 : Math.max(currentPoints - 10, 0);
+            const clampedPoints = Math.max(0, Math.min(100, newPoints));
 
-            await db.update(wordPoint).set({ points: newPoints }).where(
+            await db.update(wordPoint).set({ points: clampedPoints }).where(
                 and(
                     eq(wordPoint.userId, locals.user.id),
                     eq(wordPoint.word, word),

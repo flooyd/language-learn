@@ -7,6 +7,23 @@ type WordPoint = {
     points: number;
 };
 
+export const getWordPoints = async() => {
+		try {
+			const response = await fetch('/api/word-points', {
+				method: 'GET'
+			});
+
+			if (!response.ok) {
+				throw new Error('Failed to fetch word points');
+			}
+
+			const data = await response.json();
+			wordPoints.set(data.wordPoints);
+		} catch (error) {
+			console.error('Error fetching word points:', error);
+		}
+	};
+
 export const updateWordPoints = async (word: any, language: any, correct: any) => {
     const currentPoints: WordPoint[] = get(wordPoints as Readable<WordPoint[]>);
     const updatedPoints: WordPoint[] = currentPoints.map((point: WordPoint) => {
