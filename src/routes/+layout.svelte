@@ -3,7 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
-	import { selectedCategory, selectedMode, user } from '$lib/stores';
+	import { selectedCategory, selectedMode, user, wordPoints } from '$lib/stores';
 	import type { LayoutData } from './$types';
 
 	interface Props {
@@ -27,11 +27,29 @@
 		menuOpen = false;
 	};
 
+	const getWordPoints = async() => {
+		try {
+			const response = await fetch('/api/word-points', {
+				method: 'GET'
+			});
+
+			if (!response.ok) {
+				throw new Error('Failed to fetch word points');
+			}
+
+			const data = await response.json();
+			$wordPoints = data.wordPoints;
+		} catch (error) {
+			console.error('Error fetching word points:', error);
+		}
+	};
+
 	afterNavigate(() => {
 		handleNavigation();
 	});
 
-	onMount(() => {
+	onMount(async () => {
+		await getWordPoints();
 		$selectedCategory = localStorage.getItem('selectedCategory') || '';
 		$selectedMode = localStorage.getItem('selectedMode') || '';
 		ready = true;

@@ -1,6 +1,27 @@
 import { wordPoints } from "$lib/stores";
+import { get, type Readable } from "svelte/store";
+
+type WordPoint = {
+    word: string;
+    language: string;
+    points: number;
+};
 
 export const updateWordPoints = async (word: any, language: any, correct: any) => {
+    const currentPoints: WordPoint[] = get(wordPoints as Readable<WordPoint[]>);
+    const updatedPoints: WordPoint[] = currentPoints.map((point: WordPoint) => {
+        if (point.word === word && point.language === language) {
+            const newPoints = correct ? point.points + 10 : point.points - 10;
+            const clampedPoints = Math.max(0, Math.min(100, newPoints));
+            return {
+                ...point,
+                points: clampedPoints
+            };
+        }
+        return point;
+    });
+
+    wordPoints.set(updatedPoints);
     try {
         const response = await fetch('/api/word-points', {
             method: 'POST',

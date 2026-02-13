@@ -6,23 +6,6 @@
 
 	let ready = $state(false);
 
-	const getWordPoints = async() => {
-		try {
-			const response = await fetch('/api/word-points', {
-				method: 'GET'
-			});
-
-			if (!response.ok) {
-				throw new Error('Failed to fetch word points');
-			}
-
-			const data = await response.json();
-			$wordPoints = data.wordPoints;
-		} catch (error) {
-			console.error('Error fetching word points:', error);
-		}
-	};
-
 	const handleSelectMode = (mode: string) => {
 		$selectedMode = mode;
 		localStorage.setItem('selectedMode', mode);
@@ -30,7 +13,6 @@
 
 	onMount(async () => {
 		ready = true;
-		await getWordPoints();
 	});
 
 	$effect(() => {
