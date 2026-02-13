@@ -11,10 +11,6 @@
 		localStorage.setItem('selectedMode', mode);
 	};
 
-	onMount(async () => {
-		ready = true;
-	});
-
 	$effect(() => {
 		$selectedCategory;
 		$selectedMode;
@@ -51,6 +47,8 @@
 		} else {
 			goto('/learn');
 		}
+
+		ready = true;
 	});
 </script>
 

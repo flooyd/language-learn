@@ -5,7 +5,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import { selectedCategory, selectedMode, user, wordPoints } from '$lib/stores';
 	import type { LayoutData } from './$types';
-	import { getWordPoints } from '$lib/util';
+	import { getWordPoints, test } from '$lib/util';
 
 	interface Props {
 		children: any;
