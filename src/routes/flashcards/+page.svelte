@@ -40,13 +40,17 @@
 		flippedCards = new Set();
 	};
 
-	// Sync displayList from store: shuffle when first populated, update when list changes (e.g. card removed).
+	// Sync displayList from store: shuffle when first populated; when a card is removed (list shrinks),
+	// remove it from displayList so we keep the current shuffled order instead of reverting to original.
 	$effect(() => {
 		const list = $filteredWords;
 		if (list.length === 0) return;
 		if (displayList.length === 0) {
 			displayList = [...list].sort(() => Math.random() - 0.5);
-		} else if (list.length !== displayList.length) {
+		} else if (list.length < displayList.length) {
+			const stillInFilter = new Set(list.map((w) => w.spanish));
+			displayList = displayList.filter((w) => stillInFilter.has(w.spanish));
+		} else if (list.length > displayList.length) {
 			displayList = [...list];
 		}
 	});
