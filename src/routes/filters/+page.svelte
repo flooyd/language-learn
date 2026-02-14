@@ -41,11 +41,11 @@
 	<div class="filters">
 		<div class="filter">
 			<label for="min-points">Minimum Points</label>
-			<input type="number" id="min-points" value={$filterMinPoints} max="100" min="0" />
+			<input type="number" id="min-points" bind:value={$filterMinPoints} max="100" min="0" />
 		</div>
 		<div class="filter">
 			<label for="max-points">Maximum Points</label>
-			<input type="number" id="max-points" value={$filterMaxPoints} max="100" min="0" />
+			<input type="number" id="max-points" bind:value={$filterMaxPoints} max="100" min="0" />
 		</div>
 		<button onclick={() => clearFilters()}>Clear Filters</button>
 	</div>
