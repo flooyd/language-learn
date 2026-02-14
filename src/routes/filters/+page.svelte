@@ -9,8 +9,10 @@
 	const applyFilters = () => {
 		localStorage.setItem('filterMinPoints', $filterMinPoints.toString());
 		localStorage.setItem('filterMaxPoints', $filterMaxPoints.toString());
-		$filteredWords = $words.filter(word => word.points >= $filterMinPoints && word.points <= $filterMaxPoints);
-	}
+		$filteredWords = $words.filter(
+			(word) => word.points >= $filterMinPoints && word.points <= $filterMaxPoints
+		);
+	};
 
 	const clearFilters = () => {
 		$filterMinPoints = 0;
@@ -18,7 +20,7 @@
 
 		localStorage.setItem('filterMinPoints', $filterMinPoints.toString());
 		localStorage.setItem('filterMaxPoints', $filterMaxPoints.toString());
-	}
+	};
 
 	onMount(() => {
 		ready = true;
@@ -35,7 +37,7 @@
 <div class="container" in:fly={{ y: -50, duration: 600 }}>
 	<h1>Filters</h1>
 	<h5>Filter words by points.</h5>
-	<button onclick={() => goto('/learn')}>Back to Learning	Mode</button>
+	<button onclick={() => goto('/learn')}>Back to Learning Mode</button>
 	<div class="filters">
 		<div class="filter">
 			<label for="min-points">Minimum Points</label>
