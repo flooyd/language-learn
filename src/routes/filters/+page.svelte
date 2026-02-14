@@ -7,18 +7,28 @@
 	let ready = false;
 
 	const applyFilters = () => {
-		const minEl = document.getElementById('min-points') as HTMLInputElement | null;
-		const maxEl = document.getElementById('max-points') as HTMLInputElement | null;
-		const minPoints = parseInt(minEl?.value ?? '0');
-		const maxPoints = parseInt(maxEl?.value ?? '100');
-		$filterMinPoints = minPoints;
-		$filterMaxPoints = maxPoints;
-		$filteredWords = $words.filter(word => word.points >= minPoints && word.points <= maxPoints);
-		console.log($filteredWords);
+		localStorage.setItem('filterMinPoints', $filterMinPoints.toString());
+		localStorage.setItem('filterMaxPoints', $filterMaxPoints.toString());
+		$filteredWords = $words.filter(word => word.points >= $filterMinPoints && word.points <= $filterMaxPoints);
+	}
+
+	const clearFilters = () => {
+		$filterMinPoints = 0;
+		$filterMaxPoints = 100;
+
+		localStorage.setItem('filterMinPoints', $filterMinPoints.toString());
+		localStorage.setItem('filterMaxPoints', $filterMaxPoints.toString());
 	}
 
 	onMount(() => {
 		ready = true;
+	});
+
+	$effect(() => {
+		$filterMinPoints;
+		$filterMaxPoints;
+
+		applyFilters();
 	});
 </script>
 
@@ -35,7 +45,7 @@
 			<label for="max-points">Maximum Points</label>
 			<input type="number" id="max-points" value={$filterMaxPoints} max="100" min="0" />
 		</div>
-		<button onclick={() => applyFilters()}>Apply Filters</button>
+		<button onclick={() => clearFilters()}>Clear Filters</button>
 	</div>
 </div>
 
@@ -61,5 +71,10 @@
 		border: 5px solid black;
 		border-radius: 5px;
 		max-width: fit-content;
+	}
+
+	.filter-buttons {
+		display: flex;
+		gap: 1rem;
 	}
 </style>

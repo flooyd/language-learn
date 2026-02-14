@@ -48,6 +48,8 @@
 		await getWordPoints();
 		$selectedCategory = localStorage.getItem('selectedCategory') || '';
 		$selectedMode = localStorage.getItem('selectedMode') || '';
+		$filterMinPoints = parseInt(localStorage.getItem('filterMinPoints') || '0', 10);
+		$filterMaxPoints = parseInt(localStorage.getItem('filterMaxPoints') || '100', 10);
 		ready = true;
 	});
 

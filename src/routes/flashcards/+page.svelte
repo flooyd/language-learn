@@ -10,6 +10,7 @@
 	let ready = $state(false);
 	let flashcardSingle = $state(false);
 	let currentCardIndex = $state(0);
+	let displayList = $state<{ spanish: string; english: string; partOfSpeech: string; points: number }[]>([]);
 
 	const toggleFlip = (wordId: string) => {
 		if (flippedCards.has(wordId)) {
@@ -21,25 +22,38 @@
 	};
 
 	const shuffleWords = () => {
-		const shuffled = [...$filteredWords].sort(() => Math.random() - 0.5);
-		$filteredWords = shuffled;
-		currentCardIndex = 0; // Reset to first card
-		flippedCards.clear(); // Clear flipped state
+		const list = displayList.length > 0 ? displayList : $filteredWords;
+		displayList = [...list].sort(() => Math.random() - 0.5);
+		currentCardIndex = 0;
+		flippedCards = new Set();
 	};
 
+	const listForNav = $derived(displayList.length > 0 ? displayList : $filteredWords);
+
 	const nextCard = () => {
-		currentCardIndex = (currentCardIndex + 1) % $filteredWords.length;
-		flippedCards.clear();
+		currentCardIndex = (currentCardIndex + 1) % listForNav.length;
+		flippedCards = new Set();
 	};
 
 	const prevCard = () => {
-		currentCardIndex = (currentCardIndex - 1 + $filteredWords.length) % $filteredWords.length;
-		flippedCards.clear();
+		currentCardIndex = (currentCardIndex - 1 + listForNav.length) % listForNav.length;
+		flippedCards = new Set();
 	};
 
-	// When the filtered list shrinks, clamp currentCardIndex so we don't point past the end.
+	// Sync displayList from store: shuffle when first populated, update when list changes (e.g. card removed).
 	$effect(() => {
-		const len = $filteredWords.length;
+		const list = $filteredWords;
+		if (list.length === 0) return;
+		if (displayList.length === 0) {
+			displayList = [...list].sort(() => Math.random() - 0.5);
+		} else if (list.length !== displayList.length) {
+			displayList = [...list];
+		}
+	});
+
+	// Clamp currentCardIndex when list shrinks.
+	$effect(() => {
+		const len = listForNav.length;
 		if (len === 0) return;
 		if (currentCardIndex >= len) {
 			currentCardIndex = len - 1;
@@ -54,7 +68,6 @@
 			window.location.href = '/categories';
 		}
 		ready = true;
-		shuffleWords();
 	});
 </script>
 
@@ -75,7 +88,7 @@
 		</h5>
 
 		{#if flashcardSingle}
-			{@const currentItem = $filteredWords[currentCardIndex]}
+			{@const currentItem = listForNav[currentCardIndex]}
 			<!-- Single Card View -->
 			<div class="single-card-container" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 				<button class="nav-button prev" onclick={prevCard}>←</button>
@@ -139,12 +152,12 @@
 				<button class="nav-button next" onclick={nextCard}>→</button>
 			</div>
 			<div class="card-counter">
-				{currentCardIndex + 1} / {$filteredWords.length}
+				{currentCardIndex + 1} / {listForNav.length}
 			</div>
 		{:else}
 			<!-- Grid View -->
 			<div class="cards-grid">
-				{#each $filteredWords as item, index (item.spanish)}
+				{#each listForNav as item, index (item.spanish)}
 					<div
 						class="flashcard-container"
 						in:fly|global={{ y: -20, duration: 600, delay: 300 }}
