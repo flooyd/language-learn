@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { selectedCategory, selectedMode } from '$lib/stores';
+	import { filterMaxPoints, filterMinPoints, selectedCategory, selectedMode } from '$lib/stores';
 
     const handleClickModes = () => {
         $selectedMode = "";
@@ -19,9 +19,9 @@
 </script>
 
 <div class="h1-buttons">
-    <button onclick={() => handleClickFilters()}>Filters</button>
+    <button class="{$filterMinPoints > 0 || $filterMaxPoints < 100 ? 'active' : ''}" onclick={() => handleClickFilters()}>Filters</button>
 	<button onclick={() => handleClickModes()}>Modes</button>
-	<button onclick={() => handleClickCategories()}>Categories</button>
+	<button  onclick={() => handleClickCategories()}>Categories</button>
 </div>
 
 <style>
@@ -30,4 +30,8 @@
 		gap: 1rem;
         flex-wrap: wrap;
 	}
+
+    .active {
+        background-color: #4a90e2;
+    }
 </style>

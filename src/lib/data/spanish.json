@@ -219,6 +219,11 @@
       "spanish": "hacen",
       "english": "do/make",
       "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hacemos",
+      "english": "(we) do/make",
+      "partOfSpeech": "verb"
     }
   ],
   "numbers": [
@@ -1521,7 +1526,7 @@
     },
     {
       "spanish": "azul",
-      "english": "#4a90e2",
+      "english": "blue",
       "partOfSpeech": "adjective"
     },
     {
