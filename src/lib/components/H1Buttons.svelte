@@ -12,9 +12,14 @@
         $selectedCategory = "";
         goto('/categories');
     }
+
+    const handleClickFilters = () => {
+        goto('/filters');
+    }
 </script>
 
 <div class="h1-buttons">
+    <button onclick={() => handleClickFilters()}>Filters</button>
 	<button onclick={() => handleClickModes()}>Modes</button>
 	<button onclick={() => handleClickCategories()}>Categories</button>
 </div>

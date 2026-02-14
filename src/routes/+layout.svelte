@@ -3,9 +3,10 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
-	import { selectedCategory, selectedMode, user, wordPoints } from '$lib/stores';
+	import { filteredWords, filterMaxPoints, filterMinPoints, selectedCategory, selectedMode, user, wordPoints, words } from '$lib/stores';
 	import type { LayoutData } from './$types';
 	import { getWordPoints, test } from '$lib/util';
+	import * as spanishData from '$lib/data/spanish.json';
 
 	interface Props {
 		children: any;
@@ -22,6 +23,17 @@
 	let darkMode = $state(
 		typeof localStorage !== 'undefined' && localStorage.getItem('darkMode') === 'true'
 	);
+
+	const wordList = $derived.by(() => {
+		const list = $selectedCategory ? spanishData[$selectedCategory as keyof typeof spanishData] : undefined;
+		if (!list || !Array.isArray(list)) return [];
+		return list.map((w) => ({ ...w, points: $wordPoints.find((wp) => wp.word === w.spanish && wp.language === 'spanish')?.points ?? 0 }));
+	});
+
+	$effect(() => {
+		$words = wordList;
+		$filteredWords = wordList.filter(word => word.points >= $filterMinPoints && word.points <= $filterMaxPoints);
+	});
 
 	// Close menu on navigation
 	const handleNavigation = () => {

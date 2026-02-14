@@ -1,42 +1,50 @@
 <script lang="ts">
 	import * as spanishData from '$lib/data/spanish.json';
-	import { selectedCategory, selectedLanguage, selectedMode, wordPoints } from '$lib/stores';
+	import { filteredWords, selectedCategory, selectedLanguage, selectedMode, wordPoints, words } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { updateWordPoints } from '$lib/util';
 	import H1Buttons from '$lib/components/H1Buttons.svelte';
 
-	let flippedCards = $state<Set<number>>(new Set());
+	let flippedCards = $state<Set<string>>(new Set());
 	let ready = $state(false);
-	let words = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
 	let flashcardSingle = $state(false);
-	let currentCardIndex = $state(0); // Add this
+	let currentCardIndex = $state(0);
 
-	const toggleFlip = (index: number) => {
-		if (flippedCards.has(index)) {
-			flippedCards.delete(index);
+	const toggleFlip = (wordId: string) => {
+		if (flippedCards.has(wordId)) {
+			flippedCards.delete(wordId);
 		} else {
-			flippedCards.add(index);
+			flippedCards.add(wordId);
 		}
 		flippedCards = new Set(flippedCards);
 	};
 
 	const shuffleWords = () => {
-		const shuffled = [...words].sort(() => Math.random() - 0.5);
-		words = shuffled;
+		const shuffled = [...$filteredWords].sort(() => Math.random() - 0.5);
+		$filteredWords = shuffled;
 		currentCardIndex = 0; // Reset to first card
 		flippedCards.clear(); // Clear flipped state
 	};
 
 	const nextCard = () => {
-		currentCardIndex = (currentCardIndex + 1) % words.length;
+		currentCardIndex = (currentCardIndex + 1) % $filteredWords.length;
 		flippedCards.clear();
 	};
 
 	const prevCard = () => {
-		currentCardIndex = (currentCardIndex - 1 + words.length) % words.length;
+		currentCardIndex = (currentCardIndex - 1 + $filteredWords.length) % $filteredWords.length;
 		flippedCards.clear();
 	};
+
+	// When the filtered list shrinks, clamp currentCardIndex so we don't point past the end.
+	$effect(() => {
+		const len = $filteredWords.length;
+		if (len === 0) return;
+		if (currentCardIndex >= len) {
+			currentCardIndex = len - 1;
+		}
+	});
 
 	onMount(() => {
 		if (!$selectedMode) {
@@ -67,20 +75,20 @@
 		</h5>
 
 		{#if flashcardSingle}
-			{@const currentItem = words[currentCardIndex]}
+			{@const currentItem = $filteredWords[currentCardIndex]}
 			<!-- Single Card View -->
 			<div class="single-card-container" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 				<button class="nav-button prev" onclick={prevCard}>←</button>
 
-				{#key currentCardIndex}
+				{#key currentItem.spanish}
 					<div
 						class="flashcard-container single"
-						onclick={() => toggleFlip(currentCardIndex)}
+						onclick={() => toggleFlip(currentItem.spanish)}
 						role="button"
 						tabindex="0"
-						onkeydown={(e) => e.key === 'Enter' && toggleFlip(currentCardIndex)}
+						onkeydown={(e) => e.key === 'Enter' && toggleFlip(currentItem.spanish)}
 					>
-						<div class="flashcard {flippedCards.has(currentCardIndex) ? 'flipped' : ''}">
+						<div class="flashcard {flippedCards.has(currentItem.spanish) ? 'flipped' : ''}">
 							<div class="flashcard-front">
 								<h2>{currentItem.spanish}</h2>
 								<div class="flip-indicator">↻</div>
@@ -131,20 +139,21 @@
 				<button class="nav-button next" onclick={nextCard}>→</button>
 			</div>
 			<div class="card-counter">
-				{currentCardIndex + 1} / {words.length}
+				{currentCardIndex + 1} / {$filteredWords.length}
 			</div>
 		{:else}
 			<!-- Grid View -->
-			<div class="cards-grid" in:fly={{ y: -20, duration: 600, delay: 300 }}>
-				{#each words as item, index}
+			<div class="cards-grid">
+				{#each $filteredWords as item, index (item.spanish)}
 					<div
 						class="flashcard-container"
-						onclick={() => toggleFlip(index)}
+						in:fly|global={{ y: -20, duration: 600, delay: 300 }}
+						onclick={() => toggleFlip(item.spanish)}
 						role="button"
 						tabindex="0"
-						onkeydown={(e) => e.key === 'Enter' && toggleFlip(index)}
+						onkeydown={(e) => e.key === 'Enter' && toggleFlip(item.spanish)}
 					>
-						<div class="flashcard {flippedCards.has(index) ? 'flipped' : ''}">
+						<div class="flashcard {flippedCards.has(item.spanish) ? 'flipped' : ''}">
 							<div class="flashcard-front">
 								<h2>{item.spanish}</h2>
 								<div class="flip-indicator">↻</div>
