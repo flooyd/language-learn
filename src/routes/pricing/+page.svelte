@@ -26,7 +26,6 @@
 					<li class="included">✓ Access to Basics category</li>
 					<li class="included">✓ Table and Card learning modes</li>
 					<li class="not-included">✗ Advanced categories</li>
-					<li class="not-included">✗ Progress tracking</li>
 				</ul>
 				<button class="plan-button free-button">Get Started</button>
 			</div>
@@ -39,7 +38,7 @@
 				</div>
 				<ul>
 					<li class="included">✓ All 5 vocabulary categories</li>
-					<li class="included">✓ Table and Card learning modes</li>
+					<li class="included">✓ Table, Card, Quiz, and Sentences learning modes</li>
 					<li class="included">✓ Beginner to Advanced content</li>
 					<li class="included">✓ Numbers and specialized vocab</li>
 				</ul>
