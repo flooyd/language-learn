@@ -2,6 +2,10 @@
 
 A language-learning web app for building vocabulary with **interactive tables**, **flashcards**, **quizzes**, and **sentences**. Start with Spanish: pick a category and a learning mode, filter by progress, and track your points as you go.
 
+![home page](https://raw.githubusercontent.com/flooyd/language-learn/refs/heads/main/static/home.png)
+
+![quizzes page](https://raw.githubusercontent.com/flooyd/language-learn/refs/heads/main/static/quizzes.png)
+
 ## Features
 
 - **500+ words** across various levels: basics, numbers, beginner, intermediate, advanced, etc.
