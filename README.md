@@ -1,42 +1,24 @@
-# sv
+# Language Learn
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A language-learning web app for building vocabulary with **interactive tables**, **flashcards**, **quizzes**, and **sentences**. Start with Spanish: pick a category and a learning mode, filter by progress, and track your points as you go.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **500+ words** across various levels: basics, numbers, beginner, intermediate, advanced, etc.
+- **4 learning modes**: table view, flashcards, quizzes, sentences
+- **Points system**: +10 for correct answers, −10 for incorrect; progress is stored per word when signed in
+- **Filters**: limit words by a points range (e.g. 0–50) to focus on what you’re learning
+- **Account & persistence**: register/login, word points saved in the database
+- **Dark mode**: toggle in the nav (stored in `localStorage`)
+- **Responsive layout**: nav, filters, and learning modes work on mobile and desktop
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Tech stack
 
-To recreate this project with the same configuration:
+- **SvelteKit** (Svelte 5, TypeScript)
+- **Drizzle ORM** + **PostgreSQL** for users and word points
+- **Vercel** adapter for deployment
+- **Claude** for gneerating the vocabulary
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --add prettier eslint vitest="usages:unit,component" sveltekit-adapter="adapter:auto" drizzle="database:postgresql+postgresql:postgres.js+docker:no" mcp="ide:vscode+setup:remote" --install yarn language-learn
-```
+## Getting started
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+https://language-learn-nine-vercel.app

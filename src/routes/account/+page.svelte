@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { user } from '$lib/stores';
+	import { user, wordPoints } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
@@ -21,12 +21,16 @@
 			console.error('Logout failed:', error);
 		}
 	}
+
+	const getTotalPoints = () => {
+		return $wordPoints.reduce((acc, curr) => acc + curr.points, 0);
+	}
 </script>
 
 <div class="container" in:fly={{ y: -50, duration: 600 }}>
 	<h1>Account</h1>
 	<h5>View your account details, logout, or delete your account.</h5>
-	<p>Total Points: 0</p>
+	<p>Total Points: {getTotalPoints()}</p>
 	<div class="account-actions">
 		<button onclick={handleLogout}>Logout</button>
 		<button>Delete Account</button>
