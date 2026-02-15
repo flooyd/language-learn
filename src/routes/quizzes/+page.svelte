@@ -32,11 +32,11 @@
 		return opts.sort(() => Math.random() - 0.5);
 	}
 
-	// Snapshot filtered words when they're available (so quiz isn't affected when list updates after answers)
+	// Snapshot filtered words when they're available; shuffle so quiz order isn't always the same
 	$effect(() => {
 		const list = $filteredWords;
 		if (list.length > 0 && quizPool.length === 0) {
-			quizPool = [...list];
+			quizPool = [...list].sort(() => Math.random() - 0.5);
 			displayQuiz = quizPool[0];
 			answerOptions = displayQuiz ? buildOptionsFor(displayQuiz, get(words)) : [];
 		}
@@ -161,5 +161,11 @@
 
 	.incorrect {
 		color: #ff0000;
+	}
+
+	@media (max-width: 1090px) {
+		.message {
+			font-size: 1rem;
+		}
 	}
 </style>
