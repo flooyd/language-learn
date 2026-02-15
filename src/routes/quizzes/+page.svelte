@@ -90,17 +90,24 @@
 		</h1>
 		<h5 in:fly={{ y: -30, duration: 600, delay: 150 }}>Test your knowledge with Quizzes.</h5>
 		{#if displayQuiz}
-			<div in:fly={{ y: -20, duration: 600, delay: 300 }} class="quiz">
-				<h2>{displayQuiz.spanish} <span class="message {message.includes('Correct') ? 'correct' : 'incorrect'}">{message}</span></h2>
-				<div class="answer-options">
-					{#each answerOptions as answer}
-						<button onclick={() => checkAnswer(answer.answer)}>{answer.answer}</button>
-					{/each}
+			{#key displayQuiz.spanish}
+				<div in:fly={{ y: -20, duration: 600, delay: 300 }} class="quiz">
+					<h2>
+						{displayQuiz.spanish}
+						<span class="message {message.includes('Correct') ? 'correct' : 'incorrect'}"
+							>{message}</span
+						>
+					</h2>
+					<div class="answer-options">
+						{#each answerOptions as answer}
+							<button onclick={() => checkAnswer(answer.answer)}>{answer.answer}</button>
+						{/each}
+					</div>
 				</div>
-			</div>
+			{/key}
 		{:else}
 			<h2>No more words to quiz. Adjust your filters.</h2>
-			{/if}
+		{/if}
 	</div>
 {/if}
 
