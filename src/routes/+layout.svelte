@@ -314,6 +314,8 @@
 	:global(a) {
 		text-decoration: none;
 		color: inherit;
+		-webkit-tap-highlight-color: transparent;
+		tap-highlight-color: transparent;
 	}
 
 	:global(button) {
@@ -327,10 +329,21 @@
 		font-weight: bold;
 		border: 5px solid #4a90e2;
 		border-radius: 5px;
+		-webkit-tap-highlight-color: transparent;
+		tap-highlight-color: transparent;
 	}
 
-	:global(button:hover) {
+	/* Hover only on devices that support it (avoids sticky blue on mobile after tap) */
+	@media (hover: hover) {
+		:global(button:hover) {
+			background: #4a90e2;
+		}
+	}
+
+	:global(button:focus-visible) {
 		background: #4a90e2;
+		outline: 2px solid currentColor;
+		outline-offset: 2px;
 	}
 
 	:global(::-webkit-scrollbar) {
