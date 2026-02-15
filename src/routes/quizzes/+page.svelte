@@ -2,21 +2,22 @@
 	import H1Buttons from '$lib/components/H1Buttons.svelte';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
+	import { get } from 'svelte/store';
 	import { filteredWords, words } from '$lib/stores';
 	import { updateWordPoints } from '$lib/util';
 
-	let ready = $state(false);
-	let quizIndex = $state(0);
-	let lastSyncedQuizIndex = $state(-1);
-	// Freeze displayed word so it doesn't change when filteredWords updates (e.g. word removed after answer)
 	type Word = (typeof $filteredWords)[number];
 	type AnswerOption = { answer: string; isCorrect: boolean };
+	let ready = $state(false);
+	let quizIndex = $state(0);
+	// Snapshot of the quiz list when we started – not affected by filteredWords changing after answers
+	let quizPool = $state<Word[]>([]);
 	let displayQuiz = $state<Word | undefined>(undefined);
 	let message = $state('');
 	let answerOptions = $state<AnswerOption[]>([]);
 
-	function buildOptionsFor(word: Word): AnswerOption[] {
-		const len = $words.length;
+	function buildOptionsFor(word: Word, wordsList: Word[]): AnswerOption[] {
+		const len = wordsList.length;
 		const i1 = Math.floor(Math.random() * len);
 		let i2 = Math.floor(Math.random() * len);
 		let i3 = Math.floor(Math.random() * len);
@@ -24,18 +25,32 @@
 		while (i3 === i1 || i3 === i2) i3 = Math.floor(Math.random() * len);
 		const opts = [
 			{ answer: word.english, isCorrect: true },
-			{ answer: $words[i1].english, isCorrect: false },
-			{ answer: $words[i2].english, isCorrect: false },
-			{ answer: $words[i3].english, isCorrect: false }
+			{ answer: wordsList[i1].english, isCorrect: false },
+			{ answer: wordsList[i2].english, isCorrect: false },
+			{ answer: wordsList[i3].english, isCorrect: false }
 		];
 		return opts.sort(() => Math.random() - 0.5);
 	}
 
+	// Snapshot filtered words when they're available (so quiz isn't affected when list updates after answers)
 	$effect(() => {
-		if (quizIndex !== lastSyncedQuizIndex && $filteredWords[quizIndex]) {
-			lastSyncedQuizIndex = quizIndex;
-			displayQuiz = $filteredWords[quizIndex];
-			answerOptions = displayQuiz ? buildOptionsFor(displayQuiz) : [];
+		const list = $filteredWords;
+		if (list.length > 0 && quizPool.length === 0) {
+			quizPool = [...list];
+			displayQuiz = quizPool[0];
+			answerOptions = displayQuiz ? buildOptionsFor(displayQuiz, get(words)) : [];
+		}
+	});
+
+	// When advancing to next question, show word from our snapshot (get(words) = no subscription, so options don't rebuild when stores update)
+	$effect(() => {
+		if (quizPool.length === 0) return;
+		const word = quizPool[quizIndex];
+		if (word) {
+			displayQuiz = word;
+			answerOptions = buildOptionsFor(word, get(words));
+		} else {
+			displayQuiz = undefined;
 		}
 	});
 
@@ -83,7 +98,9 @@
 					{/each}
 				</div>
 			</div>
-		{/if}
+		{:else}
+			<h2>No more words to quiz. Adjust your filters.</h2>
+			{/if}
 	</div>
 {/if}
 
