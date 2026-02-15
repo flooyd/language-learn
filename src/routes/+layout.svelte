@@ -44,13 +44,24 @@
 		handleNavigation();
 	});
 
-	onMount(async () => {
-		await getWordPoints();
-		$selectedCategory = localStorage.getItem('selectedCategory') || '';
-		$selectedMode = localStorage.getItem('selectedMode') || '';
-		$filterMinPoints = parseInt(localStorage.getItem('filterMinPoints') || '0', 10);
-		$filterMaxPoints = parseInt(localStorage.getItem('filterMaxPoints') || '100', 10);
-		ready = true;
+	onMount(() => {
+		getWordPoints().then(() => {
+			$selectedCategory = localStorage.getItem('selectedCategory') || '';
+			$selectedMode = localStorage.getItem('selectedMode') || '';
+			$filterMinPoints = parseInt(localStorage.getItem('filterMinPoints') || '0', 10);
+			$filterMaxPoints = parseInt(localStorage.getItem('filterMaxPoints') || '100', 10);
+			ready = true;
+		});
+
+		// Blur buttons after tap/click so mobile doesn't keep them highlighted (sticky focus)
+		const blurButton = (e: Event) => {
+			const target = e.target;
+			if (target instanceof HTMLButtonElement) {
+				setTimeout(() => target.blur(), 0);
+			}
+		};
+		document.body.addEventListener('click', blurButton, true);
+		return () => document.body.removeEventListener('click', blurButton, true);
 	});
 
 	// Apply dark mode class to body element
@@ -330,7 +341,6 @@
 		border: 5px solid #4a90e2;
 		border-radius: 5px;
 		-webkit-tap-highlight-color: transparent;
-		tap-highlight-color: transparent;
 	}
 
 	/* Hover only on devices that support it (avoids sticky blue on mobile after tap) */
@@ -340,11 +350,17 @@
 		}
 	}
 
+	/* Don't show hover/focus blue when focus came from tap (mobile sticky highlight fix) */
+	:global(button:focus:not(:focus-visible)) {
+		background: white;
+	}
+
 	:global(button:focus-visible) {
 		background: #4a90e2;
 		outline: 2px solid currentColor;
 		outline-offset: 2px;
 	}
+
 
 	:global(::-webkit-scrollbar) {
 		width: 17px !important;
