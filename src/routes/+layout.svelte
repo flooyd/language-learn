@@ -62,6 +62,10 @@
 				document.body.classList.remove('dark-mode');
 			}
 		}
+
+		if($user) {
+			getWordPoints();
+		}
 	});
 
 	$effect(() => {
