@@ -53,52 +53,54 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
+		gap: var(--space-xl);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.plans {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: var(--space-xl);
 		align-items: stretch;
 	}
 
 	.plan {
 		flex: 1;
 		min-width: 280px;
-		max-width: 400px;
-		padding: 1rem;
-		border-radius: 11.11px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		max-width: 420px;
+		padding: var(--space-2xl);
+		border-radius: var(--radius-2xl);
+		box-shadow: var(--shadow-md);
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-		background: white;
-		border: 2px solid #e0e0e0;
+		transition: all var(--transition-base);
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
 	}
 
 	.plan:hover {
-		transform: translateY(-8px);
-		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+		transform: translateY(-6px);
+		box-shadow: var(--shadow-xl);
 	}
 
 	.free-plan {
-		border-color: #9e9e9e;
+		border-color: var(--border-color-strong);
 	}
 
 	.premium-plan {
-		border-color: #4a90e2;
-		background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
-		border-width: 3px;
+		border-color: var(--accent-green);
+		border-width: 2px;
 	}
 
 	.badge {
@@ -106,36 +108,40 @@
 		top: -12px;
 		left: 50%;
 		transform: translateX(-50%);
-		background: #4a90e2;
-		color: black;
-		padding: 0.5rem 1.5rem;
-		border-radius: 20px;
-		font-weight: bold;
-		font-size: 0.9rem;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		background: var(--accent-green);
+		color: var(--accent-green-text);
+		padding: var(--space-xs) var(--space-xl);
+		border-radius: var(--radius-full);
+		font-weight: 700;
+		font-size: var(--text-sm);
+		box-shadow: var(--shadow-md);
+		letter-spacing: 0.02em;
 	}
 
 	.plan h2 {
 		text-align: center;
-		margin-bottom: 0px;
-		font-size: 2.074rem;
+		margin-bottom: 0;
+		font-size: var(--text-2xl);
+		color: var(--text-primary);
 	}
 
 	.price {
 		text-align: center;
-		margin-bottom: 1rem;
+		margin-bottom: var(--space-md);
 	}
 
 	.amount {
-		font-size: 3rem;
-		font-weight: bold;
-		color: #4a90e2;
+		font-size: var(--text-4xl);
+		font-weight: 800;
+		color: var(--accent-green);
+		letter-spacing: -0.02em;
 	}
 
 	.period {
-		font-size: 1.2rem;
-		color: #666;
-		margin-left: 0.25rem;
+		font-size: var(--text-md);
+		color: var(--text-tertiary);
+		margin-left: var(--space-2xs);
+		font-weight: 300;
 	}
 
 	.plan ul {
@@ -145,103 +151,57 @@
 	}
 
 	.plan li {
-		margin-bottom: 1rem;
-		padding-left: 0.5rem;
-		font-size: 1.1rem;
+		margin-bottom: var(--space-md);
+		padding-left: var(--space-xs);
+		font-size: var(--text-md);
+		font-weight: 400;
 	}
 
 	.plan li.included {
-		color: green;
+		color: var(--accent-green);
 		font-weight: 500;
 	}
 
 	.plan li.not-included {
-		color: #9e9e9e;
-		font-weight: 400;
+		color: var(--text-tertiary);
+		font-weight: 300;
 	}
 
 	.plan-button {
 		width: 100%;
-		padding: 1rem;
-		font-size: 1.2rem;
-		font-weight: bold;
-		border-radius: 5px;;
+		padding: var(--space-md);
+		font-size: var(--text-md);
+		font-weight: 700;
+		border-radius: var(--radius-lg);
 		cursor: pointer;
-		transition: all 0.3s ease;
+		transition: all var(--transition-base);
 		margin-top: auto;
 	}
 
 	.free-button {
-		background: white;
-		color: black;
-		border: 3px solid #9e9e9e;
+		background: var(--card-bg);
+		color: var(--text-primary);
+		border: 1.5px solid var(--border-color-strong);
 	}
 
 	.free-button:hover {
-		background: #9e9e9e;
-		transform: scale(1.02);
+		background: var(--accent-blue-subtle);
+		border-color: var(--accent-blue);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-md);
 	}
 
 	.premium-button {
-		color: black;
+		background: var(--accent-green);
+		color: var(--accent-green-text);
+		border: 1.5px solid var(--accent-green);
 	}
 
 	.premium-button:hover {
-		background: #4a90e2;
-		transform: scale(1.02);
-	}
-
-	/* Dark Mode Styles */
-	:global(body.dark-mode) .plan {
-		background: #2a2a2a;
-		border-color: #444;
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .premium-plan {
-		background: linear-gradient(135deg, #2a2a2a 0%, #1e3a5f 100%);
-		border-color: #4a90e2;
-	}
-
-	:global(body.dark-mode) .badge {
-		background: #4a90e2;
-		color: white;
-	}
-
-	:global(body.dark-mode) .amount {
-		color: #4a90e2;
-	}
-
-	:global(body.dark-mode) .period {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .plan li.included {
-		color: #66bb6a;
-	}
-
-	:global(body.dark-mode) .plan li.not-included {
-		color: #757575;
-	}
-
-	:global(body.dark-mode) .free-button {
-		background: #2a2a2a;
-		color: #e0e0e0;
-		border-color: #666;
-	}
-
-	:global(body.dark-mode) .free-button:hover {
-		background: #666;
-	}
-
-	:global(body.dark-mode) .premium-button {
-		background: #4a90e2;
-		color: white;
-	}
-
-	:global(body.dark-mode) .premium-button:hover {
-		background: #5a9fe2;
-		border-color: #6aafe2;
+		background: var(--accent-green-hover);
+		border-color: var(--accent-green-hover);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-lg);
 	}
 
 	@media (max-width: 768px) {
@@ -258,11 +218,11 @@
 		}
 
 		.amount {
-			font-size: 2.5rem;
+			font-size: var(--text-3xl);
 		}
 
 		.plan h2 {
-			font-size: 1.728rem;
+			font-size: var(--text-xl);
 		}
 	}
 </style>

@@ -42,29 +42,44 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
-		padding-bottom: 1rem;
+		gap: var(--space-xl);
+		padding-bottom: var(--space-md);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
+		box-shadow: var(--shadow-sm);
 	}
 
-    .account-actions {
-        display: flex;
-        gap: 1rem;
-    }
+	p {
+		font-size: var(--text-md);
+		font-weight: 600;
+		color: var(--text-primary);
+	}
 
-    .account-actions button {
-        border-color: red;
-    }
+	.account-actions {
+		display: flex;
+		gap: var(--space-md);
+	}
 
-    .account-actions button:hover {
-        background-color: red;
-        color: white;
-    }
+	.account-actions button {
+		border-color: var(--accent-red);
+		color: var(--accent-red);
+		background: var(--accent-red-subtle);
+		font-weight: 600;
+		transition: all var(--transition-base);
+	}
+
+	.account-actions button:hover {
+		background: var(--accent-red);
+		color: white;
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-md);
+	}
 </style>

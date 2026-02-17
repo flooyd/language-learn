@@ -227,65 +227,71 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
-		padding-bottom: 1rem;
+		gap: var(--space-xl);
+		padding-bottom: var(--space-md);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-md);
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+		box-shadow: var(--shadow-sm);
 	}
 
 	h5 {
 		display: flex;
 		justify-content: space-between;
-		gap: 1rem;
+		gap: var(--space-md);
 		align-items: center;
 		flex-wrap: wrap;
 	}
 
 	.h5-buttons {
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-sm);
 	}
 
-	/* Single Card View */
 	.single-card-container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 1rem;
+		gap: var(--space-md);
 		min-height: 300px;
 	}
 
 	.nav-button {
-		font-size: 2rem;
-		padding: 1rem;
-		background: #4a90e2;
-		border: 3px solid black;
-		border-radius: 5px;
+		font-size: var(--text-2xl);
+		padding: var(--space-md);
+		background: var(--accent-blue);
+		color: var(--accent-blue-text);
+		border: 1.5px solid var(--accent-blue);
+		border-radius: var(--radius-lg);
 		cursor: pointer;
-		transition: all 0.3s ease;
+		transition: all var(--transition-base);
+		box-shadow: var(--shadow-md);
 	}
 
 	.nav-button:hover {
-		background: #357abd;
-		transform: scale(1.1);
+		background: var(--accent-blue-hover);
+		transform: scale(1.08);
+		box-shadow: var(--shadow-lg);
 	}
 
 	.card-counter {
 		text-align: center;
-		font-size: 1.44rem;
-		font-weight: bold;
-		margin-top: 1rem;
+		font-size: var(--text-lg);
+		font-weight: 700;
+		margin-top: var(--space-md);
+		color: var(--text-secondary);
 	}
 
 	.flashcard-container.single {
@@ -296,18 +302,17 @@
 	.flashcard-container.single .flashcard-front,
 	.flashcard-container.single .flashcard-back {
 		min-height: 300px;
-		font-size: 1rem;
+		font-size: var(--text-base);
 	}
 
 	.flashcard-container.single h2 {
-		font-size: 2.074rem;
+		font-size: var(--text-2xl);
 	}
 
-	/* Grid View */
 	.cards-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 1rem;
+		gap: var(--space-md);
 	}
 
 	.flashcard-container {
@@ -335,49 +340,66 @@
 		height: 100%;
 		min-height: 300px;
 		backface-visibility: hidden;
-		border: 3px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
+		padding: var(--space-xl);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		gap: 1rem;
-		transition: box-shadow 0.3s ease;
+		gap: var(--space-md);
+		transition: box-shadow var(--transition-base);
 	}
 
 	.flashcard-front {
-		background: lightyellow;
+		background: var(--card-bg);
+		box-shadow: var(--shadow-md);
 	}
 
 	.flashcard-back {
-		background: #4a90e2;
+		background: var(--accent-blue);
+		color: var(--accent-blue-text);
 		transform: rotateY(180deg);
+		box-shadow: var(--shadow-md);
+		border-color: var(--accent-blue);
 	}
 
 	.points-buttons {
 		display: flex;
-		gap: 0.5rem;
+		gap: var(--space-xs);
 	}
 
 	.points-buttons button {
-		border: 5px solid black;
-		padding: 0.5rem 1rem;
-		font-size: 1rem;
+		border: 1.5px solid var(--accent-blue-text);
+		padding: var(--space-xs) var(--space-md);
+		font-size: var(--text-base);
 		cursor: pointer;
+		background: rgba(255, 255, 255, 0.2);
+		color: var(--accent-blue-text);
+		border-radius: var(--radius-md);
+	}
+
+	.points-buttons button:hover {
+		background: rgba(255, 255, 255, 0.35);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.flashcard-front h2,
 	.flashcard-back h2 {
 		margin: 0;
-		font-size: 1.8rem;
+		font-size: var(--text-xl);
+	}
+
+	.flashcard-back h2 {
+		color: var(--accent-blue-text);
 	}
 
 	.flashcard-back p {
 		margin: 0;
-		font-size: 1.1rem;
-		color: #333;
+		font-size: var(--text-md);
+		color: var(--accent-blue-text);
+		opacity: 0.8;
 		font-style: italic;
 	}
 
@@ -385,41 +407,18 @@
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
-		font-size: 1.2rem;
-		opacity: 0.5;
-		transition:
-			opacity 0.3s ease,
-			transform 0.3s ease;
+		font-size: var(--text-md);
+		opacity: 0.3;
+		transition: all var(--transition-base);
 	}
 
 	.flashcard-container:hover .flip-indicator {
-		opacity: 1;
+		opacity: 0.7;
 		transform: rotate(180deg);
 	}
 
 	.flashcard-container:hover .flashcard-front,
 	.flashcard-container:hover .flashcard-back {
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-	}
-
-	:global(body.dark-mode) .flashcard-front {
-		background: #2a2a2a;
-		color: #e0e0e0;
-		border-color: #444;
-	}
-
-	:global(body.dark-mode) .flashcard-back {
-		background: #1e3a5f;
-		color: #e0e0e0;
-		border-color: #444;
-	}
-
-	:global(body.dark-mode) .flashcard-back p {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .nav-button {
-		background: #2d5a8a;
-		color: #e0e0e0;
+		box-shadow: var(--shadow-lg);
 	}
 </style>

@@ -116,46 +116,69 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
-		padding-bottom: 1rem;
+		gap: var(--space-xl);
+		padding-bottom: var(--space-md);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-md);
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+		box-shadow: var(--shadow-sm);
 	}
 
 	.quiz {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		gap: var(--space-md);
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
+		padding: var(--space-2xl);
+		background: var(--card-bg);
+		box-shadow: var(--shadow-md);
 	}
 
 	h2 {
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-md);
+		flex-wrap: wrap;
+		align-items: baseline;
 	}
 
 	.answer-options {
 		display: flex;
-		gap: 1.44rem;
+		gap: var(--space-md);
 		flex-wrap: wrap;
 	}
 
+	.answer-options button {
+		padding: var(--space-md) var(--space-2xl);
+		border-radius: var(--radius-lg);
+		font-weight: 600;
+		transition: all var(--transition-base);
+		border: 1.5px solid var(--border-color-strong);
+		background: var(--card-bg);
+	}
+
+	.answer-options button:hover {
+		background: var(--accent-blue-subtle);
+		border-color: var(--accent-blue);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-md);
+	}
+
 	.message {
-		font-weight: bold;
-		font-size: 1.44rem;
+		font-weight: 800;
+		font-size: var(--text-lg);
 		display: flex;
 		align-items: center;
 		gap: 1px;
@@ -163,16 +186,16 @@
 	}
 
 	.correct {
-		color: #4a90e2;
+		color: var(--accent-green);
 	}
 
 	.incorrect {
-		color: #ff0000;
+		color: var(--accent-red);
 	}
 
 	@media (max-width: 1090px) {
 		.message {
-			font-size: 1rem;
+			font-size: var(--text-base);
 		}
 	}
 </style>

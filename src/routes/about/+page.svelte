@@ -70,145 +70,125 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
-		padding-bottom: 1rem;
+		gap: var(--space-xl);
+		padding-bottom: var(--space-md);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
+		box-shadow: var(--shadow-sm);
 	}
 
 	h2 {
-		margin-bottom: 0px;
-	}
-
-	h3 {
 		margin-bottom: 0;
+		color: var(--text-primary);
 	}
 
-	/* Mission Card */
 	.mission-card {
-		transition:
-			transform 0.3s ease,
-			box-shadow 0.3s ease;
+		transition: all var(--transition-base);
 	}
 
 	.mission-card h2 {
-		color: black;
+		color: var(--text-primary);
 	}
 
 	.mission-card p {
-		color: black;
-		font-size: 1.1rem;
+		color: var(--text-secondary);
+		font-size: var(--text-md);
 		line-height: 1.8;
 		margin-bottom: 0;
+		font-weight: 300;
 	}
 
-	/* Features Section */
 	.features-section {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: var(--space-md);
 	}
 
 	.features-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 1rem;
+		gap: var(--space-md);
 	}
 
 	.feature-card {
-		background: white;
-		border: 3px solid black;
-		padding: 1rem;
-		border-radius: 5px;
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
+		padding: var(--space-xl);
+		border-radius: var(--radius-xl);
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		transition:
-			transform 0.3s ease,
-			box-shadow 0.3s ease,
-			border-color 0.3s ease;
+		gap: var(--space-sm);
+		transition: all var(--transition-base);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.feature-card:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-		border-color: #4a90e2;
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-lg);
+		border-color: var(--accent-blue);
 	}
 
 	.feature-icon {
-		font-size: 2.5rem;
+		font-size: var(--text-3xl);
+	}
+
+	.feature-card h5 {
+		color: var(--text-primary);
+		font-weight: 700;
 	}
 
 	.feature-card p {
-		color: #666;
+		color: var(--text-secondary);
 		margin-bottom: 0;
 		line-height: 1.6;
+		font-weight: 300;
 	}
 
-	/* CTA Section */
 	.cta-section {
 		text-align: center;
-		padding: 1rem;
-		background: white;
-		border: 3px solid black;
-		border-radius: 5px;
+		padding: var(--space-3xl) var(--space-xl);
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: var(--space-lg);
 		align-items: center;
+		box-shadow: var(--shadow-sm);
 	}
 
 	.cta-section h2 {
-		color: black;
+		color: var(--text-primary);
 		margin-bottom: 0;
 	}
 
 	.cta-button {
-		transition: transform 0.3s ease;
-		border-width: 0.833rem;
-		color: black;
+		transition: all var(--transition-base);
+		background: var(--accent-green);
+		border: 1.5px solid var(--accent-green);
+		padding: var(--space-md) var(--space-3xl);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-md);
+	}
+
+	.cta-button h5 {
+		color: var(--accent-green-text) !important;
+		font-weight: 600;
 	}
 
 	.cta-button:hover {
-		transform: scale(1.05);
-	}
-
-	/* Dark Mode Styles */
-	:global(body.dark-mode) .mission-card h2,
-	:global(body.dark-mode) .mission-card p {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .feature-card {
-		background: #2a2a2a;
-		border-color: #444;
-	}
-
-	:global(body.dark-mode) .feature-card:hover {
-		border-color: #4a90e2;
-	}
-
-	:global(body.dark-mode) .feature-card p {
-		color: #e0e0e0;
-	}
-
-	:global(body.dark-mode) .cta-section {
-		background: #2a2a2a;
-		border-color: #444;
-	}
-
-	:global(body.dark-mode) .cta-section h2 {
-		color: white;
-	}
-
-	:global(body.dark-mode .cta-button h5) {
-		color: black;
+		background: var(--accent-green-hover);
+		border-color: var(--accent-green-hover);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-lg);
 	}
 
 	@media (max-width: 768px) {

@@ -54,131 +54,143 @@
 		display: flex;
 		flex-direction: column;
 		min-height: calc(100vh - 164px);
-		gap: 1.44rem;
-		padding-bottom: 1rem;
+		gap: var(--space-xl);
+		padding-bottom: var(--space-md);
+		padding-top: var(--space-xl);
 	}
 
 	.intro h1 {
-		color: black;
-		transition: transform 0.3s ease;
-		margin-bottom: 0px;
-		background: #f0e68c;
-		border: 5px solid black;
-		border-radius: 5px;
-		padding: 1rem;
+		color: var(--text-primary);
+		transition: transform var(--transition-base);
+		margin-bottom: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		font-weight: 800;
+		font-size: var(--text-4xl);
+		letter-spacing: -0.03em;
+		line-height: 1.1;
+	}
+
+	.intro h5 {
+		font-weight: 200;
+		color: var(--text-secondary);
+		max-width: 600px;
+		line-height: 1.6;
 	}
 
 	.stats {
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-md);
 		flex-wrap: wrap;
 	}
 
 	.stat {
 		display: flex;
 		flex-direction: column;
-		gap: 11.11px;
-		padding: 1rem;
-		background: white;
-		border: 3px solid black;
-		border-radius: 5px;
-		min-width: 139.9px !important;
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		gap: var(--space-xs);
+		padding: var(--space-lg) var(--space-xl);
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
+		min-width: 140px;
+		transition: all var(--transition-base);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.stat:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-lg);
+		border-color: var(--accent-blue);
 	}
 
 	.stat-number {
-		font-size: 2rem;
-		font-weight: bold;
-		color: #4a90e2;
+		font-size: var(--text-3xl);
+		font-weight: 800;
+		color: var(--accent-blue);
+		letter-spacing: -0.02em;
 	}
 
 	.stat-label {
-		font-size: 0.9rem;
-		color: #666;
-		font-weight: 500;
+		font-size: var(--text-sm);
+		color: var(--text-tertiary);
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	.cta-buttons {
 		display: flex;
-		gap: 1rem;
+		gap: var(--space-md);
 		flex-wrap: wrap;
+		padding-top: var(--space-xs);
 	}
 
 	.cta-buttons button {
 		text-align: center;
-		transition: transform 0.2s ease;
+		transition: all var(--transition-base);
+		padding: var(--space-md) var(--space-3xl);
+		border-radius: var(--radius-lg);
+	}
+
+	.cta-buttons button h5 {
+		font-weight: 600;
+		font-size: var(--text-md);
 	}
 
 	.cta-buttons button:hover {
-		transform: scale(1.05);
+		transform: translateY(-2px);
 	}
 
 	.primary-cta {
-		background: white;
-		border: .833rem solid #4a90e2;
+		background: var(--accent-green);
+		border: 1.5px solid var(--accent-green);
+		box-shadow: var(--shadow-md);
+	}
+
+	.primary-cta h5 {
+		color: var(--accent-green-text) !important;
 	}
 
 	.primary-cta:hover {
-		background: #4a90e2;
+		background: var(--accent-green-hover);
+		border-color: var(--accent-green-hover);
+		box-shadow: var(--shadow-lg);
 	}
 
 	.secondary-cta {
-		background: white;
-		border: .833rem solid green;
+		background: transparent;
+		border: 1.5px solid var(--border-color-strong);
+	}
+
+	.secondary-cta h5 {
+		color: var(--text-primary) !important;
 	}
 
 	.secondary-cta:hover {
-		background: green;
-	}
-
-	/* Dark Mode Styles */
-	:global(body.dark-mode) .stat {
-		background: #2a2a2a;
-		border-color: #444;
-	}
-
-	:global(body.dark-mode) .stat-number {
-		color: #4a90e2;
-	}
-
-	:global(body.dark-mode) .stat-label {
-		color: white;
-	}
-
-	:global(body.dark-mode) h1, :global(body.dark-mode) h5 {
-		color: white;
-	}
-
-	:global(body.dark-mode) .primary-cta h5 {
-		color: black;
-	}
-
-	:global(body.dark-mode) .secondary-cta h5 {
-		color: black;
+		border-color: var(--accent-blue);
+		background: var(--accent-blue-subtle);
+		box-shadow: var(--shadow-md);
 	}
 
 	@media (max-width: 768px) {
 		.intro {
 			justify-content: flex-start;
-            gap: 1rem;
+			gap: var(--space-md);
 		}
 
 		.stats {
-			gap: 1rem;
+			gap: var(--space-sm);
 		}
 
 		.stat {
 			min-width: 100px;
-			padding: 0.75rem 1rem;
+			padding: var(--space-sm) var(--space-md);
 		}
 
 		.stat-number {
-			font-size: 1.5rem;
+			font-size: var(--text-xl);
 		}
 
 		.cta-buttons {

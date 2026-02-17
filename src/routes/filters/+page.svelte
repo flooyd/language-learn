@@ -56,27 +56,58 @@
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
-		gap: 2.074rem;
+		gap: var(--space-xl);
 		min-height: calc(100vh - 164px);
-		padding-bottom: 2.074rem;
+		padding-bottom: var(--space-3xl);
+		padding-top: var(--space-xl);
 	}
 
 	h1 {
-		margin-bottom: 0px;
+		margin-bottom: 0;
+		background: var(--header-bg);
+		border: none;
+		border-left: 4px solid var(--header-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-lg) var(--space-xl);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.filters {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		padding: 1rem;
-		border: 5px solid black;
-		border-radius: 5px;
+		gap: var(--space-md);
+		padding: var(--space-xl);
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
 		max-width: fit-content;
+		background: var(--card-bg);
+		box-shadow: var(--shadow-md);
 	}
 
-	.filter-buttons {
+	.filter {
 		display: flex;
-		gap: 1rem;
+		flex-direction: column;
+		gap: var(--space-xs);
+	}
+
+	.filter label {
+		font-weight: 700;
+		color: var(--text-primary);
+	}
+
+	.filter input {
+		padding: var(--space-sm) var(--space-md);
+		border: 1.5px solid var(--input-border);
+		border-radius: var(--radius-md);
+		font-size: var(--text-base);
+		background: var(--input-bg);
+		color: var(--text-primary);
+		transition: all var(--transition-base);
+	}
+
+	.filter input:focus {
+		outline: none;
+		border-color: var(--accent-blue);
+		box-shadow: 0 0 0 3px var(--accent-blue-subtle);
 	}
 </style>

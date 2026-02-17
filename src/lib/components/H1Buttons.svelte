@@ -27,11 +27,29 @@
 <style>
 	.h1-buttons {
 		display: flex;
-		gap: 1rem;
-        flex-wrap: wrap;
+		gap: var(--space-sm);
+		flex-wrap: wrap;
 	}
 
-    .active {
-        background-color: #4a90e2;
-    }
+	.h1-buttons button {
+		padding: var(--space-xs) var(--space-md);
+		font-size: var(--text-sm);
+		font-weight: 600;
+		border-radius: var(--radius-md);
+		border: 1.5px solid var(--border-color-strong);
+		background: var(--card-bg);
+		transition: all var(--transition-base);
+	}
+
+	.h1-buttons button:hover {
+		background: var(--accent-blue-subtle);
+		border-color: var(--accent-blue);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.active {
+		background-color: var(--accent-blue) !important;
+		color: var(--accent-blue-text) !important;
+		border-color: var(--accent-blue) !important;
+	}
 </style>
