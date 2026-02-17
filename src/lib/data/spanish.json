@@ -224,6 +224,521 @@
       "spanish": "hacemos",
       "english": "(we) do/make",
       "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hola",
+      "english": "hello",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "adiós",
+      "english": "goodbye",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "gracias",
+      "english": "thank you",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "por favor",
+      "english": "please",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "sí",
+      "english": "yes",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "no",
+      "english": "no",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "agua",
+      "english": "water",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "casa",
+      "english": "house",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "perro",
+      "english": "dog",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "gato",
+      "english": "cat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "familia",
+      "english": "family",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "madre",
+      "english": "mother",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "padre",
+      "english": "father",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hermano",
+      "english": "brother",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hermana",
+      "english": "sister",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "amigo",
+      "english": "friend",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "comida",
+      "english": "food",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "pan",
+      "english": "bread",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "leche",
+      "english": "milk",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "café",
+      "english": "coffee",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "día",
+      "english": "day",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "noche",
+      "english": "night",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hoy",
+      "english": "today",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "ayer",
+      "english": "yesterday",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "nombre",
+      "english": "name",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "persona",
+      "english": "person",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "hombre",
+      "english": "man",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "mujer",
+      "english": "woman",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "niño",
+      "english": "boy/child",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "niña",
+      "english": "girl",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "color",
+      "english": "color",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "rojo",
+      "english": "red",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "azul",
+      "english": "blue",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "verde",
+      "english": "green",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "blanco",
+      "english": "white",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "negro",
+      "english": "black",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "grande",
+      "english": "big/large",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "pequeño",
+      "english": "small",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "bueno",
+      "english": "good",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "malo",
+      "english": "bad",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "nuevo",
+      "english": "new",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "viejo",
+      "english": "old",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "bonito",
+      "english": "pretty",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "feliz",
+      "english": "happy",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "triste",
+      "english": "sad",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "caliente",
+      "english": "hot",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "frío",
+      "english": "cold",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "ser",
+      "english": "to be",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "estar",
+      "english": "to be",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "tener",
+      "english": "to have",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hacer",
+      "english": "to do/make",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ir",
+      "english": "to go",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "venir",
+      "english": "to come",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "ver",
+      "english": "to see",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "hablar",
+      "english": "to speak",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "decir",
+      "english": "to say/tell",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "comer",
+      "english": "to eat",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "beber",
+      "english": "to drink",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "dormir",
+      "english": "to sleep",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "querer",
+      "english": "to want",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "gustar",
+      "english": "to like/be pleasing",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "poder",
+      "english": "to be able to/can",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "saber",
+      "english": "to know",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "dar",
+      "english": "to give",
+      "partOfSpeech": "verb"
+    },
+    {
+      "spanish": "qué",
+      "english": "what",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "quién",
+      "english": "who",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "dónde",
+      "english": "where",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "cuándo",
+      "english": "when",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "cómo",
+      "english": "how",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "por qué",
+      "english": "why",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "cuánto",
+      "english": "how much/many",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "este",
+      "english": "this (m)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "esta",
+      "english": "this (f)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "ese",
+      "english": "that (m)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "esa",
+      "english": "that (f)",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "muy",
+      "english": "very",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "mucho",
+      "english": "a lot/much",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "poco",
+      "english": "a little/few",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "más",
+      "english": "more",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "menos",
+      "english": "less",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "bien",
+      "english": "well",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "mal",
+      "english": "badly",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "también",
+      "english": "also/too",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "ahora",
+      "english": "now",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "aquí",
+      "english": "here",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "allí",
+      "english": "there",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "siempre",
+      "english": "always",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "nunca",
+      "english": "never",
+      "partOfSpeech": "adverb"
+    },
+    {
+      "spanish": "cosa",
+      "english": "thing",
+      "partOfSpeech": "noun"
+    },
+    {
+      "spanish": "todo",
+      "english": "all/everything",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "nada",
+      "english": "nothing",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "algo",
+      "english": "something",
+      "partOfSpeech": "pronoun"
+    },
+    {
+      "spanish": "buenos días",
+      "english": "good morning",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "buenas noches",
+      "english": "good night",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "de nada",
+      "english": "you're welcome",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "lo siento",
+      "english": "I'm sorry",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "con permiso",
+      "english": "excuse me",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "spanish": "perdón",
+      "english": "pardon/sorry",
+      "partOfSpeech": "interjection"
+    },
+    {
+      "spanish": "mi",
+      "english": "my",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "tu",
+      "english": "your (informal)",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "su",
+      "english": "his/her/your (formal)",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "nuestro",
+      "english": "our",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "spanish": "hay",
+      "english": "there is/there are",
+      "partOfSpeech": "verb"
     }
   ],
   "numbers": [
@@ -435,71 +950,6 @@
   ],
   "beginner": [
     {
-      "spanish": "hola",
-      "english": "hello",
-      "partOfSpeech": "interjection"
-    },
-    {
-      "spanish": "adiós",
-      "english": "goodbye",
-      "partOfSpeech": "interjection"
-    },
-    {
-      "spanish": "gracias",
-      "english": "thank you",
-      "partOfSpeech": "interjection"
-    },
-    {
-      "spanish": "por favor",
-      "english": "please",
-      "partOfSpeech": "phrase"
-    },
-    {
-      "spanish": "sí",
-      "english": "yes",
-      "partOfSpeech": "adverb"
-    },
-    {
-      "spanish": "no",
-      "english": "no",
-      "partOfSpeech": "adverb"
-    },
-    {
-      "spanish": "agua",
-      "english": "water",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "casa",
-      "english": "house",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "perro",
-      "english": "dog",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "gato",
-      "english": "cat",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "familia",
-      "english": "family",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "madre",
-      "english": "mother",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "padre",
-      "english": "father",
-      "partOfSpeech": "noun"
-    },
-    {
       "spanish": "hijo",
       "english": "son",
       "partOfSpeech": "noun"
@@ -507,16 +957,6 @@
     {
       "spanish": "hija",
       "english": "daughter",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "hermano",
-      "english": "brother",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "hermana",
-      "english": "sister",
       "partOfSpeech": "noun"
     },
     {
@@ -552,11 +992,6 @@
     {
       "spanish": "esposa",
       "english": "wife",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "amigo",
-      "english": "friend",
       "partOfSpeech": "noun"
     },
     {
@@ -660,16 +1095,6 @@
       "partOfSpeech": "noun"
     },
     {
-      "spanish": "comida",
-      "english": "food",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "pan",
-      "english": "bread",
-      "partOfSpeech": "noun"
-    },
-    {
       "spanish": "carne",
       "english": "meat",
       "partOfSpeech": "noun"
@@ -770,11 +1195,6 @@
       "partOfSpeech": "noun"
     },
     {
-      "spanish": "leche",
-      "english": "milk",
-      "partOfSpeech": "noun"
-    },
-    {
       "spanish": "mantequilla",
       "english": "butter",
       "partOfSpeech": "noun"
@@ -792,11 +1212,6 @@
     {
       "spanish": "pimienta",
       "english": "pepper",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "café",
-      "english": "coffee",
       "partOfSpeech": "noun"
     },
     {
@@ -1035,16 +1450,6 @@
       "partOfSpeech": "noun"
     },
     {
-      "spanish": "día",
-      "english": "day",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "noche",
-      "english": "night",
-      "partOfSpeech": "noun"
-    },
-    {
       "spanish": "mañana",
       "english": "morning/tomorrow",
       "partOfSpeech": "noun"
@@ -1053,16 +1458,6 @@
       "spanish": "tarde",
       "english": "afternoon/late",
       "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "hoy",
-      "english": "today",
-      "partOfSpeech": "adverb"
-    },
-    {
-      "spanish": "ayer",
-      "english": "yesterday",
-      "partOfSpeech": "adverb"
     },
     {
       "spanish": "año",
@@ -1252,36 +1647,6 @@
     {
       "spanish": "calor",
       "english": "heat",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "nombre",
-      "english": "name",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "persona",
-      "english": "person",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "hombre",
-      "english": "man",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "mujer",
-      "english": "woman",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "niño",
-      "english": "boy/child",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "niña",
-      "english": "girl",
       "partOfSpeech": "noun"
     },
     {
@@ -1515,26 +1880,6 @@
       "partOfSpeech": "noun"
     },
     {
-      "spanish": "color",
-      "english": "color",
-      "partOfSpeech": "noun"
-    },
-    {
-      "spanish": "rojo",
-      "english": "red",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "azul",
-      "english": "blue",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "verde",
-      "english": "green",
-      "partOfSpeech": "adjective"
-    },
-    {
       "spanish": "amarillo",
       "english": "yellow",
       "partOfSpeech": "adjective"
@@ -1562,26 +1907,6 @@
     {
       "spanish": "gris",
       "english": "gray",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "blanco",
-      "english": "white",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "negro",
-      "english": "black",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "grande",
-      "english": "big/large",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "pequeño",
-      "english": "small",
       "partOfSpeech": "adjective"
     },
     {
@@ -1635,16 +1960,6 @@
       "partOfSpeech": "adjective"
     },
     {
-      "spanish": "bueno",
-      "english": "good",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "malo",
-      "english": "bad",
-      "partOfSpeech": "adjective"
-    },
-    {
       "spanish": "mejor",
       "english": "better",
       "partOfSpeech": "adjective"
@@ -1655,23 +1970,8 @@
       "partOfSpeech": "adjective"
     },
     {
-      "spanish": "nuevo",
-      "english": "new",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "viejo",
-      "english": "old",
-      "partOfSpeech": "adjective"
-    },
-    {
       "spanish": "joven",
       "english": "young",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "bonito",
-      "english": "pretty",
       "partOfSpeech": "adjective"
     },
     {
@@ -1687,16 +1987,6 @@
     {
       "spanish": "lindo",
       "english": "cute",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "feliz",
-      "english": "happy",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "triste",
-      "english": "sad",
       "partOfSpeech": "adjective"
     },
     {
@@ -1717,16 +2007,6 @@
     {
       "spanish": "aburrido",
       "english": "bored",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "caliente",
-      "english": "hot",
-      "partOfSpeech": "adjective"
-    },
-    {
-      "spanish": "frío",
-      "english": "cold",
       "partOfSpeech": "adjective"
     },
     {
@@ -1815,41 +2095,6 @@
       "partOfSpeech": "adjective"
     },
     {
-      "spanish": "ser",
-      "english": "to be",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "estar",
-      "english": "to be",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "tener",
-      "english": "to have",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "hacer",
-      "english": "to do/make",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "ir",
-      "english": "to go",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "venir",
-      "english": "to come",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "ver",
-      "english": "to see",
-      "partOfSpeech": "verb"
-    },
-    {
       "spanish": "mirar",
       "english": "to look at/watch",
       "partOfSpeech": "verb"
@@ -1862,16 +2107,6 @@
     {
       "spanish": "escuchar",
       "english": "to listen",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "hablar",
-      "english": "to speak",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "decir",
-      "english": "to say/tell",
       "partOfSpeech": "verb"
     },
     {
@@ -1895,23 +2130,8 @@
       "partOfSpeech": "verb"
     },
     {
-      "spanish": "comer",
-      "english": "to eat",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "beber",
-      "english": "to drink",
-      "partOfSpeech": "verb"
-    },
-    {
       "spanish": "cocinar",
       "english": "to cook",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "dormir",
-      "english": "to sleep",
       "partOfSpeech": "verb"
     },
     {
@@ -2000,11 +2220,6 @@
       "partOfSpeech": "verb"
     },
     {
-      "spanish": "querer",
-      "english": "to want",
-      "partOfSpeech": "verb"
-    },
-    {
       "spanish": "amar",
       "english": "to love",
       "partOfSpeech": "verb"
@@ -2015,23 +2230,8 @@
       "partOfSpeech": "verb"
     },
     {
-      "spanish": "gustar",
-      "english": "to like/be pleasing",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "poder",
-      "english": "to be able to/can",
-      "partOfSpeech": "verb"
-    },
-    {
       "spanish": "deber",
       "english": "to must/should",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "saber",
-      "english": "to know",
       "partOfSpeech": "verb"
     },
     {
@@ -2042,11 +2242,6 @@
     {
       "spanish": "entender",
       "english": "to understand",
-      "partOfSpeech": "verb"
-    },
-    {
-      "spanish": "dar",
-      "english": "to give",
       "partOfSpeech": "verb"
     },
     {
