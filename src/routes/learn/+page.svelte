@@ -2,7 +2,6 @@
 	import { fly } from 'svelte/transition';
 	import { selectedCategory, selectedMode, selectedLanguage, wordPoints } from '$lib/stores';
 	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
 
 	let ready = $state(false);
 
@@ -11,22 +10,14 @@
 		localStorage.setItem('selectedMode', mode);
 	};
 
-	onMount(() => {
-		ready = true;
-	});
-
 	$effect(() => {
 		$selectedCategory;
 		$selectedMode;
 
-		console.log('Selected Category:', $selectedCategory);
-		console.log('Selected Mode:', $selectedMode);
-
 		if ($selectedCategory && $selectedMode) {
-			console.log('Both category and mode are selected. Navigating...');
 			switch ($selectedMode) {
 				case 'table':
-					console.log('Navigating to table...');
+					('Navigating to table...');
 					goto('/table');
 					break;
 				case 'flashcards':
@@ -42,14 +33,12 @@
 					goto('/custom');
 					break;
 				default:
-					goto('/learn');
+					ready = true;
 			}
 		} else if ($selectedMode && !$selectedCategory) {
 			goto('/categories');
-		} else if (!$selectedMode && $selectedCategory) {
-			goto('/learn');
 		} else {
-			goto('/learn');
+			ready = true;
 		}
 	});
 </script>

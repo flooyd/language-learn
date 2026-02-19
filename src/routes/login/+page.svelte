@@ -15,7 +15,6 @@
 	};
 
 	const handleLogin = async (event: Event) => {
-		console.log('hi')
 		const formData = new FormData(event.target as HTMLFormElement);
 		const email = formData.get('username') as string;
 		const password = formData.get('password') as string;

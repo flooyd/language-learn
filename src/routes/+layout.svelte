@@ -5,7 +5,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import { filteredWords, filterMaxPoints, filterMinPoints, selectedCategory, selectedMode, user, wordPoints, words } from '$lib/stores';
 	import type { LayoutData } from './$types';
-	import { getWordPoints, test } from '$lib/util';
+	import { getWordPoints } from '$lib/util';
 	import * as spanishData from '$lib/data/spanish.json';
 
 	interface Props {

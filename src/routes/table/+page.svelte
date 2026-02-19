@@ -105,7 +105,7 @@
 					<tr>
 						<td>{item.spanish}</td>
 						<td>{item.english}</td>
-						<td>{item.partOfSpeech}</td>
+						<td class="pos">{item.partOfSpeech}</td>
 					</tr>
 				{/each}
 			</tbody>
@@ -153,20 +153,23 @@
 		display: table;
 		table-layout: fixed;
 		width: 100%;
-		background: var(--accent-blue);
+		background: var(--header-bg);
 	}
 
 	thead th {
 		font-weight: 700;
-		color: var(--accent-blue-text);
+		color: var(--text-tertiary);
 		cursor: pointer;
 		user-select: none;
 		transition: background var(--transition-fast);
-		letter-spacing: 0.02em;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		font-size: var(--text-sm);
 	}
 
 	thead th:hover {
-		background: var(--accent-blue-hover);
+		background: var(--accent-blue-subtle);
+		color: var(--accent-blue);
 	}
 
 	.sort-arrow {
@@ -200,5 +203,10 @@
 		padding: var(--space-sm) var(--space-md);
 		text-align: left;
 		width: 33.33%;
+	}
+
+	.pos {
+		font-style: italic;
+		color: var(--text-tertiary);
 	}
 </style>

@@ -66,14 +66,14 @@
 			setTimeout(() => {
 				message = '';
 				nextQuiz();
-			}, 1500);
+			}, 1000);
 		} else {
 			message = 'Incorrect! -10 points';
 			updateWordPoints(displayQuiz.spanish, 'spanish', false);
 			setTimeout(() => {
 				message = '';
 				nextQuiz();
-			}, 1500);
+			}, 1000);
 		}
 	};
 

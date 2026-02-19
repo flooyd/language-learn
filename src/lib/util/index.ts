@@ -7,10 +7,6 @@ type WordPoint = {
     points: number;
 };
 
-export const test = async () => {
-    console.log('test');
-}
-
 export const getWordPoints = async() => {
 		try {
 			const response = await fetch('/api/word-points', {

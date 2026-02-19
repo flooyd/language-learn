@@ -53,7 +53,6 @@ export const GET = async ({ request, locals }) => {
 
     try {
         const wordPoints = await db.select().from(wordPoint).where(eq(wordPoint.userId, locals.user.id));
-        console.log('Fetched Word Points:', wordPoints);
         return json({ wordPoints });
     } catch (error) {
         return json({ error: 'Failed to fetch word points' }, { status: 500 });

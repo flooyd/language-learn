@@ -78,7 +78,7 @@
 		flex: 1;
 		min-width: 280px;
 		max-width: 420px;
-		padding: var(--space-2xl);
+		padding: var(--space-xl);
 		border-radius: var(--radius-2xl);
 		box-shadow: var(--shadow-md);
 		display: flex;
