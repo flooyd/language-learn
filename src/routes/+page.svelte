@@ -120,6 +120,7 @@
 	}
 
 	.intro h1 {
+		margin-top: 0;
 		color: var(--text-primary);
 		transition: transform var(--transition-base);
 		margin-bottom: 0;

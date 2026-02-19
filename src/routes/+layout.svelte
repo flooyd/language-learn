@@ -276,7 +276,6 @@
 		font-weight: 800;
 		line-height: 1.15;
 		margin-bottom: var(--space-3xl);
-		margin-top: var(--space-md);
 		letter-spacing: -0.02em;
 		color: var(--text-primary);
 	}
