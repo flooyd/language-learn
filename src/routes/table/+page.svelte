@@ -189,12 +189,10 @@
 		width: 100%;
 		table-layout: fixed;
 		background: var(--card-bg);
-		transition: all var(--transition-fast);
 	}
 
 	tbody tr:hover {
 		background: var(--accent-blue-subtle);
-		transform: translateX(3px);
 	}
 
 	th,
