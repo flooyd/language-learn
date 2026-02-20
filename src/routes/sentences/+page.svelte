@@ -132,17 +132,22 @@
 		if (!$selectedCategory) {
 			window.location.href = '/categories';
 		}
-		sentences = shuffle(sentencesData.sentences as Sentence[]);
+		const categoryData = sentencesData[$selectedCategory as keyof typeof sentencesData];
+		if (categoryData) {
+			sentences = shuffle(categoryData as Sentence[]);
+		}
 		ready = true;
 	});
 </script>
 
-{#if ready && currentSentence}
+{#if ready}
 	<div class="container" in:fly={{ y: -50, duration: 600, delay: 0 }}>
 		<h1>
 			Sentences
 			<H1Buttons />
 		</h1>
+
+		{#if currentSentence}
 		<h5>Translate the English sentence into Spanish by clicking the word buttons below.</h5>
 
 		<div class="card">
@@ -188,6 +193,12 @@
 				<button class="next-btn" onclick={nextSentence}>Next →</button>
 			</div>
 		</div>
+		{:else}
+			<div class="empty-state">
+				<p>No sentences are available for the <strong>{$selectedCategory}</strong> category yet.</p>
+				<p>Try selecting <strong>Basics</strong> to get started.</p>
+			</div>
+		{/if}
 	</div>
 {/if}
 
@@ -225,6 +236,23 @@
 		padding: var(--space-2xl);
 		background: var(--card-bg);
 		box-shadow: var(--shadow-md);
+	}
+
+	.empty-state {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+		padding: var(--space-3xl) var(--space-2xl);
+		border: 1px solid var(--border-color);
+		border-radius: var(--radius-xl);
+		background: var(--card-bg);
+		box-shadow: var(--shadow-sm);
+		color: var(--text-secondary);
+		font-size: var(--text-lg);
+	}
+
+	.empty-state strong {
+		color: var(--text-primary);
 	}
 
 	/* Sentence display */
