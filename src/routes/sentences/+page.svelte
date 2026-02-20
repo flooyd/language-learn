@@ -49,26 +49,21 @@
 		return avail;
 	});
 
-	// Unique word options (one button per unique word in wordOptions order)
-	const uniqueWordOptions = $derived.by(() => {
-		const seen = new Set<string>();
-		const result: string[] = [];
-		for (const w of currentSentence?.wordOptions ?? []) {
-			if (!seen.has(w)) {
-				seen.add(w);
-				result.push(w);
-			}
-		}
-		return result;
-	});
+	let shuffledWordOptions = $state<string[]>([]);
 
-	// Reset state whenever the current sentence changes
+	// Reset state whenever the current sentence changes, and shuffle word options
 	$effect(() => {
 		const s = currentSentence;
 		if (s) {
 			filledSlots = new Array(s.slots.length).fill(null);
 			scored = new Array(s.slots.length).fill(false);
 			flyMessages = [];
+			const seen = new Set<string>();
+			const unique: string[] = [];
+			for (const w of s.wordOptions) {
+				if (!seen.has(w)) { seen.add(w); unique.push(w); }
+			}
+			shuffledWordOptions = shuffle(unique);
 		}
 	});
 
@@ -177,7 +172,7 @@
 			</div>
 
 			<div class="word-options">
-				{#each uniqueWordOptions as word}
+				{#each shuffledWordOptions as word}
 					<button
 						class="word-btn"
 						disabled={(wordCounts.get(word) ?? 0) <= 0}
