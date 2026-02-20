@@ -1,0 +1,168 @@
+{
+  "sentences": [
+    {
+      "english": "Hello I am a person",
+      "slots": [
+        { "english": "Hello", "spanish": "hola" },
+        { "english": "I", "spanish": "yo" },
+        { "english": "am", "spanish": "soy", "baseWord": "es" },
+        { "english": "a", "spanish": "una" },
+        { "english": "person", "spanish": "persona" }
+      ],
+      "wordOptions": ["hola", "yo", "soy", "una", "persona", "él", "es", "un", "niño", "ella"]
+    },
+    {
+      "english": "The dog is in the house",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "dog", "spanish": "perro" },
+        { "english": "is", "spanish": "está" },
+        { "english": "in", "spanish": "en" },
+        { "english": "the", "spanish": "la" },
+        { "english": "house", "spanish": "casa" }
+      ],
+      "wordOptions": ["el", "perro", "está", "en", "la", "casa", "gato", "un", "de", "es", "son"]
+    },
+    {
+      "english": "She has bread and milk",
+      "slots": [
+        { "english": "She", "spanish": "ella" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "bread", "spanish": "pan" },
+        { "english": "and", "spanish": "y" },
+        { "english": "milk", "spanish": "leche" }
+      ],
+      "wordOptions": ["ella", "tiene", "pan", "y", "leche", "él", "hace", "agua", "pero", "café"]
+    },
+    {
+      "english": "The mother is in the house today",
+      "slots": [
+        { "english": "The", "spanish": "la" },
+        { "english": "mother", "spanish": "madre" },
+        { "english": "is", "spanish": "está" },
+        { "english": "in", "spanish": "en" },
+        { "english": "house", "spanish": "casa" },
+        { "english": "today", "spanish": "hoy" }
+      ],
+      "wordOptions": ["la", "madre", "está", "en", "casa", "hoy", "el", "padre", "de", "ayer", "hermano"]
+    },
+    {
+      "english": "We have food and water",
+      "slots": [
+        { "english": "We", "spanish": "nosotros" },
+        { "english": "have", "spanish": "tenemos", "baseWord": "tienen" },
+        { "english": "food", "spanish": "comida" },
+        { "english": "and", "spanish": "y" },
+        { "english": "water", "spanish": "agua" }
+      ],
+      "wordOptions": ["nosotros", "tenemos", "comida", "y", "agua", "ellos", "tienen", "pan", "o", "leche"]
+    },
+    {
+      "english": "They are the family",
+      "slots": [
+        { "english": "They", "spanish": "ellos" },
+        { "english": "are", "spanish": "son" },
+        { "english": "the", "spanish": "la" },
+        { "english": "family", "spanish": "familia" }
+      ],
+      "wordOptions": ["ellos", "son", "la", "familia", "ellas", "es", "el", "amigo", "yo", "están"]
+    },
+    {
+      "english": "You are a friend",
+      "slots": [
+        { "english": "You", "spanish": "tú" },
+        { "english": "are", "spanish": "eres", "baseWord": "es" },
+        { "english": "a", "spanish": "un" },
+        { "english": "friend", "spanish": "amigo" }
+      ],
+      "wordOptions": ["tú", "eres", "un", "amigo", "yo", "soy", "una", "persona", "él", "son"]
+    },
+    {
+      "english": "The cat is without water",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "cat", "spanish": "gato" },
+        { "english": "is", "spanish": "está" },
+        { "english": "without", "spanish": "sin" },
+        { "english": "water", "spanish": "agua" }
+      ],
+      "wordOptions": ["el", "gato", "está", "sin", "agua", "la", "perro", "es", "con", "leche"]
+    },
+    {
+      "english": "The father has coffee",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "father", "spanish": "padre" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "coffee", "spanish": "café" }
+      ],
+      "wordOptions": ["el", "padre", "tiene", "café", "la", "madre", "hace", "agua", "un", "pan"]
+    },
+    {
+      "english": "The girl is with the dog",
+      "slots": [
+        { "english": "The", "spanish": "la" },
+        { "english": "girl", "spanish": "niña" },
+        { "english": "is", "spanish": "está" },
+        { "english": "with", "spanish": "con" },
+        { "english": "the", "spanish": "el" },
+        { "english": "dog", "spanish": "perro" }
+      ],
+      "wordOptions": ["la", "niña", "está", "con", "el", "perro", "gato", "niño", "los", "madre", "un"]
+    },
+    {
+      "english": "A man and a woman are family",
+      "slots": [
+        { "english": "A", "spanish": "un" },
+        { "english": "man", "spanish": "hombre" },
+        { "english": "and", "spanish": "y" },
+        { "english": "a", "spanish": "una" },
+        { "english": "woman", "spanish": "mujer" },
+        { "english": "are", "spanish": "son" },
+        { "english": "family", "spanish": "familia" }
+      ],
+      "wordOptions": ["un", "hombre", "y", "una", "mujer", "son", "familia", "el", "niño", "la", "es"]
+    },
+    {
+      "english": "The color is red",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "color", "spanish": "color" },
+        { "english": "is", "spanish": "es" },
+        { "english": "red", "spanish": "rojo" }
+      ],
+      "wordOptions": ["el", "color", "es", "rojo", "la", "azul", "son", "verde", "café", "están"]
+    },
+    {
+      "english": "Today is a day",
+      "slots": [
+        { "english": "Today", "spanish": "hoy" },
+        { "english": "is", "spanish": "es" },
+        { "english": "a", "spanish": "un" },
+        { "english": "day", "spanish": "día" }
+      ],
+      "wordOptions": ["hoy", "es", "un", "día", "ayer", "son", "la", "noche", "ella", "está"]
+    },
+    {
+      "english": "The brother has a cat",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "brother", "spanish": "hermano" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "a", "spanish": "un" },
+        { "english": "cat", "spanish": "gato" }
+      ],
+      "wordOptions": ["el", "hermano", "tiene", "un", "gato", "la", "hermana", "hace", "una", "perro"]
+    },
+    {
+      "english": "She is a woman",
+      "slots": [
+        { "english": "She", "spanish": "ella" },
+        { "english": "is", "spanish": "es" },
+        { "english": "a", "spanish": "una" },
+        { "english": "woman", "spanish": "mujer" }
+      ],
+      "wordOptions": ["ella", "es", "una", "mujer", "él", "un", "hombre", "yo", "son", "está"]
+    }
+  ]
+}

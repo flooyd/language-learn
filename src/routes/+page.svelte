@@ -110,7 +110,7 @@
 		min-height: calc(100vh - 164px);
 		padding-bottom: var(--space-md);
 		padding-top: var(--space-xl);
-		align-items: start;
+		align-items: center;
 	}
 
 	.intro {
