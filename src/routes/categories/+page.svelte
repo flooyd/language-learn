@@ -11,7 +11,6 @@
 		'beginner',
 		'intermediate',
 		'advanced',
-		'custom'
 	] as const;
 
 	const handleSelectCategory = (category: string) => {

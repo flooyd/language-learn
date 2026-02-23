@@ -29,9 +29,6 @@
 				case 'sentences':
 					goto('/sentences');
 					break;
-				case 'custom':
-					goto('/custom');
-					break;
 				default:
 					ready = true;
 			}

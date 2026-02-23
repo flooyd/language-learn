@@ -2,15 +2,20 @@
 	import { goto } from '$app/navigation';
 	import H1Buttons from '$lib/components/H1Buttons.svelte';
 	import * as spanishData from '$lib/data/spanish.json';
-	import { selectedCategory } from '$lib/stores';
+	import { selectedCategory, wordPoints } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
+
+	// Build a lookup map: Spanish word -> points
+	let wordPointsMap = $derived(
+		Object.fromEntries($wordPoints.map((wp) => [wp.word, wp.points]))
+	);
 
 	let ready = $state(false);
     let sortColumn = $state<string | null>(null);
 	let sortDirection = $state<'asc' | 'desc' | null>(null);
 
-    const columns = ['Spanish', 'English', 'Part of Speech'];
+    const columns = ['Spanish', 'English', 'Part of Speech', 'Points'];
 
     $effect(() => {
 		$selectedCategory;
@@ -19,17 +24,22 @@
 	});
 
     let sortedData = $derived.by(() => {
-		const data = $derived.by(() => spanishData[$selectedCategory as keyof typeof spanishData]);
+		const categoryData = spanishData[$selectedCategory as keyof typeof spanishData];
 
 		if (!sortColumn || !sortDirection) {
-			return data;
+			return categoryData;
 		}
 
-		return data.sort((a, b) => {
+		return [...categoryData].sort((a, b) => {
+			if (sortColumn === 'Points') {
+				const aPoints = wordPointsMap[a.spanish] ?? 0;
+				const bPoints = wordPointsMap[b.spanish] ?? 0;
+				return sortDirection === 'asc' ? aPoints - bPoints : bPoints - aPoints;
+			}
+
 			let aValue: string;
 			let bValue: string;
 
-			// Map column name to data property
 			if (sortColumn === 'Spanish') {
 				aValue = a.spanish;
 				bValue = b.spanish;
@@ -106,6 +116,7 @@
 						<td>{item.spanish}</td>
 						<td>{item.english}</td>
 						<td class="pos">{item.partOfSpeech}</td>
+					<td>{wordPointsMap[item.spanish] ?? 0}</td>
 					</tr>
 				{/each}
 			</tbody>

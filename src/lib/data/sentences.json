@@ -164,5 +164,159 @@
       ],
       "wordOptions": ["ella", "es", "una", "mujer", "él", "un", "hombre", "yo", "son", "está"]
     }
+  ],
+  "numbers": [
+    {
+      "english": "I have two dogs",
+      "slots": [
+        { "english": "I", "spanish": "yo" },
+        { "english": "have", "spanish": "tengo", "baseWord": "tener" },
+        { "english": "two", "spanish": "dos" },
+        { "english": "dogs", "spanish": "perros" }
+      ],
+      "wordOptions": ["yo", "tengo", "dos", "perros", "ella", "tres", "gatos", "uno", "tiene", "cuatro"]
+    },
+    {
+      "english": "She has three cats",
+      "slots": [
+        { "english": "She", "spanish": "ella" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "three", "spanish": "tres" },
+        { "english": "cats", "spanish": "gatos" }
+      ],
+      "wordOptions": ["ella", "tiene", "tres", "gatos", "él", "dos", "perros", "cuatro", "tengo", "un"]
+    },
+    {
+      "english": "There are five houses",
+      "slots": [
+        { "english": "There are", "spanish": "hay" },
+        { "english": "five", "spanish": "cinco" },
+        { "english": "houses", "spanish": "casas" }
+      ],
+      "wordOptions": ["hay", "cinco", "casas", "son", "cuatro", "perros", "seis", "es", "casa", "tres"]
+    },
+    {
+      "english": "He has one cat",
+      "slots": [
+        { "english": "He", "spanish": "él" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "one", "spanish": "un" },
+        { "english": "cat", "spanish": "gato" }
+      ],
+      "wordOptions": ["él", "tiene", "un", "gato", "ella", "dos", "perro", "una", "yo", "tres"]
+    },
+    {
+      "english": "We have ten friends",
+      "slots": [
+        { "english": "We", "spanish": "nosotros" },
+        { "english": "have", "spanish": "tenemos", "baseWord": "tener" },
+        { "english": "ten", "spanish": "diez" },
+        { "english": "friends", "spanish": "amigos" }
+      ],
+      "wordOptions": ["nosotros", "tenemos", "diez", "amigos", "ellos", "cinco", "perros", "cuatro", "tienen", "ocho"]
+    },
+    {
+      "english": "The family has four people",
+      "slots": [
+        { "english": "The", "spanish": "la" },
+        { "english": "family", "spanish": "familia" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "four", "spanish": "cuatro" },
+        { "english": "people", "spanish": "personas" }
+      ],
+      "wordOptions": ["la", "familia", "tiene", "cuatro", "personas", "el", "dos", "amigos", "cinco", "tres"]
+    },
+    {
+      "english": "There is one man",
+      "slots": [
+        { "english": "There is", "spanish": "hay" },
+        { "english": "one", "spanish": "un" },
+        { "english": "man", "spanish": "hombre" }
+      ],
+      "wordOptions": ["hay", "un", "hombre", "una", "mujer", "dos", "es", "son", "el", "niño"]
+    },
+    {
+      "english": "I have zero cats",
+      "slots": [
+        { "english": "I", "spanish": "yo" },
+        { "english": "have", "spanish": "tengo", "baseWord": "tener" },
+        { "english": "zero", "spanish": "cero" },
+        { "english": "cats", "spanish": "gatos" }
+      ],
+      "wordOptions": ["yo", "tengo", "cero", "gatos", "ella", "uno", "perros", "dos", "tiene", "tres"]
+    },
+    {
+      "english": "Today is day seven",
+      "slots": [
+        { "english": "Today", "spanish": "hoy" },
+        { "english": "is", "spanish": "es" },
+        { "english": "day", "spanish": "día" },
+        { "english": "seven", "spanish": "siete" }
+      ],
+      "wordOptions": ["hoy", "es", "día", "siete", "ayer", "son", "noche", "ocho", "el", "seis"]
+    },
+    {
+      "english": "There are eight dogs in the house",
+      "slots": [
+        { "english": "There are", "spanish": "hay" },
+        { "english": "eight", "spanish": "ocho" },
+        { "english": "dogs", "spanish": "perros" },
+        { "english": "in", "spanish": "en" },
+        { "english": "the", "spanish": "la" },
+        { "english": "house", "spanish": "casa" }
+      ],
+      "wordOptions": ["hay", "ocho", "perros", "en", "la", "casa", "cinco", "gatos", "de", "el"]
+    },
+    {
+      "english": "The mother has six children",
+      "slots": [
+        { "english": "The", "spanish": "la" },
+        { "english": "mother", "spanish": "madre" },
+        { "english": "has", "spanish": "tiene" },
+        { "english": "six", "spanish": "seis" },
+        { "english": "children", "spanish": "niños" }
+      ],
+      "wordOptions": ["la", "madre", "tiene", "seis", "niños", "el", "padre", "tres", "niñas", "ocho"]
+    },
+    {
+      "english": "I see three houses",
+      "slots": [
+        { "english": "I", "spanish": "yo" },
+        { "english": "see", "spanish": "veo", "baseWord": "ver" },
+        { "english": "three", "spanish": "tres" },
+        { "english": "houses", "spanish": "casas" }
+      ],
+      "wordOptions": ["yo", "veo", "tres", "casas", "ella", "dos", "perros", "cuatro", "ve", "uno"]
+    },
+    {
+      "english": "She wants two dogs",
+      "slots": [
+        { "english": "She", "spanish": "ella" },
+        { "english": "wants", "spanish": "quiere", "baseWord": "querer" },
+        { "english": "two", "spanish": "dos" },
+        { "english": "dogs", "spanish": "perros" }
+      ],
+      "wordOptions": ["ella", "quiere", "dos", "perros", "él", "tres", "gatos", "uno", "quiero", "cuatro"]
+    },
+    {
+      "english": "The second day is today",
+      "slots": [
+        { "english": "The", "spanish": "el" },
+        { "english": "second", "spanish": "segundo" },
+        { "english": "day", "spanish": "día" },
+        { "english": "is", "spanish": "es" },
+        { "english": "today", "spanish": "hoy" }
+      ],
+      "wordOptions": ["el", "segundo", "día", "es", "hoy", "la", "primero", "noche", "ayer", "son"]
+    },
+    {
+      "english": "He is number one",
+      "slots": [
+        { "english": "He", "spanish": "él" },
+        { "english": "is", "spanish": "es" },
+        { "english": "the first", "spanish": "el primero" }
+      ],
+      "wordOptions": ["él", "es", "el primero", "ella", "son", "la primera", "yo", "un", "están", "dos"]
+    }
   ]
 }

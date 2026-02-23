@@ -139,7 +139,7 @@
 	<div class="container" in:fly={{ y: -50, duration: 600, delay: 0 }}>
 		<h1>
 			Sentences
-			<H1Buttons />
+			<H1Buttons showFilters={false} />
 		</h1>
 
 		{#if currentSentence}

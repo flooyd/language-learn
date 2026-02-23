@@ -2,26 +2,31 @@
 	import { goto } from '$app/navigation';
 	import { filterMaxPoints, filterMinPoints, selectedCategory, selectedMode } from '$lib/stores';
 
-    const handleClickModes = () => {
-        $selectedMode = "";
-        localStorage.setItem("selectedMode", "");
-        goto('/learn');
-    }
+	export let showFilters = false;
 
-    const handleClickCategories = () => {
-        $selectedCategory = "";
-        goto('/categories');
-    }
+	const handleClickModes = () => {
+		$selectedMode = '';
+		localStorage.setItem('selectedMode', '');
+		goto('/learn');
+	};
 
-    const handleClickFilters = () => {
-        goto('/filters');
-    }
+	const handleClickCategories = () => {
+		$selectedCategory = '';
+		goto('/categories');
+	};
+
+	const handleClickFilters = () => {
+		goto('/filters');
+	};
 </script>
 
 <div class="h1-buttons">
-    <button class="{$filterMinPoints > 0 || $filterMaxPoints < 100 ? 'active' : ''}" onclick={() => handleClickFilters()}>Filters</button>
+	{#if showFilters}<button
+			class={$filterMinPoints > 0 || $filterMaxPoints < 100 ? 'active' : ''}
+			onclick={() => handleClickFilters()}>Filters</button
+		>{/if}
 	<button onclick={() => handleClickModes()}>Modes</button>
-	<button  onclick={() => handleClickCategories()}>Categories</button>
+	<button onclick={() => handleClickCategories()}>Categories</button>
 </div>
 
 <style>
