@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { filterMaxPoints, filterMinPoints, selectedCategory, selectedMode } from '$lib/stores';
 
-	export let showFilters = false;
+	export let showFilters = true;
 
 	const handleClickModes = () => {
 		$selectedMode = '';
