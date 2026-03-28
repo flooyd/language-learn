@@ -4,7 +4,7 @@ A language-learning web app for building vocabulary with **interactive tables**,
 
 ![home page](https://raw.githubusercontent.com/flooyd/language-learn/refs/heads/main/static/home.png)
 
-![quizzes page](https://raw.githubusercontent.com/flooyd/language-learn/refs/heads/main/static/quizzes.png)
+![sentences page](https://raw.githubusercontent.com/flooyd/language-learn/refs/heads/main/static/sentences.png)
 
 ## Features
 
